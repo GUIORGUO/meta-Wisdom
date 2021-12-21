@@ -1,8 +1,14 @@
 <template>
   <div id="first">
   <!-- 路由跳转 -->
+<!-- 中间图 -->
    <!-- 千万注意大小写myChart2如果写错，就什么也出不来 -->
-  <div ref="myChart4" style="width:650px;height:640px;"></div>   
+   <el-row type="flex" justify="center">
+       <el-col :span="24" >
+            <div ref="myChart4" style="min-width:650px;height:640px;"></div>   
+       </el-col>
+   </el-row>
+  
  
 </div>
 

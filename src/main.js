@@ -6,8 +6,8 @@ import './plugins/element.js'
 import installElementPlus from './plugins/element'
 import dataV from '../node_modules/@jiaminghi/data-view'
 import * as echarts from 'echarts'
-import axios from 'axios'
-import vue3SeamlessScroll from "vue3-seamless-scroll";
+import axios from 'axios'    
+import vue3SeamlessScroll from "vue3-seamless-scroll"
   
 const app = createApp(App)
 installElementPlus(app)

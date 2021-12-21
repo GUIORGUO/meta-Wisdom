@@ -7,10 +7,10 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^0.2.4",
     "@jiaminghi/charts": "^0.2.18",
     "@jiaminghi/data-view": "^2.10.0",
     "@vue/composition-api": "^1.4.1",
-    "axios": "^0.24.0",
     "core-js": "^3.19.2",
     "echarts": "^5.2.2",
     "echarts-gl": "^2.0.8",
@@ -30,6 +30,7 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.2.23",
+    "axios": "^0.24.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-element": "^1.0.1",

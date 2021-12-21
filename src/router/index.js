@@ -5,6 +5,7 @@ import First from '../views/First.vue'
 import Second from '../views/Second.vue'
 import Scroll from '../views/Scroll.vue'
 import Third from '../views/Third.vue'
+import Team from '../views/Team.vue'
 
 const routes = [
    
@@ -35,6 +36,11 @@ const routes = [
     path: '/Third',
     name: 'Third',
     component: () => import(/* webpackChunkName: "about" */ '../views/Third.vue')
+  },
+  {
+    path: '/Team',
+    name: 'Team',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Team.vue')
   },
   {
     path: '/Scroll',

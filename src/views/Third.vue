@@ -1,12 +1,20 @@
 <template>
 
 <div id="Third">
-<dv-active-ring-chart :config="config" style="margin-top:-50px;width:300px;height:300px" />
+  <el-row type="flex" justify="center">
+    <el-col :span="24">
+                              <!-- 刚开始圆环内的文字显示不全，因此要直接设置全局文字行高才可以 -->
+      <dv-active-ring-chart :config="config" style="margin-top:-60px;width:300px;height:300px;line-height:22px;" />
+    </el-col>
+  </el-row>
+
 </div>
 
 </template>
 
 <script>
+import * as echarts from "echarts";
+import {reactive, ref, onMounted } from 'vue'
 
 export default {
  
@@ -14,7 +22,7 @@ export default {
     return {
       config: {
             radius: '57%',  //圆环大小
-            activeRadius: '77%',//半径大小
+            activeRadius: '66%',//半径大小
             lineWidth: 20,
             data: [
                     {
@@ -40,8 +48,8 @@ export default {
                 ],
             digitalFlopStyle: {
                 fontSize: 20,
-               
-               
+                
+
             }
     }
   }

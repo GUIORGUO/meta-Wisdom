@@ -129,162 +129,21 @@
           <div class="team" style="background-color: #E9EEF3;margin-top:100px;">
           <h1><a href="#" float="right" width="45%"  style="font-family:Raleway; font-size:35px;line-height:100px;text-decoration:none; color:#5c768d; ">Our Team</a></h1> 
           <h2 style="margin-top:-10px;font-family:Raleway; font-size:20px;text-color:#5c768d; "> Mulitimedia and AI Research for Visual Transmission Exploratory Laboratory</h2><br> 
-           <div class="photo" style="margin-top:-20px; background-color: #E9EEF3;">
-              <div class="parent1" >
-                <div class="son1">
-                    <img src="../assets/纪雯.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" position="relative"  z-index="10">
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>纪雯</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>博导<br>E-mail：jiwen@ict.ac.cn</p>
-                      </a>
-                </div>
-              </div>
-              
-              <div class="parent2">
-                <div class="son1">
-                    <img src="../assets/杨哲铭.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" position="relative"  z-index="10">
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>杨哲铭</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>博士研究生<br>E-mail：yangzheming19b@ict.ac.cn</p>
-                      </a>
-                </div>
-              </div>
-              <div class="parent3">
-                <div class="son1">
-                    <img src="../assets/梁冰.png" position="absolute" alt="" style="width:310px;height:310px; border:2px solid #ccc;">
-                </div>
-                <div class="son2" position="relative"  z-index="10">
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>梁冰</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>博士研究生<br>E-mail：liangbing@ict.ac.cn</p>
-                      </a>
-                </div>
-              </div>
-               <div class="parent4">
-                <div class="son1">
-                    <img src="../assets/李宁州.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" position="relative"  z-index="10">
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>李宁州</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>硕士研究生<br>E-mail：liningzhou20s@ict.ac.cn</p>
-                      </a>
-                </div>
-              </div>
-            <div class="parent5">
-                <div class="son1">
-                    <img src="../assets/左路路.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" position="relative"  z-index="10">
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>左路路</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>博士研究生<br>E-mail：ghlluzuo@163.com</p>
-                      </a>
-                </div>
-              </div>
-               <div class="parent6">
-                <div class="son1">
-                    <img src="../assets/刘建燃.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" position="relative"  z-index="10">
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>刘建燃</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>博士研究生<br>E-mail：jrliu94@qq.com</p>
-                      </a>
-                </div>
-              </div>
-                <div class="parent7">
-                <div class="son1">
-                    <img src="../assets/李明轩.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" position="relative"  z-index="10">
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>李明轩</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>博士研究生<br>E-mail：limingxuan20z@ict.ac.cn</p>
-                      </a>
-                </div>
-              </div>
-             <div class="parent8">
-                <div class="son1">
-                    <img src="../assets/胡叠丽.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" position="relative"  z-index="10">
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>胡叠丽</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>博士研究生<br>E-mail：2111807054@e.gzhu.edu.cn</p>
-                      </a>
-                </div>
-              </div>
-              <div class="parent12">
-                <div class="son1">
-                    <img src="../assets/邱锐.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" >
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>邱锐</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>硕士研究生<br>E-mail：qiurui@ict.ac.cn</p>
-                      </a>
-                </div>
-              </div>
-          <div class="parent9">
-                <div class="son1">
-                    <img src="../assets/田港一.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" >
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>田港一</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>硕士研究生<br>E-mail：tiangangyi@ict.ac.cn</p>
-                      </a>
-                </div>
-              </div>    
-         <div class="parent10">
-                <div class="son1">
-                    <img src="../assets/国琪.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" >
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>国琪</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>硕士研究生<br>E-mail：847666493@qq.com</p>
-                      </a>
-                </div>
-              </div>    
-        <div class="parent11">
-                <div class="son1">
-                    <img src="../assets/张畅.png" position="absolute" alt="" style="width:310px;height:310px;border:2px solid #ccc;">
-                </div>
-                <div class="son2" position="absolute"  z-index="10">
-                    <a position="absolute" >
-                      <h3 style="margin-top:0px;margin-bottom:0px;"><strong>张畅</strong><br></h3>
-                      <p style="line-height:0;">——————</p>
-                      <p>硕士研究生<br>E-mail：1849679643@qq.com</p>
-                      </a>
-                </div>
-              </div>    
-
-           </div>
-          </div>
-          <p class="name4" style="margin-top:1000px">**长期招聘博士后、优秀实习生，从事多媒体传输、边缘计算、机器智能等相关方向，欢迎联系**</p>
+          
+           <div><Team style="padding: 0px 10px;margin-top:-20px;" /></div>
+      
+          </div> 
+          <p class="name4" style="margin-top:40px">**长期招聘博士后、优秀实习生，从事多媒体传输、边缘计算、机器智能等相关方向，欢迎联系**</p>
        <!-- end our team -->
        
       </el-main>
       <!-- 底部 -->
-      <el-footer>
-        <div class="footer-top" style="100px;">
+    
+       <el-footer>
+           
+
+          <!-- 底部标志 -->
+             <div class="footer-top" >
             <div class="container">
                 <div class="row">
 
@@ -297,7 +156,6 @@
         </div>
       </div>
     </div>
-        
       </el-footer>
       <!-- end底部 -->
     </el-container>
@@ -320,8 +178,12 @@
     line-height: 30px;
     font-size: 12px;
     color: #fff;
+    padding: 0 20px;
+    height: 300px;
 
 }
+
+
 .p{
   color: #fff;
 }
@@ -507,73 +369,16 @@
 }
 
  /* end 关于我们  */
+
  /* our team */
 .photo{
   height:300px;
   width: 380px;
   margin-bottom: 1px;
 }
-.parent1{
+.parent{
   position: relative;
-  width: 100px;
-
-}
-.parent2{
-  position:relative;
-  margin-left: 340px;
-  margin-top: -300px;
-  }
-.parent3{
-  position:relative;
-  margin-left: 680px;
-  margin-top: -300px;
-  }
-.parent4{
-  position:relative;
-  margin-left: 1020px;
-  margin-top: -300px;
-  }
-.parent5{
-  position:relative;
-  left: 1020px;
-  top: 120px;
-  }
-.parent6{
-  position:relative;
-  left: 680px;
-  top: -180px;
-  }
-.parent7{
-  position:relative;
-  left: 340px;
-  top: -480px;
-  }
-.parent8{
-  position: relative;
-  top: -780px;
-  left: 0px;
-
-}
-.parent9{
-  position: relative;
-  top: -960px;
-  left: 340px;
-
-}
-.parent10{
-  position:relative;
-  left: 680px;
-  top: -1260px;
-  }
-.parent11{
-  position:relative;
-  left: 1020px;
-  top: -1560px;
-  }
-.parent12{
-  position:relative;
-  left: 0px;
-  top: -660px;
+  width:100px;
 }
 .son1{
   position:relative;
@@ -581,6 +386,7 @@
   width:300px;
   height:300px;
   z-index:5;
+  text-align: center;
   
 }
 .son2{
@@ -597,10 +403,11 @@
   border-radius: 15px;
   line-height:2;
   color: rgb(54, 48, 48);
-  font-family: kaiti;
+  text-align: center;
 
 
 }
+
 
 
  /* end our team */
@@ -614,7 +421,13 @@
 import { Edit, View as IconView } from '@element-plus/icons'
 import { Calendar } from '@element-plus/icons'
 import { defineComponent, ref } from 'vue'
+import { InfoFilled } from '@element-plus/icons-vue'
+import Team from "./Team.vue";
 export default {
+  components: {
+    //  'Demo':First  ////将别名First 变成 组件 Demo
+    Team,
+  },
   data() {
     const src = ref(
       'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'
@@ -690,6 +503,7 @@ export default {
 
 
 },
+
 
 //一定要加s，要不然识别不了跳转方法
 methods: {

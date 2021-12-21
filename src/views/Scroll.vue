@@ -1,5 +1,10 @@
 <template>
-  <div id="myChart1234" :data="option2" :style="{ width: '400px', height: '300px'}"></div>
+<!-- 喜好类型统计 -->
+   <el-row type="flex" justify="start">
+       <el-col :span="24" >
+            <div id="myChart1234" :data="option2" :style="{ width: '390px', height: '300px'}"></div>
+      </el-col>
+   </el-row>
 </template>
 
 <script>

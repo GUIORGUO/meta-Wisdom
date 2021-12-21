@@ -1,4 +1,6 @@
 <template>
+<!-- 右侧双层图表 -->
+
   <div id="myChart123" :data="option" :style="{ width: '330px', height: '300px' }"></div>
   <!-- <div id="myChart1234" :data="option2" :style="{ width: '1500px', height: '550px' }"></div> -->
 </template>
