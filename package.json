@@ -17,7 +17,9 @@
     "element-plus": "^1.0.2-beta.28",
     "element-ui": "^2.15.6",
     "flv.js": "^1.6.2",
+    "qs": "^6.10.2",
     "vue": "^3.2.23",
+    "vue-axios": "^3.4.0",
     "vue-router": "^4.0.0-0",
     "vue-seamless-scroll": "^1.1.23",
     "vue-video-player": "^5.0.2",
@@ -40,5 +42,11 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+
+
+  
+  "eslintIgnore":[   
+    "*"
   ]
 }

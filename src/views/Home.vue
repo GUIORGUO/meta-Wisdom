@@ -19,7 +19,8 @@
           
           <el-row style="float: right;height:60px;padding-top:10px">
           <el-autocomplete v-model="hospitalName.hospitalName" placeholder="请输入搜索内容" label-name="标题名称" :fetch-suggestions="querySearch" @select="handleSelect"></el-autocomplete> 
-          <el-button type="primary" plain >登录</el-button>
+          <!-- <el-button type="primary" plain @click="getApi" class="axiosbutton">登录</el-button> -->
+          <el-button type="primary" plain>登录</el-button>
           <el-button type="success" plain @click="Jump3" href="/First">注册</el-button>
           <!-- <el-button type="success" plain @click="Jump3" ><a href="/First" style="color:#fff;">注册</a></el-button> -->
           </el-row>
@@ -535,6 +536,7 @@ methods: {
     console.log(11111)
     this.$router.push({path:'/First'})
   },
+
 
  /* end跳转界面*/
   handleEdit(index, row) {

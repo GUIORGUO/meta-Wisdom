@@ -58,6 +58,7 @@ export default {
         columnWidth: [50],
         align: ["center"],
       },
+       //图表2
        ranking: {
         data1: [
           {
@@ -121,50 +122,6 @@ export default {
         unit: "次",
       },
 
-
-  //     config:{
-  //       header: ['地区编码','地区名称','订单数量'],
-  //       indexHeader:'序号',
-  //       columnWidth: [50],
-  //       carousel: 'page',
-  //       index: true,
-  //       columnWidth: [50],
-  //       rowNum: 23, // 表行数
-  //       headerBGC: '#50b9f9', // 表头背景色
-  //       oddRowBGC: '#122631', // 奇数行背景色
-  //       evenRowBGC: '#153a4f', // 偶数行背景色
-  //       waitTime: 1000, // 轮播时间间隔(ms)
-  //       align: ['center'],
-  //       data: [ 
-  //         ['行1列1', '行1列2', '行1列3'],
-  //         ['行2列1', '行2列2', '行2列3'],
-  //         ['行3列1', '行3列2', '行3列3'],
-  //         ['行4列1', '行4列2', '行4列3'],
-  //         ['行5列1', '行5列2', '行5列3'],
-  //         ['行6列1', '行6列2', '行6列3'],
-  //         ['行7列1', '行7列2', '行7列3'],
-  //         ['行8列1', '行8列2', '行8列3'],
-  //         ['行9列1', '行9列2', '行9列3'],
-  //         ['行10列1', '行10列2', '行10列3']
-  //         ]
-  //     }
-  //   }
-  // },
-  // watch:{
-  //   AreaData(val){
-  //     console.log(val)
-  //     let arr = []
-  //     if(val.length >0){
-  //       for(let i in val){
-  //         let code = val[i].area
-  //         let name = val[i].name
-  //         let num = val[i].num
-  //         arr.push([code,name, `<div style="background:#67e0e3; white-space:nowrap; width:${num/1000}px !important">${num}</div>`])
-  //       }
-  //       let nowData = this.config
-  //       nowData.data = arr
-  //       this.config = {...nowData}
-  //     }
      }
    },
 

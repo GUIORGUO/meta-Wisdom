@@ -1,8 +1,6 @@
 <template>
-<!-- 右侧双层图表 -->
-
+<!-- 右侧双层图表 -----访客量统计-->
   <div id="myChart123" :data="option" :style="{ width: '330px', height: '300px' }"></div>
-  <!-- <div id="myChart1234" :data="option2" :style="{ width: '1500px', height: '550px' }"></div> -->
 </template>
 
 <script>
@@ -17,7 +15,8 @@ export default {
   
     onMounted(() => {
 
-      let base = +new Date(2020, 10, 1);
+      let base = +new Date(2021
+      , 10, 1);
       let oneDay = 24 * 3600 * 1000;
       let valueBase = Math.random() * 300;
       let valueBase2 = Math.random() * 50;
@@ -46,7 +45,7 @@ export default {
           },
           
         },
-        legend: {
+        legend: {//图例 
           top: "bottom",
           data: [" "],
         },
@@ -70,7 +69,7 @@ export default {
         xAxis: {
           type: "time",
           axisPointer: {
-            value: "2020-11-7",
+            value: "2021-11-7",
             snap: true,
             lineStyle: {
               color: "#90edef",
@@ -179,49 +178,7 @@ export default {
           },
         ],
       };
-    //   var option2 = {
-    //     dataset: {
-    //         source: [
-    //         ['score', 'amount', 'product'],
-    //         [89.3, 58212, 'Matcha Latte'],
-    //         [57.1, 78254, 'Milk Tea'],
-    //         [74.4, 41032, 'Cheese Cocoa'],
-    //         [50.1, 12755, 'Cheese Brownie'],
-    //         [89.7, 20145, 'Matcha Cocoa'],
-    //         [68.1, 79146, 'Tea'],
-    //         [19.6, 91852, 'Orange Juice'],
-    //         [10.6, 101852, 'Lemon Juice'],
-    //         [32.7, 20112, 'Walnut Brownie']
-    //         ]
-    //     },
-    //     grid: { containLabel: true },
-    //     xAxis: { name: 'amount' },
-    //     yAxis: { type: 'category' },
-    //     visualMap: {
-    //         orient: 'horizontal',
-    //         left: 'center',
-    //         min: 10,
-    //         max: 100,
-    //         text: ['High Score', 'Low Score'],
-    //         // Map the score column to color
-    //         dimension: 0,
-    //         inRange: {
-    //         color: ['#65B581', '#FFCE34', '#FD665F']
-    //         }
-    //     },
-    //     series: [
-    //         {
-    //         type: 'bar',
-    //         encode: {
-    //             // Map the "amount" column to X axis.
-    //             x: 'amount',
-    //             // Map the "product" column to Y axis
-    //             y: 'product'
-    //         }
-    //         }
-    //     ]
-    //     };
-        
+   
         //初始化图表
       let myChart = echarts.init(document.getElementById("myChart123"));
     //   let myChart1 = echarts.init(document.getElementById("myChart1234"));

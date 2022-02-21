@@ -294,9 +294,10 @@
               justify="center"
               :gutter="20"
               style="margin-top: 60px"
+              :span="24"
             >
-              <el-col :span="23">
-                <el-col :span="10">
+             
+                <el-col :span="8">
                   <dv-border-box-1 style="height: 280px; width: 370px">
                     <video
                       class="card-video"
@@ -325,7 +326,7 @@
                     </div>
                   </dv-border-box-1>
                 </el-col>
-                <el-col :span="10">
+                <el-col :span="8">
                   <dv-border-box-1 style="height: 280px; width: 370px">
                     <div>
                       <video
@@ -356,7 +357,7 @@
                     </div>
                   </dv-border-box-1>
                 </el-col>
-                <el-col :span="10">
+                <el-col :span="8">
                   <dv-border-box-1 style="height: 280px; width: 370px">
                     <div>
                       <video
@@ -387,7 +388,7 @@
                     </div>
                   </dv-border-box-1>
                 </el-col>
-              </el-col>
+            
             </el-row>
             <!-- 第二行视频 -->
             <el-row
@@ -396,9 +397,10 @@
               justify="center"
               :gutter="20"
               style="margin-top: 35px"
+              :span="24"
             >
-              <el-col :span="23">
-                <el-col :span="10">
+           
+                <el-col :span="8">
                   <dv-border-box-1 style="height: 280px; width: 370px">
                     <div>
                       <video
@@ -429,7 +431,7 @@
                     </div>
                   </dv-border-box-1>
                 </el-col>
-                <el-col :span="10">
+                <el-col :span="8">
                   <dv-border-box-1 style="height: 280px; width: 370px">
                     <video
                       class="card-video"
@@ -458,7 +460,7 @@
                     </div>
                   </dv-border-box-1>
                 </el-col>
-                <el-col :span="10">
+                <el-col :span="8">
                   <dv-border-box-1 style="height: 280px; width: 370px">
                     <div>
                       <video
@@ -489,18 +491,19 @@
                     </div>
                   </dv-border-box-1>
                 </el-col>
-              </el-col>
+              
             </el-row>
             <!-- 第三行视频 -->
             <el-row
               type="flex"
               class="row-bg"
               justify="center"
-              :gutter="20"
+              :gutter="6"
               style="margin-top: 35px"
+              :span="24"
             >
-              <el-col :span="23">
-                <el-col :span="10">
+              
+                <el-col :span="8">
                   <dv-border-box-1 style="height: 280px; width: 370px">
                     <div>
                       <video
@@ -531,7 +534,7 @@
                     </div>
                   </dv-border-box-1>
                 </el-col>
-                <el-col :span="10">
+                <el-col :span="8">
                   <dv-border-box-1 style="height: 280px; width: 370px">
                     <video
                       class="card-video"
@@ -560,7 +563,7 @@
                     </div>
                   </dv-border-box-1>
                 </el-col>
-                <el-col :span="10">
+                <el-col :span="8">
                   <dv-border-box-1 style="height: 280px; width: 370px">
                     <div>
                       <video
@@ -591,7 +594,7 @@
                     </div>
                   </dv-border-box-1>
                 </el-col>
-              </el-col>
+          
             </el-row>
           </div>
 
@@ -601,14 +604,14 @@
           />
 
           <!-- 第三块开始 -->
-          <el-row>
-            <el-col span="4" :offset="1">
+          <el-row >
+            <el-col :span="4" :offset="1">
               <dv-decoration-12 style="width: 150px; height: 150px" />
             </el-col>
           </el-row>
 
-          <el-row :gutter="4">
-            <el-col span="6" :offset="1">
+          <el-row :span="24" type="flex" justify="center" :gutter="2">
+            <el-col :span="8" >
               <dv-border-box-10
                 style="width: 400px; height: 380px; margin-top: 20px"
               >
@@ -624,7 +627,7 @@
               </dv-border-box-10>
             </el-col>
 
-            <el-col span="6">
+            <el-col :span="8">
               <dv-border-box-10
                 style="width: 400px; height: 380px; margin-top: 30px"
               >
@@ -648,7 +651,7 @@
                 
               </dv-border-box-10>
             </el-col>
-            <el-col span="6">
+            <el-col :span="8">
               <dv-border-box-10
                 style="width: 400px; height: 380px; margin-top: 30px"
               >
@@ -890,113 +893,203 @@
             style="margin-top: 30px; width: 100%; height: 40px"/>    
           <!-- 第五块开始 -->
 
-          <el-row :span="24" type="flex" justify="center" >
+          <el-row :span="24" >
+
             <el-col :span="6">
-          <el-card class="box-card">
-           
-            <div class="text item">
-                <h2 style="margin-top:-10px;">科技文化</h2>
-                <dv-decoration-2 style="width:300px;height:40px; margin-top:-20px; margin-left:-10px;" />
-                <el-row :span="24" type="flex" justify="center" style="margin-top:10px;">
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                     <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
-                  </el-col>
-                </el-row>
-                <el-row :span="24" type="flex" justify="center" :gutter="2">
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
-                  </el-col>
-                </el-row>
-                
-            </div>
-          </el-card>
+              <div>
+              <el-card class="box-card">
+              
+                <div class="text item">
+                  <el-row >
+                    <h3 style="margin-top:-10px;">科技文化</h3>
+                  </el-row>
+                    <el-row :span="24" type="flex" justify="star" >
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                      </el-col>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                      <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                     
+                </div>
+              </el-card>
+          </div>
           </el-col>
           <el-col :span="6">
-
-          <el-card class="box-card">
-           
-            <div class="text item">
-                <h2 style="margin-top:-10px;">科技文化</h2>
-                <dv-decoration-2 style="width:300px;height:40px; margin-top:-20px; margin-left:-10px;" />
-                <el-row :span="24" type="flex" justify="center" style="margin-top:10px;">
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                     <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
-                  </el-col>
-                </el-row>
-                <el-row :span="24" type="flex" justify="center" :gutter="2">
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
-                  </el-col>
-                </el-row>
-                
-            </div>
-          </el-card>
+              <div>
+              <el-card class="box-card">
+              
+                <div class="text item">
+                  <el-row >
+                    <h3 style="margin-top:-10px;">科技文化</h3>
+                  </el-row>
+                    <el-row :span="24" type="flex" justify="star" >
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                      </el-col>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                      <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                     
+                </div>
+              </el-card>
+          </div>
           </el-col>
           <el-col :span="6">
-
-          <el-card class="box-card">
-           
-            <div class="text item">
-                <h2 style="margin-top:-10px;">科技文化</h2>
-                <dv-decoration-2 style="width:300px;height:40px; margin-top:-20px; margin-left:-10px;" />
-                <el-row :span="24" type="flex" justify="center" style="margin-top:10px;">
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                     <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
-                  </el-col>
-                </el-row>
-                <el-row :span="24" type="flex" justify="center" :gutter="2">
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
-                  </el-col>
-                </el-row>
-                
-            </div>
-          </el-card>
+              <div>
+              <el-card class="box-card">
+              
+                <div class="text item">
+                  <el-row :span="24" type="flex" justify="star" :gutter="2" >
+                    <h3 style="margin-top:-10px;">科技文化</h3>
+                  </el-row>
+                    <el-row :span="24" type="flex" justify="star" >
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                      </el-col>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                      <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                     
+                </div>
+              </el-card>
+          </div>
           </el-col>
           <el-col :span="6">
-
-          <el-card class="box-card">
+              <div>
+              <el-card class="box-card">
+              
+                <div class="text item">
+                  <el-row :span="24" type="flex" justify="star" :gutter="2" >
+                    <h3 style="margin-top:-10px;">科技文化</h3>
+                  </el-row>
+                    <el-row :span="24" type="flex" justify="star" >
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                      </el-col>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                      <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                     
+                </div>
+              </el-card>
+          </div>
+          </el-col>
+        </el-row>
+        <el-row :span="24" :gutter="2">
+          <el-col :span="6" :offset="1">
+           <div>
+          <el-card class="box-card1" style="margin-top:50px;">
            
             <div class="text item">
-                <h2 style="margin-top:-10px;">科技文化</h2>
-                <dv-decoration-2 style="width:300px;height:40px; margin-top:-20px; margin-left:-10px;" />
-                <el-row :span="24" type="flex" justify="center" style="margin-top:10px;">
+                <el-row :span="24" type="flex" justify="star" >
+                <h3 style="margin-top:-10px;">科技文化</h3>
+              </el-row>
+                <el-row :span="24" type="flex" justify="star">
                   <el-col :span="8">
                       <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
                   </el-col>
@@ -1007,7 +1100,42 @@
                        <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
                   </el-col>
                 </el-row>
-                <el-row :span="24" type="flex" justify="center" :gutter="2">
+                <el-row :span="24" type="flex" justify="star" :gutter="2">
+                  <el-col :span="8">
+                       <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                  </el-col>
+                  <el-col :span="8">
+                      <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                  </el-col>
+                  <el-col :span="8">
+                      <p><a href="http://www.w3school.com.cn" target="_blank">户外</a></p>
+                  </el-col>
+                </el-row>
+                
+            </div>
+          </el-card>
+          </div>
+          </el-col>
+          <el-col :span="6">
+          <div>
+          <el-card class="box-card2" style="margin-top:50px;margin-left:-80px;">
+           
+            <div class="text item">
+                 <el-row :span="24" type="flex" justify="star" >
+                <h3 style="margin-top:-10px;">科技文化</h3>
+              </el-row>
+                <el-row :span="24" type="flex" justify="star" >
+                  <el-col :span="8">
+                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                  </el-col>
+                  <el-col :span="8">
+                     <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                  </el-col>
+                  <el-col :span="8">
+                       <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                  </el-col>
+                </el-row>
+                <el-row :span="24" type="flex" justify="star" :gutter="2">
                   <el-col :span="8">
                        <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
                   </el-col>
@@ -1021,8 +1149,97 @@
                 
             </div>
           </el-card>
+          </div>
           </el-col>
+          <el-col :span="4">
+
+          <el-card class="box-card3" style="margin-left:-200px;margin-top:50px;">
+           
+            <div class="text item">
+                <el-row :span="24" type="flex" justify="star" >
+                <h3 style="margin-top:-10px;">科技文化</h3>
+              </el-row>
+               
+                <el-row :span="24" type="flex" justify="center">
+                  <el-col :span="6">
+                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                  </el-col>
+                  <el-col :span="6">
+                     <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                  </el-col>
+                  <el-col :span="6">
+                       <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                  </el-col>
+                  <el-col :span="6">
+                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                  </el-col>
+                </el-row>
+                <el-row :span="24" type="flex" justify="center" :gutter="2">
+                  <el-col :span="6">
+                       <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                  </el-col>
+                  <el-col :span="6">
+                      <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                  </el-col>
+                  <el-col :span="6">
+                      <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                  </el-col>
+                  <el-col :span="6">
+                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                  </el-col>
+                </el-row>
+                
+            </div>
+          </el-card>
+          </el-col>
+           <el-col :span="6">
+              <div>
+              <el-card class="box-card" style="margin-left:-30px;">
+              
+                <div class="text item">
+                  <el-row :span="24" type="flex" justify="star" >
+                    <h3 style="margin-top:-10px;">科技文化</h3>
+                  </el-row>
+                    <el-row :span="24" type="flex" justify="star" >
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                      </el-col>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                      <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                      </el-col>
+                      <el-col :span="8">
+                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                      </el-col>
+                    </el-row>
+                     
+                </div>
+              </el-card>
+          </div>
+          </el-col> 
           </el-row>
+            {{msg1}}
 
         </el-main>
 
@@ -1105,6 +1322,7 @@ export default {
       playing9: false,
       isCollapsed: false,
       charts: "",
+      msg1:22,
       options: [
         {
           value: "zhinan",
@@ -1401,7 +1619,7 @@ export default {
             '<span style="color:#969189;">2255623</span>',
           ],
           [
-            '<span style="color:#969189;">雷诺机构</span>',
+            '<span style="color:#969189;">大数据</span>',
             '<span style="color:#969189;">1155631</span>',
           ],
           [
@@ -1431,44 +1649,47 @@ export default {
           '<span style="color:#32c5e9;">直播间名称</span>',
           '<span style="color:#32c5e9;">直播间编号</span>',
         ],
-        data: [
-          [
-            '<span style="color:#da5d58;">元宇宙</span>',
-            '<span style="color:#da5d58;">2233111</span>',
-          ],
-          [
-            '<span style="color:#dc7d5b;">视频编码</span>',
-            '<span style="color:#dc7d5b;">2233113</span>',
-          ],
-          [
-            '<span style="color:#a58048;">区块链 </span>',
-            '<span style="color:#a58048;">2233118</span>',
-          ],
-          [
-            '<span style="color:#969189;">碳中和</span>',
-            '<span style="color:#969189;">2255156</span>',
-          ],
-          [
-            '<span style="color:#969189;">机器学习研讨会</span>',
-            '<span style="color:#969189;">2255623</span>',
-          ],
-          [
-            '<span style="color:#969189;">雷诺机构</span>',
-            '<span style="color:#969189;">1155631</span>',
-          ],
-          [
-            '<span style="color:#969189;">人生观交流会</span>',
-            '<span style="color:#969189;">1252120</span>',
-          ],
-          [
-            '<span style="color:#969189;">区块链</span>',
-            '<span style="color:#969189;">1212512</span>',
-          ],
-          [
-            '<span style="color:#969189;">图像识别</span>',
-            '<span style="color:#969189;">1212662</span>',
-          ],
-        ],
+        VideoInfo:{
+          datalist1: [],
+          },
+        // datalist1: [
+          // [
+          //   '<span style="color:#da5d58;">元宇宙</span>',
+          //   '<span style="color:#da5d58;">2233111</span>',
+          // ],
+          // [
+          //   '<span style="color:#dc7d5b;">视频编码</span>',
+          //   '<span style="color:#dc7d5b;">2233113</span>',
+          // ],
+          // [
+          //   '<span style="color:#a58048;">区块链 </span>',
+          //   '<span style="color:#a58048;">2233118</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">碳中和</span>',
+          //   '<span style="color:#969189;">2255156</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">机器学习研讨会</span>',
+          //   '<span style="color:#969189;">2255623</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">雷诺机构</span>',
+          //   '<span style="color:#969189;">1155631</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">人生观交流会</span>',
+          //   '<span style="color:#969189;">1252120</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">区块链</span>',
+          //   '<span style="color:#969189;">1212512</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">图像识别</span>',
+          //   '<span style="color:#969189;">1212662</span>',
+          // ],
+        // ],
         rowNum: 5, //表格行数
         headerHeight: 40,
         headerBGC: "#202947", //表头
@@ -1528,48 +1749,7 @@ export default {
   },
   //启动函数
   setup() {
-    //   const list = ref([    //创建响应式的数据对象
-    //   {
-
-    //     title: "Vue3.0 无缝滚动组件展示数据第1条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第2条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第3条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第4条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第5条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第6条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第7条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第8条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第9条",
-    //     date: Date.now(),
-    //   },
-    // ]);
-
-    // return {list};
-
+   
     const state = reactive({
       //创建响应式的数据对象
 
@@ -1617,7 +1797,8 @@ export default {
         type: "flv",
         isLive: true,
         //   type: "video/mp4",
-        url: "http://10.208.104.242:6901/flv/test", //视频资源路径  支持：http
+        //url: "http://10.208.104.242:6901/flv/test", //视频资源路径  支持：http
+         url: "http://1011.hlsplay.aodianyun.com/demo/game.flv", 
       });
     }
     if (flv2.isSupported()) {
@@ -1625,7 +1806,7 @@ export default {
         type: "flv",
         isLive: true,
         //   type: "video/mp4",
-        url: "http://localhost:10076/live?port=1935&app=live&stream=test", //视频资源路径  支持：http
+        url: "http://1011.hlsplay.aodianyun.com/demo/game.flv", //视频资源路径  支持：http
       });
     }
     if (flv3.isSupported()) {
@@ -1633,7 +1814,7 @@ export default {
         type: "flv",
         isLive: true,
         //   type: "video/mp4",
-        url: "http://localhost:10076/live?port=1935&app=live&stream=test", //视频资源路径  支持：http
+        url: "http://1011.hlsplay.aodianyun.com/demo/game.flv", //视频资源路径  支持：http
       });
     }
     if (flv4.isSupported()) {
@@ -1685,6 +1866,12 @@ export default {
         url: "http://localhost:10076/live?port=1935&app=live&stream=test", //视频资源路径  支持：http
       });
     }
+    // const _this=this;
+    // //在单引号里填写子地址
+    // this.$axios.get('getUserInfo',{}).then(res=>{
+    //   const data=res.data.data;
+    //   _this.msg1=data;
+    // });
   },
   mounted() {
     //调用
@@ -1724,10 +1911,40 @@ export default {
     this.player9.attachMediaElement(video9);
     this.player9.load();
 
-    this.$nextTick(function () {
-      this.drawPie("main");
-      this.drawPie2("echarts");
-    });
+    // this.$nextTick(function () {
+    //   this.drawPie("main");
+    //   this.drawPie2("echarts");
+
+    // });
+    
+    //  //直播间排名
+     getVideoInfo().then((response) => {
+               console.log('响应的数据');
+               console.log(response);
+                  var datalist = [];
+                  var a = ['Name','ID','Color'];
+                     datalist.push(a)
+                   response.datalist1.forEach(item =>{
+                     datalist.push([item.Name,item.ID,item.color])
+                   });
+                   console.log(datalist);
+                 })
+              
+             
+    //   getVideoInfo().then((res) =>{     //.then获取getLikeInfo回调函数的响应值给res
+    //              console.log('响应的数据');
+    //              console.log(res);            //打印出响应值
+    //              //this.LikeInfo = res;
+    //              //把res的结构恢复成原source的结构再复制给this.source
+    //              var datalist1 =[];   //页面中source未定义，找不到source内容
+    //              var a = ['Name', 'ID'];
+    //                datalist1.push(a)    // push（）向source数组末尾添加数组a[]
+    //              res.data.forEach(item => {    //遍历res中的list数组---每一个项a[0],a[1]都是一个item
+    //                datalist1.push([item.Name, item.ID])//每次遍历都要在source的基础上加上list的一个小item
+    //             });
+    //              console.log(datalist1)
+    //            });
+          
   },
 
   methods: {
@@ -1825,6 +2042,9 @@ export default {
       this.player9.pause();
       this.playing9 = false;
     },
+    
+     
+            
   },
 };
 </script>
@@ -2260,8 +2480,30 @@ svg {
   .box-card {
     width: 260px;
     height: 230px;
-    background-color: rgb(4, 13, 32);
-    border-color:rgb(16, 31, 63);;
+    background-color: rgb(1, 11, 34);
+    border-color:rgb(16, 31, 63);
+     border: 1px solid #178d97;
+  }
+  .box-card1{
+    width: 200px;
+    height: 180px;
+    background-color: rgb(1, 11, 34);
+    border-color:rgb(16, 31, 63);
+     border: 1px solid #178d97;
+  }
+   .box-card2{
+    width: 160px;
+    height: 180px;
+    background-color: rgb(1, 11, 34);
+    border-color:rgb(16, 31, 63);
+     border: 1px solid #178d97;
+  }
+   .box-card3{
+    width: 350px;
+    height: 180px;
+    background-color: rgb(1, 11, 34);
+    border-color:rgb(16, 31, 63);
+     border: 1px solid #178d97;
   }
 
 a:link    {color:rgb(33, 223, 248);
