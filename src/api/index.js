@@ -41,3 +41,16 @@ export const mokePost = (data) => {
         }
     })
 }
+export const getVideoInfo = (data) => {
+    return axios({
+        url: "/getVideoInfo1",
+        method: "get",
+        data,
+        config: {
+            headers: {
+                
+            },
+            timeout: 10000
+        }
+    })
+}

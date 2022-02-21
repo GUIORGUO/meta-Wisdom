@@ -176,56 +176,54 @@
             <!-- end数字化显示 -->
 
             <el-row :gutter="2" type="flex" justify="center">
-
-
-            <!-- 左图 -->
-              <el-col :xs="24" :ms='24' :md="24" :lg="6" :xl="8">
-                <dv-border-box-12 :span='6'
-                  style=" min-width: 350px; height: 340px"
+              <!-- 左图 -->
+              <el-col :xs="24" :ms="24" :md="24" :lg="6" :xl="8">
+                <dv-border-box-12
+                  :span="6"
+                  style="min-width: 350px; height: 340px"
                 >
                   <div>
                     <el-row>
-                        <el-col :span="24">
-                              <h3 style="color: #90edef;">直播间排名</h3>
-                        </el-col>
-                        <el-col :span="22"  type="flex" justify="center">
-                           <dv-scroll-board :config="config2" style="
-                                          margin-top: -25px;
-                                          margin-left:3px;
-                                          color: #00baff;
-                                          height: 220px;
-                                          padding: 10px 10px;
-                                        "
-                                      />
+                      <el-col :span="24">
+                        <h3 style="color: #90edef">直播间排名</h3>
+                      </el-col>
+                      <el-col :span="22" type="flex" justify="center">
+                        <dv-scroll-board
+                          :config="config2"
+                          style="
+                            margin-top: -25px;
+                            margin-left: 3px;
+                            color: #00baff;
+                            height: 220px;
+                            padding: 10px 10px;
+                          "
+                        />
                       </el-col>
                     </el-row>
-
                   </div>
                 </dv-border-box-12>
 
-                <dv-border-box-12
-                  style=" min-width: 350px; height: 320px"
-                >
+                <dv-border-box-12 style="min-width: 350px; height: 320px">
                   <div>
-                     <el-row>
-                        <el-col :span="24">
-                              <h3 style="color: #90edef">地区活跃量</h3>
-                        </el-col>
-                        <el-col :span="24">
-                              <div><Third style="padding: 10px" /></div>
-                        </el-col>
-                    </el-row>    
+                    <el-row>
+                      <el-col :span="24">
+                        <h3 style="color: #90edef">地区活跃量</h3>
+                      </el-col>
+                      <el-col :span="24">
+                        <div><Third style="padding: 10px" /></div>
+                      </el-col>
+                    </el-row>
                   </div>
                 </dv-border-box-12>
               </el-col>
               <!-- 中间图 -->
-              <el-col :xs="24" :ms='24' :md="24" :lg="12" :xl="8">
-                <dv-border-box-12 >
+              <el-col :xs="24" :ms="24" :md="24" :lg="12" :xl="8">
+                <dv-border-box-12>
                   <div><Map style="padding: 10px" /></div>
                 </dv-border-box-12>
               </el-col>
               <!-- 右边图 -->
-              <el-col :xs="12" :ms='24' :md="24" :lg="6" :xl="8">
+              <el-col :xs="12" :ms="24" :md="24" :lg="6" :xl="8">
                 <dv-border-box-12 style="min-width: 350px; height: 320px">
                   <div><Second style="padding: 20px 10px" /></div>
                 </dv-border-box-12>
@@ -233,8 +231,6 @@
                   <div><Scroll style="padding: 20px 10px" /></div>
                 </dv-border-box-12>
               </el-col>
-
-          
             </el-row>
 
             <!-- 中间直播盒子 -->
@@ -296,27 +292,56 @@
               style="margin-top: 60px"
               :span="24"
             >
-             
-                <el-col :span="8">
-                  <dv-border-box-1 style="height: 280px; width: 370px">
+              <el-col :span="8">
+                <dv-border-box-1 style="height: 280px; width: 370px">
+                  <video
+                    class="card-video"
+                    id="myvideo1"
+                    controls
+                    autoplay
+                    muted
+                    style="height: 200px; width: 340px"
+                  ></video>
+                  <div style="margin-top: -10px; padding: 0px">
+                    <el-row :span="18">
+                      <el-col :span="10">
+                        <span class="video-name"
+                          ><strong>学习vlog</strong></span
+                        >
+                      </el-col>
+                      <el-col :span="8">
+                        <el-button
+                          @click="onClick1()"
+                          type="text"
+                          class="button"
+                          >点击播放</el-button
+                        >
+                      </el-col>
+                    </el-row>
+                  </div>
+                </dv-border-box-1>
+              </el-col>
+              <el-col :span="8">
+                <dv-border-box-1 style="height: 280px; width: 370px">
+                  <div>
                     <video
                       class="card-video"
-                      id="myvideo1"
+                      id="myvideo3"
                       controls
                       autoplay
                       muted
                       style="height: 200px; width: 340px"
                     ></video>
-                    <div style="margin-top: -10px; padding: 0px">
+                    <div style="margin-top: -20px; padding: 0px">
                       <el-row :span="18">
                         <el-col :span="10">
                           <span class="video-name"
-                            ><strong>学习vlog</strong></span
+                            ><strong>游戏直播</strong></span
                           >
                         </el-col>
                         <el-col :span="8">
                           <el-button
-                            @click="onClick1()"
+                            @click="onClick3()"
                             type="text"
                             class="button"
                             >点击播放</el-button
@@ -324,71 +349,40 @@
                         </el-col>
                       </el-row>
                     </div>
-                  </dv-border-box-1>
-                </el-col>
-                <el-col :span="8">
-                  <dv-border-box-1 style="height: 280px; width: 370px">
-                    <div>
-                      <video
-                        class="card-video"
-                        id="myvideo3"
-                        controls
-                        autoplay
-                        muted
-                        style="height: 200px; width: 340px"
-                      ></video>
-                      <div style="margin-top: -20px; padding: 0px">
-                        <el-row :span="18">
-                          <el-col :span="10">
-                            <span class="video-name"
-                              ><strong>游戏直播</strong></span
-                            >
-                          </el-col>
-                          <el-col :span="8">
-                            <el-button
-                              @click="onClick3()"
-                              type="text"
-                              class="button"
-                              >点击播放</el-button
-                            >
-                          </el-col>
-                        </el-row>
-                      </div>
+                  </div>
+                </dv-border-box-1>
+              </el-col>
+              <el-col :span="8">
+                <dv-border-box-1 style="height: 280px; width: 370px">
+                  <div>
+                    <video
+                      class="card-video"
+                      id="myvideo4"
+                      controls
+                      autoplay
+                      muted
+                      style="height: 200px; width: 340px"
+                    ></video>
+                    <div style="margin-top: -20px; padding: 0px">
+                      <el-row :span="18">
+                        <el-col :span="10">
+                          <span class="video-name"
+                            ><strong>游戏直播</strong></span
+                          >
+                        </el-col>
+                        <el-col :span="8">
+                          <el-button
+                            @click="onClick4()"
+                            type="text"
+                            class="button"
+                            >点击播放</el-button
+                          >
+                        </el-col>
+                      </el-row>
                     </div>
-                  </dv-border-box-1>
-                </el-col>
-                <el-col :span="8">
-                  <dv-border-box-1 style="height: 280px; width: 370px">
-                    <div>
-                      <video
-                        class="card-video"
-                        id="myvideo4"
-                        controls
-                        autoplay
-                        muted
-                        style="height: 200px; width: 340px"
-                      ></video>
-                      <div style="margin-top: -20px; padding: 0px">
-                        <el-row :span="18">
-                          <el-col :span="10">
-                            <span class="video-name"
-                              ><strong>游戏直播</strong></span
-                            >
-                          </el-col>
-                          <el-col :span="8">
-                            <el-button
-                              @click="onClick4()"
-                              type="text"
-                              class="button"
-                              >点击播放</el-button
-                            >
-                          </el-col>
-                        </el-row>
-                      </div>
-                    </div>
-                  </dv-border-box-1>
-                </el-col>
-            
+                  </div>
+                </dv-border-box-1>
+              </el-col>
             </el-row>
             <!-- 第二行视频 -->
             <el-row
@@ -399,43 +393,12 @@
               style="margin-top: 35px"
               :span="24"
             >
-           
-                <el-col :span="8">
-                  <dv-border-box-1 style="height: 280px; width: 370px">
-                    <div>
-                      <video
-                        class="card-video"
-                        id="myvideo5"
-                        controls
-                        autoplay
-                        muted
-                        style="height: 200px; width: 340px"
-                      ></video>
-                      <div style="margin-top: -20px; padding: 0px">
-                        <el-row :span="18">
-                          <el-col :span="10">
-                            <span class="video-name"
-                              ><strong>游戏直播</strong></span
-                            >
-                          </el-col>
-                          <el-col :span="8">
-                            <el-button
-                              @click="onClick5()"
-                              type="text"
-                              class="button"
-                              >点击播放</el-button
-                            >
-                          </el-col>
-                        </el-row>
-                      </div>
-                    </div>
-                  </dv-border-box-1>
-                </el-col>
-                <el-col :span="8">
-                  <dv-border-box-1 style="height: 280px; width: 370px">
+              <el-col :span="8">
+                <dv-border-box-1 style="height: 280px; width: 370px">
+                  <div>
                     <video
                       class="card-video"
-                      id="myvideo6"
+                      id="myvideo5"
                       controls
                       autoplay
                       muted
@@ -450,7 +413,7 @@
                         </el-col>
                         <el-col :span="8">
                           <el-button
-                            @click="onClick6()"
+                            @click="onClick5()"
                             type="text"
                             class="button"
                             >点击播放</el-button
@@ -458,40 +421,69 @@
                         </el-col>
                       </el-row>
                     </div>
-                  </dv-border-box-1>
-                </el-col>
-                <el-col :span="8">
-                  <dv-border-box-1 style="height: 280px; width: 370px">
-                    <div>
-                      <video
-                        class="card-video"
-                        id="myvideo7"
-                        controls
-                        autoplay
-                        muted
-                        style="height: 201px; width: 340px"
-                      ></video>
-                      <div style="margin-top: -20px; padding: 0px">
-                        <el-row :span="18">
-                          <el-col :span="10">
-                            <span class="video-name"
-                              ><strong>游戏直播</strong></span
-                            >
-                          </el-col>
-                          <el-col :span="8">
-                            <el-button
-                              @click="onClick7()"
-                              type="text"
-                              class="button"
-                              >点击播放</el-button
-                            >
-                          </el-col>
-                        </el-row>
-                      </div>
+                  </div>
+                </dv-border-box-1>
+              </el-col>
+              <el-col :span="8">
+                <dv-border-box-1 style="height: 280px; width: 370px">
+                  <video
+                    class="card-video"
+                    id="myvideo6"
+                    controls
+                    autoplay
+                    muted
+                    style="height: 200px; width: 340px"
+                  ></video>
+                  <div style="margin-top: -20px; padding: 0px">
+                    <el-row :span="18">
+                      <el-col :span="10">
+                        <span class="video-name"
+                          ><strong>游戏直播</strong></span
+                        >
+                      </el-col>
+                      <el-col :span="8">
+                        <el-button
+                          @click="onClick6()"
+                          type="text"
+                          class="button"
+                          >点击播放</el-button
+                        >
+                      </el-col>
+                    </el-row>
+                  </div>
+                </dv-border-box-1>
+              </el-col>
+              <el-col :span="8">
+                <dv-border-box-1 style="height: 280px; width: 370px">
+                  <div>
+                    <video
+                      class="card-video"
+                      id="myvideo7"
+                      controls
+                      autoplay
+                      muted
+                      style="height: 201px; width: 340px"
+                    ></video>
+                    <div style="margin-top: -20px; padding: 0px">
+                      <el-row :span="18">
+                        <el-col :span="10">
+                          <span class="video-name"
+                            ><strong>游戏直播</strong></span
+                          >
+                        </el-col>
+                        <el-col :span="8">
+                          <el-button
+                            @click="onClick7()"
+                            type="text"
+                            class="button"
+                            >点击播放</el-button
+                          >
+                        </el-col>
+                      </el-row>
                     </div>
-                  </dv-border-box-1>
-                </el-col>
-              
+                  </div>
+                </dv-border-box-1>
+              </el-col>
             </el-row>
             <!-- 第三行视频 -->
             <el-row
@@ -502,47 +494,76 @@
               style="margin-top: 35px"
               :span="24"
             >
-              
-                <el-col :span="8">
-                  <dv-border-box-1 style="height: 280px; width: 370px">
-                    <div>
-                      <video
-                        class="card-video"
-                        id="myvideo2"
-                        controls
-                        autoplay
-                        muted
-                        style="height: 200px; width: 340px"
-                      ></video>
-                      <div style="margin-top: -20px; padding: 0px">
-                        <el-row :span="18">
-                          <el-col :span="10">
-                            <span class="video-name"
-                              ><strong>学习直播</strong></span
-                            >
-                          </el-col>
-                          <el-col :span="8">
-                            <el-button
-                              @click="onClick2()"
-                              type="text"
-                              class="button"
-                              >点击播放</el-button
-                            >
-                          </el-col>
-                        </el-row>
-                      </div>
-                    </div>
-                  </dv-border-box-1>
-                </el-col>
-                <el-col :span="8">
-                  <dv-border-box-1 style="height: 280px; width: 370px">
+              <el-col :span="8">
+                <dv-border-box-1 style="height: 280px; width: 370px">
+                  <div>
                     <video
                       class="card-video"
-                      id="myvideo8"
+                      id="myvideo2"
                       controls
                       autoplay
                       muted
                       style="height: 200px; width: 340px"
+                    ></video>
+                    <div style="margin-top: -20px; padding: 0px">
+                      <el-row :span="18">
+                        <el-col :span="10">
+                          <span class="video-name"
+                            ><strong>学习直播</strong></span
+                          >
+                        </el-col>
+                        <el-col :span="8">
+                          <el-button
+                            @click="onClick2()"
+                            type="text"
+                            class="button"
+                            >点击播放</el-button
+                          >
+                        </el-col>
+                      </el-row>
+                    </div>
+                  </div>
+                </dv-border-box-1>
+              </el-col>
+              <el-col :span="8">
+                <dv-border-box-1 style="height: 280px; width: 370px">
+                  <video
+                    class="card-video"
+                    id="myvideo8"
+                    controls
+                    autoplay
+                    muted
+                    style="height: 200px; width: 340px"
+                  ></video>
+                  <div style="margin-top: -20px; padding: 0px">
+                    <el-row :span="18">
+                      <el-col :span="10">
+                        <span class="video-name"
+                          ><strong>游戏直播</strong></span
+                        >
+                      </el-col>
+                      <el-col :span="8">
+                        <el-button
+                          @click="onClick8()"
+                          type="text"
+                          class="button"
+                          >点击播放</el-button
+                        >
+                      </el-col>
+                    </el-row>
+                  </div>
+                </dv-border-box-1>
+              </el-col>
+              <el-col :span="8">
+                <dv-border-box-1 style="height: 280px; width: 370px">
+                  <div>
+                    <video
+                      class="card-video"
+                      id="myvideo9"
+                      controls
+                      autoplay
+                      muted
+                      style="height: 201px; width: 340px"
                     ></video>
                     <div style="margin-top: -20px; padding: 0px">
                       <el-row :span="18">
@@ -553,7 +574,7 @@
                         </el-col>
                         <el-col :span="8">
                           <el-button
-                            @click="onClick8()"
+                            @click="onClick9()"
                             type="text"
                             class="button"
                             >点击播放</el-button
@@ -561,40 +582,9 @@
                         </el-col>
                       </el-row>
                     </div>
-                  </dv-border-box-1>
-                </el-col>
-                <el-col :span="8">
-                  <dv-border-box-1 style="height: 280px; width: 370px">
-                    <div>
-                      <video
-                        class="card-video"
-                        id="myvideo9"
-                        controls
-                        autoplay
-                        muted
-                        style="height: 201px; width: 340px"
-                      ></video>
-                      <div style="margin-top: -20px; padding: 0px">
-                        <el-row :span="18">
-                          <el-col :span="10">
-                            <span class="video-name"
-                              ><strong>游戏直播</strong></span
-                            >
-                          </el-col>
-                          <el-col :span="8">
-                            <el-button
-                              @click="onClick9()"
-                              type="text"
-                              class="button"
-                              >点击播放</el-button
-                            >
-                          </el-col>
-                        </el-row>
-                      </div>
-                    </div>
-                  </dv-border-box-1>
-                </el-col>
-          
+                  </div>
+                </dv-border-box-1>
+              </el-col>
             </el-row>
           </div>
 
@@ -604,14 +594,14 @@
           />
 
           <!-- 第三块开始 -->
-          <el-row >
+          <el-row>
             <el-col :span="4" :offset="1">
               <dv-decoration-12 style="width: 150px; height: 150px" />
             </el-col>
           </el-row>
 
           <el-row :span="24" type="flex" justify="center" :gutter="2">
-            <el-col :span="8" >
+            <el-col :span="8">
               <dv-border-box-10
                 style="width: 400px; height: 380px; margin-top: 20px"
               >
@@ -648,7 +638,6 @@
                     "
                   />
                 </div>
-                
               </dv-border-box-10>
             </el-col>
             <el-col :span="8">
@@ -674,577 +663,896 @@
               </dv-border-box-10>
             </el-col>
           </el-row>
-        <!-- 第四块开始 -->
-          <div class="flv-min" style="margin-top:40px;">
-          <el-row :gutter="10" type="flex" justify="center" :span="24">
-            
-            <el-col :span="6">
-              <dv-border-box-8 style="width:320px;height:260px;">
-              <div style="">
-              <div class="img-wrapper" style="margin-top:20px;padding:3px;">
-                  <img class="img1" src="https://img-blog.csdnimg.cn/2020032122230564.png" alt="" style="max-width:100%;height:100%;">
-                   <div class="DyRecCover-info">
-                    <span class="DyRecCover-hot">
-                      <svg class="DyRecCover-hotIcon">
-                        <use xlink:href="#icon-hot_8a57f0b"></use>
-                      </svg>
-                      3.4万
-                    </span>
-                    <h2 class="DyRecCover-user">类脑</h2>
+          <!-- 第四块开始 -->
+          <div class="flv-min" style="margin-top: 40px">
+            <el-row :gutter="10" type="flex" justify="center" :span="24">
+              <el-col :span="6">
+                <dv-border-box-8 style="width: 320px; height: 260px">
+                  <div style="">
+                    <div
+                      class="img-wrapper"
+                      style="margin-top: 20px; padding: 3px"
+                    >
+                      <img
+                        class="img1"
+                        src="https://img-blog.csdnimg.cn/2020032122230564.png"
+                        alt=""
+                        style="max-width: 100%; height: 100%"
+                      />
+                      <div class="DyRecCover-info">
+                        <span class="DyRecCover-hot">
+                          <svg class="DyRecCover-hotIcon">
+                            <use xlink:href="#icon-hot_8a57f0b"></use>
+                          </svg>
+                          3.4万
+                        </span>
+                        <h2 class="DyRecCover-user">类脑</h2>
+                      </div>
+                      <img class="ico_play1" />
+                    </div>
+                    <div class="DyRecCover-content">
+                      <div>
+                        <span class="DyRecCover-zone">吃鸡游戏</span>
+                        <h3 class="DyRecCover-intro" title="Tpp天花老年版">
+                          Tpp天花老年版
+                        </h3>
+                      </div>
+                      <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
+                    </div>
                   </div>
-                  <img class="ico_play1">
-                </div>
-                <div class="DyRecCover-content">
-                  <div>
-                    <span class="DyRecCover-zone">吃鸡游戏</span
-                    ><h3 class="DyRecCover-intro" title="Tpp天花老年版">Tpp天花老年版</h3>
-                  </div>
-                <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
-                </div>
-              </div>
-              </dv-border-box-8>
-            </el-col>
-             <el-col :span="6" >
-              <dv-border-box-8 style="width:320px;height:260px;">
-              <div class="img-wrapper" style="margin-top:20px;">
-                  <img class="img1" src="../assets/sze.jpg" alt="" style="max-width:100%;height:100%;">
-                  <div class="DyRecCover-info">
-                    <span class="DyRecCover-hot">
-                      <svg class="DyRecCover-hotIcon">
-                        <use xlink:href="#icon-hot_8a57f0b"></use>
-                      </svg>
-                      193.4万
-                    </span>
-                    <h2 class="DyRecCover-user">轻语丶619</h2>
-                  </div>
-                  <img class="ico_play1">
-                </div>
-                <div class="DyRecCover-content">
-                  <div>
-                    <span class="DyRecCover-zone">吃鸡游戏</span
-                    ><h3 class="DyRecCover-intro" title="Tpp天花老年版">Tpp天花老年版</h3>
-                  </div>
-                  <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
-                </div>
                 </dv-border-box-8>
-            </el-col>
-            <el-col :span="6" >
-              <dv-border-box-8 style="width:320px;height:260px;">
-              <div class="img-wrapper" style="margin-top:20px;padding:3px;">
-     
-                  <img class="img1" src="https://rpic.douyucdn.cn/live-cover/roomCover/cover_update/2021/07/16/881343dfe97b2a848b32784d3689fdf0.jpg/dy1" alt="" style="max-width:100%;height:100%;">
-                   <div class="DyRecCover-info">
-                    <span class="DyRecCover-hot">
-                      <svg class="DyRecCover-hotIcon">
-                        <use xlink:href="#icon-hot_8a57f0b"></use>
-                      </svg>
-                      193.4万
-                    </span>
-                    <h2 class="DyRecCover-user">类脑</h2>
+              </el-col>
+              <el-col :span="6">
+                <dv-border-box-8 style="width: 320px; height: 260px">
+                  <div class="img-wrapper" style="margin-top: 20px">
+                    <img
+                      class="img1"
+                      src="../assets/sze.jpg"
+                      alt=""
+                      style="max-width: 100%; height: 100%"
+                    />
+                    <div class="DyRecCover-info">
+                      <span class="DyRecCover-hot">
+                        <svg class="DyRecCover-hotIcon">
+                          <use xlink:href="#icon-hot_8a57f0b"></use>
+                        </svg>
+                        193.4万
+                      </span>
+                      <h2 class="DyRecCover-user">轻语丶619</h2>
+                    </div>
+                    <img class="ico_play1" />
                   </div>
-                  <img class="ico_play1">
-                </div>
-                <div class="DyRecCover-content">
-                  <div>
-                    <span class="DyRecCover-zone">吃鸡游戏</span
-                    ><h3 class="DyRecCover-intro" title="Tpp天花老年版">Tpp天花老年版</h3>
+                  <div class="DyRecCover-content">
+                    <div>
+                      <span class="DyRecCover-zone">吃鸡游戏</span>
+                      <h3 class="DyRecCover-intro" title="Tpp天花老年版">
+                        Tpp天花老年版
+                      </h3>
+                    </div>
+                    <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
                   </div>
-                <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
-                </div>
                 </dv-border-box-8>
-            </el-col>
-            <el-col :span="6" >
-              <dv-border-box-8 style="width:320px;height:260px;">
-              <div class="img-wrapper" style="margin-top:20px;">
-                  <img class="img1" src="https://rpic.douyucdn.cn/asrpic/211214/787579_1127.png/dy1" alt="" style="max-width:100%;height:100%;">
-                  <div class="DyRecCover-info">
-                    <span class="DyRecCover-hot">
-                      <svg class="DyRecCover-hotIcon">
-                        <use xlink:href="#icon-hot_8a57f0b"></use>
-                      </svg>
-                      193.4万
-                    </span>
-                    <h2 class="DyRecCover-user">轻语丶619</h2>
+              </el-col>
+              <el-col :span="6">
+                <dv-border-box-8 style="width: 320px; height: 260px">
+                  <div
+                    class="img-wrapper"
+                    style="margin-top: 20px; padding: 3px"
+                  >
+                    <img
+                      class="img1"
+                      src="https://rpic.douyucdn.cn/live-cover/roomCover/cover_update/2021/07/16/881343dfe97b2a848b32784d3689fdf0.jpg/dy1"
+                      alt=""
+                      style="max-width: 100%; height: 100%"
+                    />
+                    <div class="DyRecCover-info">
+                      <span class="DyRecCover-hot">
+                        <svg class="DyRecCover-hotIcon">
+                          <use xlink:href="#icon-hot_8a57f0b"></use>
+                        </svg>
+                        193.4万
+                      </span>
+                      <h2 class="DyRecCover-user">类脑</h2>
+                    </div>
+                    <img class="ico_play1" />
                   </div>
-                  <img class="ico_play1">
-                </div>
-                <div class="DyRecCover-content">
-                  <div>
-                    <span class="DyRecCover-zone">吃鸡游戏</span
-                    ><h3 class="DyRecCover-intro" title="Tpp天花老年版">Tpp天花老年版</h3>
+                  <div class="DyRecCover-content">
+                    <div>
+                      <span class="DyRecCover-zone">吃鸡游戏</span>
+                      <h3 class="DyRecCover-intro" title="Tpp天花老年版">
+                        Tpp天花老年版
+                      </h3>
+                    </div>
+                    <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
                   </div>
-                  <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
-                </div>
                 </dv-border-box-8>
-            </el-col>
-          </el-row>
+              </el-col>
+              <el-col :span="6">
+                <dv-border-box-8 style="width: 320px; height: 260px">
+                  <div class="img-wrapper" style="margin-top: 20px">
+                    <img
+                      class="img1"
+                      src="https://rpic.douyucdn.cn/asrpic/211214/787579_1127.png/dy1"
+                      alt=""
+                      style="max-width: 100%; height: 100%"
+                    />
+                    <div class="DyRecCover-info">
+                      <span class="DyRecCover-hot">
+                        <svg class="DyRecCover-hotIcon">
+                          <use xlink:href="#icon-hot_8a57f0b"></use>
+                        </svg>
+                        193.4万
+                      </span>
+                      <h2 class="DyRecCover-user">轻语丶619</h2>
+                    </div>
+                    <img class="ico_play1" />
+                  </div>
+                  <div class="DyRecCover-content">
+                    <div>
+                      <span class="DyRecCover-zone">吃鸡游戏</span>
+                      <h3 class="DyRecCover-intro" title="Tpp天花老年版">
+                        Tpp天花老年版
+                      </h3>
+                    </div>
+                    <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
+                  </div>
+                </dv-border-box-8>
+              </el-col>
+            </el-row>
 
-          <el-row :gutter="1" type="flex" justify="center" :span="24" style="margin-top:15px;">
-            
-            <el-col :span="6">
-              <dv-border-box-8 style="width:320px;height:260px;">
-              <div class="img-wrapper" style="margin-top:20px;padding:3px;">
-                  <img class="img1" src="https://rpic.douyucdn.cn/asrpic/211214/101367_1126.png/dy1" alt="" style="max-width:100%;height:100%;">
-                   <div class="DyRecCover-info">
-                    <span class="DyRecCover-hot">
-                      <svg class="DyRecCover-hotIcon">
-                        <use xlink:href="#icon-hot_8a57f0b"></use>
-                      </svg>
-                      3.4万
-                    </span>
-                    <h2 class="DyRecCover-user">帮saaa</h2>
+            <el-row
+              :gutter="1"
+              type="flex"
+              justify="center"
+              :span="24"
+              style="margin-top: 15px"
+            >
+              <el-col :span="6">
+                <dv-border-box-8 style="width: 320px; height: 260px">
+                  <div
+                    class="img-wrapper"
+                    style="margin-top: 20px; padding: 3px"
+                  >
+                    <img
+                      class="img1"
+                      src="https://rpic.douyucdn.cn/asrpic/211214/101367_1126.png/dy1"
+                      alt=""
+                      style="max-width: 100%; height: 100%"
+                    />
+                    <div class="DyRecCover-info">
+                      <span class="DyRecCover-hot">
+                        <svg class="DyRecCover-hotIcon">
+                          <use xlink:href="#icon-hot_8a57f0b"></use>
+                        </svg>
+                        3.4万
+                      </span>
+                      <h2 class="DyRecCover-user">帮saaa</h2>
+                    </div>
+                    <img class="ico_play1" />
                   </div>
-                  <img class="ico_play1">
-                </div>
-                <div class="DyRecCover-content">
-                  <div>
-                    <span class="DyRecCover-zone">元宇宙</span
-                    ><h3 class="DyRecCover-intro" title="Tpp天花老年版">Tpp讲师讲解</h3>
+                  <div class="DyRecCover-content">
+                    <div>
+                      <span class="DyRecCover-zone">元宇宙</span>
+                      <h3 class="DyRecCover-intro" title="Tpp天花老年版">
+                        Tpp讲师讲解
+                      </h3>
+                    </div>
+                    <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
                   </div>
-                <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
-                </div>
                 </dv-border-box-8>
-            </el-col>
-             
-            <el-col :span="6" >
-              <dv-border-box-8 style="width:320px;height:260px;">
-              <div class="img-wrapper" style="margin-top:20px;padding:3px;">
-                  <img class="img1" src="https://rpic.douyucdn.cn/asrpic/211214/6462960_1127.png/dy1" alt="" style="max-width:100%;height:100%;">
-                   <div class="DyRecCover-info">
-                    <span class="DyRecCover-hot">
-                      <svg class="DyRecCover-hotIcon">
-                        <use xlink:href="#icon-hot_8a57f0b"></use>
-                      </svg>
-                      193.4万
-                    </span>
-                    <h2 class="DyRecCover-user">类脑</h2>
+              </el-col>
+
+              <el-col :span="6">
+                <dv-border-box-8 style="width: 320px; height: 260px">
+                  <div
+                    class="img-wrapper"
+                    style="margin-top: 20px; padding: 3px"
+                  >
+                    <img
+                      class="img1"
+                      src="https://rpic.douyucdn.cn/asrpic/211214/6462960_1127.png/dy1"
+                      alt=""
+                      style="max-width: 100%; height: 100%"
+                    />
+                    <div class="DyRecCover-info">
+                      <span class="DyRecCover-hot">
+                        <svg class="DyRecCover-hotIcon">
+                          <use xlink:href="#icon-hot_8a57f0b"></use>
+                        </svg>
+                        193.4万
+                      </span>
+                      <h2 class="DyRecCover-user">类脑</h2>
+                    </div>
+                    <img class="ico_play1" />
                   </div>
-                  <img class="ico_play1">
-                </div>
-                <div class="DyRecCover-content">
-                  <div>
-                    <span class="DyRecCover-zone">吃鸡游戏</span
-                    ><h3 class="DyRecCover-intro" title="Tpp天花老年版">Tpp天花老年版</h3>
+                  <div class="DyRecCover-content">
+                    <div>
+                      <span class="DyRecCover-zone">吃鸡游戏</span>
+                      <h3 class="DyRecCover-intro" title="Tpp天花老年版">
+                        Tpp天花老年版
+                      </h3>
+                    </div>
+                    <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
                   </div>
-                <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
-                </div>
                 </dv-border-box-8>
-            </el-col>
-             <el-col :span="6">
-              <dv-border-box-8 style="width:320px;height:260px;">
-              <div style="">
-              <div class="img-wrapper" style="margin-top:20px;padding:3px;">
-
-                  <img class="img1" src="https://rpic.douyucdn.cn/asrpic/211214/2459142_1127.png/dy1" alt="" style="max-width:100%;height:100%;">
-                   <div class="DyRecCover-info">
-                    <span class="DyRecCover-hot">
-                      <svg class="DyRecCover-hotIcon">
-                        <use xlink:href="#icon-hot_8a57f0b"></use>
-                      </svg>
-                      3.4万
-                    </span>
-                    <h2 class="DyRecCover-user">类脑</h2>
+              </el-col>
+              <el-col :span="6">
+                <dv-border-box-8 style="width: 320px; height: 260px">
+                  <div style="">
+                    <div
+                      class="img-wrapper"
+                      style="margin-top: 20px; padding: 3px"
+                    >
+                      <img
+                        class="img1"
+                        src="https://rpic.douyucdn.cn/asrpic/211214/2459142_1127.png/dy1"
+                        alt=""
+                        style="max-width: 100%; height: 100%"
+                      />
+                      <div class="DyRecCover-info">
+                        <span class="DyRecCover-hot">
+                          <svg class="DyRecCover-hotIcon">
+                            <use xlink:href="#icon-hot_8a57f0b"></use>
+                          </svg>
+                          3.4万
+                        </span>
+                        <h2 class="DyRecCover-user">类脑</h2>
+                      </div>
+                      <img class="ico_play1" />
+                    </div>
+                    <div class="DyRecCover-content">
+                      <div>
+                        <span class="DyRecCover-zone">吃鸡游戏</span>
+                        <h3 class="DyRecCover-intro" title="Tpp天花老年版">
+                          Tpp天花老年版
+                        </h3>
+                      </div>
+                      <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
+                    </div>
                   </div>
-                  <img class="ico_play1">
-                </div>
-                <div class="DyRecCover-content">
-                  <div>
-                    <span class="DyRecCover-zone">吃鸡游戏</span
-                    ><h3 class="DyRecCover-intro" title="Tpp天花老年版">Tpp天花老年版</h3>
+                </dv-border-box-8>
+              </el-col>
+              <el-col :span="6">
+                <dv-border-box-8 style="width: 320px; height: 260px">
+                  <div style="">
+                    <div
+                      class="img-wrapper"
+                      style="margin-top: 20px; padding: 3px"
+                    >
+                      <img
+                        class="img1"
+                        src="https://rpic.douyucdn.cn/live-cover/roomCove_coverUpdate_2021-11-18_526eba1f108e60a9d9e6f5ae1ad08b0c.jpg/dy1"
+                        alt=""
+                        style="max-width: 100%; height: 100%"
+                      />
+                      <div class="DyRecCover-info">
+                        <span class="DyRecCover-hot">
+                          <svg class="DyRecCover-hotIcon">
+                            <use xlink:href="#icon-hot_8a57f0b"></use>
+                          </svg>
+                          3.4万
+                        </span>
+                        <h2 class="DyRecCover-user">类脑</h2>
+                      </div>
+                      <img class="ico_play1" />
+                    </div>
+                    <div class="DyRecCover-content">
+                      <div>
+                        <span class="DyRecCover-zone">吃鸡游戏</span>
+                        <h3 class="DyRecCover-intro" title="Tpp天花老年版">
+                          Tpp天花老年版
+                        </h3>
+                      </div>
+                      <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
+                    </div>
                   </div>
-                <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
-                </div>
-              </div>
-              </dv-border-box-8>
-            </el-col>
-             <el-col :span="6">
-              <dv-border-box-8 style="width:320px;height:260px;">
-              <div style="">
-              <div class="img-wrapper" style="margin-top:20px;padding:3px;">
-
-                  <img class="img1" src="https://rpic.douyucdn.cn/live-cover/roomCove_coverUpdate_2021-11-18_526eba1f108e60a9d9e6f5ae1ad08b0c.jpg/dy1" alt="" style="max-width:100%;height:100%;">
-                   <div class="DyRecCover-info">
-                    <span class="DyRecCover-hot">
-                      <svg class="DyRecCover-hotIcon">
-                        <use xlink:href="#icon-hot_8a57f0b"></use>
-                      </svg>
-                      3.4万
-                    </span>
-                    <h2 class="DyRecCover-user">类脑</h2>
-                  </div>
-                  <img class="ico_play1">
-                </div>
-                <div class="DyRecCover-content">
-                  <div>
-                    <span class="DyRecCover-zone">吃鸡游戏</span
-                    ><h3 class="DyRecCover-intro" title="Tpp天花老年版">Tpp天花老年版</h3>
-                  </div>
-                <div class="DyRecCover-tag">猜你会喜欢这类型的主播</div>
-                </div>
-              </div>
-              </dv-border-box-8>
-            </el-col>
-          </el-row>
-                
-
-         </div> 
-         <!-- 第四块结束 -->
-         <dv-decoration-5
-            style="margin-top: 30px; width: 100%; height: 40px"/>    
+                </dv-border-box-8>
+              </el-col>
+            </el-row>
+          </div>
+          <!-- 第四块结束 -->
+          <dv-decoration-5
+            style="margin-top: 30px; width: 100%; height: 40px"
+          />
           <!-- 第五块开始 -->
 
-          <el-row :span="24" >
-
+          <el-row :span="24">
             <el-col :span="6">
               <div>
-              <el-card class="box-card">
-              
-                <div class="text item">
-                  <el-row >
-                    <h3 style="margin-top:-10px;">科技文化</h3>
-                  </el-row>
-                    <el-row :span="24" type="flex" justify="star" >
+                <el-card class="box-card">
+                  <div class="text item">
+                    <el-row>
+                      <h3 style="margin-top: -10px">科技文化</h3>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >科技</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >文化</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >知识</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
                     <el-row :span="24" type="flex" justify="star" :gutter="2">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
-                      <el-row :span="24" type="flex" justify="star" :gutter="2">
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
-                     
-                </div>
-              </el-card>
-          </div>
-          </el-col>
-          <el-col :span="6">
+                  </div>
+                </el-card>
+              </div>
+            </el-col>
+            <el-col :span="6">
               <div>
-              <el-card class="box-card">
-              
-                <div class="text item">
-                  <el-row >
-                    <h3 style="margin-top:-10px;">科技文化</h3>
-                  </el-row>
-                    <el-row :span="24" type="flex" justify="star" >
+                <el-card class="box-card">
+                  <div class="text item">
+                    <el-row>
+                      <h3 style="margin-top: -10px">科技文化</h3>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >科技</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >文化</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >知识</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
                     <el-row :span="24" type="flex" justify="star" :gutter="2">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
-                      <el-row :span="24" type="flex" justify="star" :gutter="2">
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
-                     
-                </div>
-              </el-card>
-          </div>
-          </el-col>
-          <el-col :span="6">
+                  </div>
+                </el-card>
+              </div>
+            </el-col>
+            <el-col :span="6">
               <div>
-              <el-card class="box-card">
-              
-                <div class="text item">
-                  <el-row :span="24" type="flex" justify="star" :gutter="2" >
-                    <h3 style="margin-top:-10px;">科技文化</h3>
-                  </el-row>
-                    <el-row :span="24" type="flex" justify="star" >
+                <el-card class="box-card">
+                  <div class="text item">
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <h3 style="margin-top: -10px">科技文化</h3>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >科技</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >文化</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >知识</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
                     <el-row :span="24" type="flex" justify="star" :gutter="2">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
-                      <el-row :span="24" type="flex" justify="star" :gutter="2">
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
-                     
-                </div>
-              </el-card>
-          </div>
-          </el-col>
-          <el-col :span="6">
+                  </div>
+                </el-card>
+              </div>
+            </el-col>
+            <el-col :span="6">
               <div>
-              <el-card class="box-card">
-              
-                <div class="text item">
-                  <el-row :span="24" type="flex" justify="star" :gutter="2" >
-                    <h3 style="margin-top:-10px;">科技文化</h3>
-                  </el-row>
-                    <el-row :span="24" type="flex" justify="star" >
+                <el-card class="box-card">
+                  <div class="text item">
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <h3 style="margin-top: -10px">科技文化</h3>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >科技</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >文化</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >知识</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
                     <el-row :span="24" type="flex" justify="star" :gutter="2">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
-                      </el-col>
-                    </el-row>
-                      <el-row :span="24" type="flex" justify="star" :gutter="2">
-                      <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
-                      </el-col>
-                      <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
-                      </el-col>
-                      <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
-                      </el-col>
-                    </el-row>
-                     
-                </div>
-              </el-card>
-          </div>
-          </el-col>
-        </el-row>
-        <el-row :span="24" :gutter="2">
-          <el-col :span="6" :offset="1">
-           <div>
-          <el-card class="box-card1" style="margin-top:50px;">
-           
-            <div class="text item">
-                <el-row :span="24" type="flex" justify="star" >
-                <h3 style="margin-top:-10px;">科技文化</h3>
-              </el-row>
-                <el-row :span="24" type="flex" justify="star">
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                     <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
-                  </el-col>
-                </el-row>
-                <el-row :span="24" type="flex" justify="star" :gutter="2">
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">户外</a></p>
-                  </el-col>
-                </el-row>
-                
-            </div>
-          </el-card>
-          </div>
-          </el-col>
-          <el-col :span="6">
-          <div>
-          <el-card class="box-card2" style="margin-top:50px;margin-left:-80px;">
-           
-            <div class="text item">
-                 <el-row :span="24" type="flex" justify="star" >
-                <h3 style="margin-top:-10px;">科技文化</h3>
-              </el-row>
-                <el-row :span="24" type="flex" justify="star" >
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                     <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
-                  </el-col>
-                </el-row>
-                <el-row :span="24" type="flex" justify="star" :gutter="2">
-                  <el-col :span="8">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
-                  </el-col>
-                  <el-col :span="8">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
-                  </el-col>
-                </el-row>
-                
-            </div>
-          </el-card>
-          </div>
-          </el-col>
-          <el-col :span="4">
-
-          <el-card class="box-card3" style="margin-left:-200px;margin-top:50px;">
-           
-            <div class="text item">
-                <el-row :span="24" type="flex" justify="star" >
-                <h3 style="margin-top:-10px;">科技文化</h3>
-              </el-row>
-               
-                <el-row :span="24" type="flex" justify="center">
-                  <el-col :span="6">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
-                  </el-col>
-                  <el-col :span="6">
-                     <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
-                  </el-col>
-                  <el-col :span="6">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
-                  </el-col>
-                  <el-col :span="6">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
-                  </el-col>
-                </el-row>
-                <el-row :span="24" type="flex" justify="center" :gutter="2">
-                  <el-col :span="6">
-                       <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
-                  </el-col>
-                  <el-col :span="6">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
-                  </el-col>
-                  <el-col :span="6">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
-                  </el-col>
-                  <el-col :span="6">
-                      <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
-                  </el-col>
-                </el-row>
-                
-            </div>
-          </el-card>
-          </el-col>
-           <el-col :span="6">
-              <div>
-              <el-card class="box-card" style="margin-left:-30px;">
-              
-                <div class="text item">
-                  <el-row :span="24" type="flex" justify="star" >
-                    <h3 style="margin-top:-10px;">科技文化</h3>
-                  </el-row>
-                    <el-row :span="24" type="flex" justify="star" >
-                      <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">科技</a></p>
-                      </el-col>
-                      <el-col :span="8">
-                        <p><a href="http://www.w3school.com.cn" target="_blank">文化</a></p>
-                      </el-col>
-                      <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">知识</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
                     <el-row :span="24" type="flex" justify="star" :gutter="2">
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
                       </el-col>
                       <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
                       </el-col>
                     </el-row>
-                      <el-row :span="24" type="flex" justify="star" :gutter="2">
-                      <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">纪录片</a></p>
-                      </el-col>
-                      <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">数码</a></p>
-                      </el-col>
-                      <el-col :span="8">
-                          <p><a href="http://www.w3school.com.cn" target="_blank">户外探寻</a></p>
-                      </el-col>
-                    </el-row>
-                     
-                </div>
-              </el-card>
-          </div>
-          </el-col> 
+                  </div>
+                </el-card>
+              </div>
+            </el-col>
           </el-row>
-            {{msg1}}
+          <el-row :span="24" :gutter="2">
+            <el-col :span="6" :offset="1">
+              <div>
+                <el-card class="box-card1" style="margin-top: 50px">
+                  <div class="text item">
+                    <el-row :span="24" type="flex" justify="star">
+                      <h3 style="margin-top: -10px">科技文化</h3>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star">
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >科技</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >文化</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >知识</a
+                          >
+                        </p>
+                      </el-col>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外</a
+                          >
+                        </p>
+                      </el-col>
+                    </el-row>
+                  </div>
+                </el-card>
+              </div>
+            </el-col>
+            <el-col :span="6">
+              <div>
+                <el-card
+                  class="box-card2"
+                  style="margin-top: 50px; margin-left: -80px"
+                >
+                  <div class="text item">
+                    <el-row :span="24" type="flex" justify="star">
+                      <h3 style="margin-top: -10px">科技文化</h3>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star">
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >科技</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >文化</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >知识</a
+                          >
+                        </p>
+                      </el-col>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
+                      </el-col>
+                    </el-row>
+                  </div>
+                </el-card>
+              </div>
+            </el-col>
+            <el-col :span="4">
+              <el-card
+                class="box-card3"
+                style="margin-left: -200px; margin-top: 50px"
+              >
+                <div class="text item">
+                  <el-row :span="24" type="flex" justify="star">
+                    <h3 style="margin-top: -10px">科技文化</h3>
+                  </el-row>
 
+                  <el-row :span="24" type="flex" justify="center">
+                    <el-col :span="6">
+                      <p>
+                        <a href="http://www.w3school.com.cn" target="_blank"
+                          >科技</a
+                        >
+                      </p>
+                    </el-col>
+                    <el-col :span="6">
+                      <p>
+                        <a href="http://www.w3school.com.cn" target="_blank"
+                          >文化</a
+                        >
+                      </p>
+                    </el-col>
+                    <el-col :span="6">
+                      <p>
+                        <a href="http://www.w3school.com.cn" target="_blank"
+                          >知识</a
+                        >
+                      </p>
+                    </el-col>
+                    <el-col :span="6">
+                      <p>
+                        <a href="http://www.w3school.com.cn" target="_blank"
+                          >科技</a
+                        >
+                      </p>
+                    </el-col>
+                  </el-row>
+                  <el-row :span="24" type="flex" justify="center" :gutter="2">
+                    <el-col :span="6">
+                      <p>
+                        <a href="http://www.w3school.com.cn" target="_blank"
+                          >纪录片</a
+                        >
+                      </p>
+                    </el-col>
+                    <el-col :span="6">
+                      <p>
+                        <a href="http://www.w3school.com.cn" target="_blank"
+                          >数码</a
+                        >
+                      </p>
+                    </el-col>
+                    <el-col :span="6">
+                      <p>
+                        <a href="http://www.w3school.com.cn" target="_blank"
+                          >户外探寻</a
+                        >
+                      </p>
+                    </el-col>
+                    <el-col :span="6">
+                      <p>
+                        <a href="http://www.w3school.com.cn" target="_blank"
+                          >科技</a
+                        >
+                      </p>
+                    </el-col>
+                  </el-row>
+                </div>
+              </el-card>
+            </el-col>
+            <el-col :span="6">
+              <div>
+                <el-card class="box-card" style="margin-left: -30px">
+                  <div class="text item">
+                    <el-row :span="24" type="flex" justify="star">
+                      <h3 style="margin-top: -10px">科技文化</h3>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star">
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >科技</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >文化</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >知识</a
+                          >
+                        </p>
+                      </el-col>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
+                      </el-col>
+                    </el-row>
+                    <el-row :span="24" type="flex" justify="star" :gutter="2">
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >纪录片</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >数码</a
+                          >
+                        </p>
+                      </el-col>
+                      <el-col :span="8">
+                        <p>
+                          <a href="http://www.w3school.com.cn" target="_blank"
+                            >户外探寻</a
+                          >
+                        </p>
+                      </el-col>
+                    </el-row>
+                  </div>
+                </el-card>
+              </div>
+            </el-col>
+          </el-row>
+          {{ msg1 }}
         </el-main>
-
       </el-container>
-     
     </el-container>
   </div>
 </template>
@@ -1275,7 +1583,7 @@ import flv7 from "flv.js";
 import flv8 from "flv.js";
 import flv9 from "flv.js";
 import { Vue3SeamlessScroll } from "vue3-seamless-scroll";
-
+import { getVideoInfo } from "@/api";
 export default {
   name: "video",
   components: {
@@ -1322,7 +1630,7 @@ export default {
       playing9: false,
       isCollapsed: false,
       charts: "",
-      msg1:22,
+      msg1: 22,
       options: [
         {
           value: "zhinan",
@@ -1650,42 +1958,42 @@ export default {
           '<span style="color:#32c5e9;">直播间编号</span>',
         ],
         data: [
-          [
-            '<span style="color:#da5d58;">元宇宙</span>',
-            '<span style="color:#da5d58;">2233111</span>',
-          ],
-          [
-            '<span style="color:#dc7d5b;">视频编码</span>',
-            '<span style="color:#dc7d5b;">2233113</span>',
-          ],
-          [
-            '<span style="color:#a58048;">区块链 </span>',
-            '<span style="color:#a58048;">2233118</span>',
-          ],
-          [
-            '<span style="color:#969189;">碳中和</span>',
-            '<span style="color:#969189;">2255156</span>',
-          ],
-          [
-            '<span style="color:#969189;">机器学习研讨会</span>',
-            '<span style="color:#969189;">2255623</span>',
-          ],
-          [
-            '<span style="color:#969189;">雷诺机构</span>',
-            '<span style="color:#969189;">1155631</span>',
-          ],
-          [
-            '<span style="color:#969189;">人生观交流会</span>',
-            '<span style="color:#969189;">1252120</span>',
-          ],
-          [
-            '<span style="color:#969189;">区块链</span>',
-            '<span style="color:#969189;">1212512</span>',
-          ],
-          [
-            '<span style="color:#969189;">图像识别</span>',
-            '<span style="color:#969189;">1212662</span>',
-          ],
+          // [
+          //   '<span style="color:#da5d58;">元宇宙</span>',
+          //   '<span style="color:#da5d58;">2233111</span>',
+          // ],
+          // [
+          //   '<span style="color:#dc7d5b;">视频编码</span>',
+          //   '<span style="color:#dc7d5b;">2233113</span>',
+          // ],
+          // [
+          //   '<span style="color:#a58048;">区块链 </span>',
+          //   '<span style="color:#a58048;">2233118</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">碳中和</span>',
+          //   '<span style="color:#969189;">2255156</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">机器学习研讨会</span>',
+          //   '<span style="color:#969189;">2255623</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">雷诺机构</span>',
+          //   '<span style="color:#969189;">1155631</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">人生观交流会</span>',
+          //   '<span style="color:#969189;">1252120</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">区块链</span>',
+          //   '<span style="color:#969189;">1212512</span>',
+          // ],
+          // [
+          //   '<span style="color:#969189;">图像识别</span>',
+          //   '<span style="color:#969189;">1212662</span>',
+          // ],
         ],
         rowNum: 5, //表格行数
         headerHeight: 40,
@@ -1836,7 +2144,7 @@ export default {
         isLive: true,
         //   type: "video/mp4",
         //url: "http://10.208.104.242:6901/flv/test", //视频资源路径  支持：http
-         url: "http://1011.hlsplay.aodianyun.com/demo/game.flv", 
+        url: "http://1011.hlsplay.aodianyun.com/demo/game.flv",
       });
     }
     if (flv2.isSupported()) {
@@ -1912,6 +2220,7 @@ export default {
     // });
   },
   mounted() {
+        this.getVideoInfo();
     //调用
     var video1 = document.querySelector("#myvideo1");
     this.player1.attachMediaElement(video1);
@@ -1949,13 +2258,28 @@ export default {
     this.player9.attachMediaElement(video9);
     this.player9.load();
 
-    this.$nextTick(function () {
-      this.drawPie("main");
-      this.drawPie2("echarts");
-    });
+    // this.$nextTick(function () {
+    //   this.drawPie("main");
+    //   this.drawPie2("echarts");
+    // });
   },
 
   methods: {
+    getVideoInfo() {
+      getVideoInfo().then((res) => {
+        console.log(res);
+        var data = [];
+        res.datalist.forEach((item) => {
+          var temp = [
+            '<span style="color:' + item.Color + ';">' + item.Name + "</span>",
+            '<span style="color:' + item.Color + ';">' + item.ID + "</span>",
+          ];
+          data.push(temp);
+        });
+        this.config2.data = data;
+        this.config2 = { ...this.config2 }
+      });
+    },
     onClick1() {
       console.log("播放");
       this.player1.play();
@@ -2338,22 +2662,20 @@ export default {
   background-repeat: no-repeat;
 }
 
-
 /* 直播照片 */
 
 .img-wrapper {
   min-width: 180px;
   height: 170px;
-  overflow: hidden;/*清除浮动*/
-  zoom:1;
-  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.6);/* 边框阴影 */
+  overflow: hidden; /*清除浮动*/
+  zoom: 1;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.6); /* 边框阴影 */
   display: inline-block;
   box-sizing: border-box;
   position: relative;
-  cursor:pointer; /* cursor：pointer设定鼠标的形状为一只伸出食指的手 */ /* 设置鼠标指针样式，常用的有default 箭头，crosshair 十字，progress 箭头和沙漏 */
+  cursor: pointer; /* cursor：pointer设定鼠标的形状为一只伸出食指的手 */ /* 设置鼠标指针样式，常用的有default 箭头，crosshair 十字，progress 箭头和沙漏 */
 }
 .img-wrapper:hover {
- 
   border-radius: 1em; /* border:0px solid rgb(232, 240, 240); */
 }
 .img-wrapper .img1 {
@@ -2365,161 +2687,181 @@ export default {
 }
 
 .img-wrapper .img1:hover {
-  
   /* 2d缩放转换scale（x，y） */
-  transform: scale(1.6,1.6);  
+  transform: scale(1.6, 1.6);
 }
 
-.img-wrapper:hover .ico_play1{
+.img-wrapper:hover .ico_play1 {
   background-image: url(https://shark2.douyucdn.cn/front-publish/live-master/assets/images/icon-play_e4e7e68.webp);
-  background-size: 100%,100%;
+  background-size: 100%, 100%;
 }
 .ico_play1 {
-    position: absolute;
-    top: 50px;
-    left: 115px;
-    width: 66px;
-    height: 66px;
-    border-radius: 3em;       /* 圆角 */
+  position: absolute;
+  top: 50px;
+  left: 115px;
+  width: 66px;
+  height: 66px;
+  border-radius: 3em; /* 圆角 */
 }
 .DyRecCover-info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-image: -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.65)));
-    background-image: -webkit-linear-gradient(top,transparent,rgba(0,0,0,.65));
-    background-image: -o-linear-gradient(top,transparent 0,rgba(0,0,0,.65) 100%);
-    background-image: -moz- oldlinear-gradient(top,transparent 0,rgba(0,0,0,.65) 100%);
-    background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.65));
-    padding: 0 2px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 28px;
-    line-height: 28px;
-    font-size: 10px;
-    color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    to(rgba(0, 0, 0, 0.65))
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    transparent,
+    rgba(0, 0, 0, 0.65)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    transparent 0,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  background-image: -moz-
+    oldlinear-gradient(top, transparent 0, rgba(0, 0, 0, 0.65) 100%);
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.65));
+  padding: 0 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 28px;
+  line-height: 28px;
+  font-size: 10px;
+  color: #fff;
 }
 .DyRecCover-hotIcon {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-right: 6px;
-    margin-bottom: -1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  margin-bottom: -1px;
 }
 svg {
-    fill: currentColor;
-    stroke: currentColor;
-    stroke-width: 0;
-    pointer-events: visibleStroke;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0;
+  pointer-events: visibleStroke;
 }
-*, :focus {
-    outline: 0;
+*,
+:focus {
+  outline: 0;
 }
 .DyRecCover-hot {
-    float: right;
-    font-size: 12px;
+  float: right;
+  font-size: 12px;
 }
 /* 左下角用户name */
 .DyRecCover-user {
-    display: block;
-    padding-left: 10px;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-weight: 400;
-    font-size: 18px;
-    margin: 0;
-    float: left;
+  display: block;
+  padding-left: 10px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  float: left;
 }
 /* box右下角类型 */
 .DyRecCover-zone {
-    float: right;
-    color: rgb(33, 223, 248);
-    font-size: 12px;
-    line-height: 15px;
-    padding-right:30px;
+  float: right;
+  color: rgb(33, 223, 248);
+  font-size: 12px;
+  line-height: 15px;
+  padding-right: 30px;
 }
 /* 直播名字 */
 .DyRecCover-intro {
-    display: block;
-    padding-right: 80px;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 16px;
-    line-height: 20px;
-    color: #1e88eb;
-    font-weight: 500;
-    margin-top: -10px;
+  display: block;
+  padding-right: 80px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1e88eb;
+  font-weight: 500;
+  margin-top: -10px;
 }
 .DyRecCover-tag {
-    color: #ff5d23;
-    font-size: 12px;
-    max-width: 150px;
-    line-height: 25px;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin-top:-10px;
-    float: left;
-    padding-left: 40px;
+  color: #ff5d23;
+  font-size: 12px;
+  max-width: 150px;
+  line-height: 25px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: -10px;
+  float: left;
+  padding-left: 40px;
 }
-*, :focus {
-    outline: 0;
+*,
+:focus {
+  outline: 0;
 }
 
- .text {
-    font-size: 15px;
-    line-height: 18px;
-    color: rgb(33, 223, 248);
-  }
+.text {
+  font-size: 15px;
+  line-height: 18px;
+  color: rgb(33, 223, 248);
+}
 
-  .item {
-    padding: 18px 0;
-  }
+.item {
+  padding: 18px 0;
+}
 
-  .box-card {
-    width: 260px;
-    height: 230px;
-    background-color: rgb(1, 11, 34);
-    border-color:rgb(16, 31, 63);
-     border: 1px solid #178d97;
-  }
-  .box-card1{
-    width: 200px;
-    height: 180px;
-    background-color: rgb(1, 11, 34);
-    border-color:rgb(16, 31, 63);
-     border: 1px solid #178d97;
-  }
-   .box-card2{
-    width: 160px;
-    height: 180px;
-    background-color: rgb(1, 11, 34);
-    border-color:rgb(16, 31, 63);
-     border: 1px solid #178d97;
-  }
-   .box-card3{
-    width: 350px;
-    height: 180px;
-    background-color: rgb(1, 11, 34);
-    border-color:rgb(16, 31, 63);
-     border: 1px solid #178d97;
-  }
+.box-card {
+  width: 260px;
+  height: 230px;
+  background-color: rgb(1, 11, 34);
+  border-color: rgb(16, 31, 63);
+  border: 1px solid #178d97;
+}
+.box-card1 {
+  width: 200px;
+  height: 180px;
+  background-color: rgb(1, 11, 34);
+  border-color: rgb(16, 31, 63);
+  border: 1px solid #178d97;
+}
+.box-card2 {
+  width: 160px;
+  height: 180px;
+  background-color: rgb(1, 11, 34);
+  border-color: rgb(16, 31, 63);
+  border: 1px solid #178d97;
+}
+.box-card3 {
+  width: 350px;
+  height: 180px;
+  background-color: rgb(1, 11, 34);
+  border-color: rgb(16, 31, 63);
+  border: 1px solid #178d97;
+}
 
-a:link    {color:rgb(33, 223, 248);
-            text-decoration:none}
-a:visited {color:rgb(0, 255, 242);}
-a:hover   {color:rgb(255, 145, 0);}
-a:active  {color:rgb(255, 196, 0);}
-
-
-
+a:link {
+  color: rgb(33, 223, 248);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(0, 255, 242);
+}
+a:hover {
+  color: rgb(255, 145, 0);
+}
+a:active {
+  color: rgb(255, 196, 0);
+}
 
 /* 尾部 */
-
 </style>
