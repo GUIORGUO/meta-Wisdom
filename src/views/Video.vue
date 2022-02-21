@@ -1649,47 +1649,44 @@ export default {
           '<span style="color:#32c5e9;">直播间名称</span>',
           '<span style="color:#32c5e9;">直播间编号</span>',
         ],
-        VideoInfo:{
-          datalist1: [],
-          },
-        // datalist1: [
-          // [
-          //   '<span style="color:#da5d58;">元宇宙</span>',
-          //   '<span style="color:#da5d58;">2233111</span>',
-          // ],
-          // [
-          //   '<span style="color:#dc7d5b;">视频编码</span>',
-          //   '<span style="color:#dc7d5b;">2233113</span>',
-          // ],
-          // [
-          //   '<span style="color:#a58048;">区块链 </span>',
-          //   '<span style="color:#a58048;">2233118</span>',
-          // ],
-          // [
-          //   '<span style="color:#969189;">碳中和</span>',
-          //   '<span style="color:#969189;">2255156</span>',
-          // ],
-          // [
-          //   '<span style="color:#969189;">机器学习研讨会</span>',
-          //   '<span style="color:#969189;">2255623</span>',
-          // ],
-          // [
-          //   '<span style="color:#969189;">雷诺机构</span>',
-          //   '<span style="color:#969189;">1155631</span>',
-          // ],
-          // [
-          //   '<span style="color:#969189;">人生观交流会</span>',
-          //   '<span style="color:#969189;">1252120</span>',
-          // ],
-          // [
-          //   '<span style="color:#969189;">区块链</span>',
-          //   '<span style="color:#969189;">1212512</span>',
-          // ],
-          // [
-          //   '<span style="color:#969189;">图像识别</span>',
-          //   '<span style="color:#969189;">1212662</span>',
-          // ],
-        // ],
+        data: [
+          [
+            '<span style="color:#da5d58;">元宇宙</span>',
+            '<span style="color:#da5d58;">2233111</span>',
+          ],
+          [
+            '<span style="color:#dc7d5b;">视频编码</span>',
+            '<span style="color:#dc7d5b;">2233113</span>',
+          ],
+          [
+            '<span style="color:#a58048;">区块链 </span>',
+            '<span style="color:#a58048;">2233118</span>',
+          ],
+          [
+            '<span style="color:#969189;">碳中和</span>',
+            '<span style="color:#969189;">2255156</span>',
+          ],
+          [
+            '<span style="color:#969189;">机器学习研讨会</span>',
+            '<span style="color:#969189;">2255623</span>',
+          ],
+          [
+            '<span style="color:#969189;">雷诺机构</span>',
+            '<span style="color:#969189;">1155631</span>',
+          ],
+          [
+            '<span style="color:#969189;">人生观交流会</span>',
+            '<span style="color:#969189;">1252120</span>',
+          ],
+          [
+            '<span style="color:#969189;">区块链</span>',
+            '<span style="color:#969189;">1212512</span>',
+          ],
+          [
+            '<span style="color:#969189;">图像识别</span>',
+            '<span style="color:#969189;">1212662</span>',
+          ],
+        ],
         rowNum: 5, //表格行数
         headerHeight: 40,
         headerBGC: "#202947", //表头
@@ -1749,7 +1746,48 @@ export default {
   },
   //启动函数
   setup() {
-   
+    //   const list = ref([    //创建响应式的数据对象
+    //   {
+
+    //     title: "Vue3.0 无缝滚动组件展示数据第1条",
+    //     date: Date.now(),
+    //   },
+    //   {
+    //     title: "Vue3.0 无缝滚动组件展示数据第2条",
+    //     date: Date.now(),
+    //   },
+    //   {
+    //     title: "Vue3.0 无缝滚动组件展示数据第3条",
+    //     date: Date.now(),
+    //   },
+    //   {
+    //     title: "Vue3.0 无缝滚动组件展示数据第4条",
+    //     date: Date.now(),
+    //   },
+    //   {
+    //     title: "Vue3.0 无缝滚动组件展示数据第5条",
+    //     date: Date.now(),
+    //   },
+    //   {
+    //     title: "Vue3.0 无缝滚动组件展示数据第6条",
+    //     date: Date.now(),
+    //   },
+    //   {
+    //     title: "Vue3.0 无缝滚动组件展示数据第7条",
+    //     date: Date.now(),
+    //   },
+    //   {
+    //     title: "Vue3.0 无缝滚动组件展示数据第8条",
+    //     date: Date.now(),
+    //   },
+    //   {
+    //     title: "Vue3.0 无缝滚动组件展示数据第9条",
+    //     date: Date.now(),
+    //   },
+    // ]);
+
+    // return {list};
+
     const state = reactive({
       //创建响应式的数据对象
 
@@ -1911,40 +1949,10 @@ export default {
     this.player9.attachMediaElement(video9);
     this.player9.load();
 
-    // this.$nextTick(function () {
-    //   this.drawPie("main");
-    //   this.drawPie2("echarts");
-
-    // });
-    
-    //  //直播间排名
-     getVideoInfo().then((response) => {
-               console.log('响应的数据');
-               console.log(response);
-                  var datalist = [];
-                  var a = ['Name','ID','Color'];
-                     datalist.push(a)
-                   response.datalist1.forEach(item =>{
-                     datalist.push([item.Name,item.ID,item.color])
-                   });
-                   console.log(datalist);
-                 })
-              
-             
-    //   getVideoInfo().then((res) =>{     //.then获取getLikeInfo回调函数的响应值给res
-    //              console.log('响应的数据');
-    //              console.log(res);            //打印出响应值
-    //              //this.LikeInfo = res;
-    //              //把res的结构恢复成原source的结构再复制给this.source
-    //              var datalist1 =[];   //页面中source未定义，找不到source内容
-    //              var a = ['Name', 'ID'];
-    //                datalist1.push(a)    // push（）向source数组末尾添加数组a[]
-    //              res.data.forEach(item => {    //遍历res中的list数组---每一个项a[0],a[1]都是一个item
-    //                datalist1.push([item.Name, item.ID])//每次遍历都要在source的基础上加上list的一个小item
-    //             });
-    //              console.log(datalist1)
-    //            });
-          
+    this.$nextTick(function () {
+      this.drawPie("main");
+      this.drawPie2("echarts");
+    });
   },
 
   methods: {
@@ -2042,9 +2050,6 @@ export default {
       this.player9.pause();
       this.playing9 = false;
     },
-    
-     
-            
   },
 };
 </script>
