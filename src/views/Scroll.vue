@@ -1,10 +1,13 @@
 <template>
 <!-- 喜好类型统计 -->
-   <el-row type="flex" justify="start">
+  <div class="Scroll" >
+    <el-row type="flex" justify="center">
        <el-col :span="24" >
-            <div id="myChart1234" :data="option2" :style="{ width: '390px', height: '300px'}"></div>
+            <div id="myChart1234" :data="option2" :style="{ minwidth: '250px', minHeight: '360px'}"></div>
       </el-col>
    </el-row>
+  </div>
+   
 </template>
 
 <script>
@@ -48,10 +51,10 @@ export default {
                       left: "center",
                       text: "喜好类型统计",
                       textStyle:{
-                          color:'#90edef',
+                          color:'#fff',
                       },
                     },
-                      dataset: {
+                    dataset: {
                         source: source  //source已成功出来（图表中所有的可变数据）
                       },
                     //  dataset: {
@@ -68,21 +71,58 @@ export default {
                     //     [32.7, 20112, '演讲']
                     //      ]
                     //  },
-                    grid: { containLabel: true },
-                    xAxis: { name: '' },  //数量"amount"x轴下标
-                    yAxis: { type: 'category' },  //类型
+                    xAxis: { 
+                      name: '' ,
+                      axisLabel: {
+                          show: true,
+                          textStyle: {
+                              color: '#c3dbff',  //更改坐标轴文字颜色
+                              fontSize : 12      //更改坐标轴文字大小
+                            } 
+                        } ,
+                      },  //数量"amount"x轴下标
+                    yAxis: { 
+                      type: 'category',
+                      axisLabel: {
+                          show: true,
+                            textStyle: {
+                              color: '#c3dbff',  //更改坐标轴文字颜色
+                              fontSize : 12      //更改坐标轴文字大小
+                            } 
+                        } ,
+                      axisLine:{
+                            lineStyle:{
+                              color:'#fff' //更改坐标轴颜色
+                          } 
+                    } 
+                     },  //类型
                     visualMap: {
                         orient: 'horizontal',
+                        top:'15%',
                         left: 'center',
-                        min: 10,
+                        min: 0,
                         max: 100,
                         text: ['High Score', 'Low Score'],
+                        textStyle: {
+                              color: '#c3dbff',  //更改坐标轴文字颜色
+                              fontSize : 10      //更改坐标轴文字大小
+                            },
+                        itemHeight: 90,//图例长度
+                        itemWidth: 14,//图例宽度
                         // Map the score column to color
                         dimension: 0,
                       inRange: {
                         color: ['#90edef', '#f0f077', '#FD665F']
                         }
                     },
+                    grid:{//调整图表和标题的距离
+                       bottom: '10%',
+                       top: '30%',
+                       left:'2%',
+                       right:'10%',
+                       containLabel: true
+                     },
+
                     series: [
                         {
                       type: 'bar',
@@ -99,14 +139,16 @@ export default {
                     //初始化图表
                   // let myChart = echarts.init(document.getElementById("myChart123"));
                   let myChart1 = echarts.init(document.getElementById("myChart1234"));
-              
+                  this.autoHeight = this.counts * 55 + 50; // this.counts为柱状图的条数，即数据长度。
+
+　　                myChart1.getDom().style.height = this.autoHeight + "px";
                   //指定配置项和数据显示
                   // myChart.setOption(option);
                   myChart1.setOption(option2);  
 
                   window.onresize = function () {
                     // 自适应大小
-                    myChart1.resize();
+                  myChart1.resize();
                   };
             });      
     },
@@ -114,8 +156,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-    #myChart1234{
-
-      margin-left: -40px;
-    }
+    // #myChart1234{
+    //   margin-left: -40px;
+    // }
 </style>

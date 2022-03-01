@@ -16,6 +16,7 @@
             <!-- 直播间处跳转 -->
             <el-menu-item index="4" @click="Jump1"><a href="/Video" target="_blank">直播间1</a></el-menu-item>
             <el-menu-item index="4" @click="Jump2"><a href="/About" target="_blank">直播间2</a></el-menu-item>
+            <el-menu-item index="4" @click="Jump3"><a href="/Broadcast" target="_blank">直播间3</a></el-menu-item>
           
           <el-row style="float: right;height:60px;padding-top:10px">
           <el-autocomplete v-model="hospitalName.hospitalName" placeholder="请输入搜索内容" label-name="标题名称" :fetch-suggestions="querySearch" @select="handleSelect"></el-autocomplete> 
@@ -346,7 +347,7 @@
 }
 
 .box-card {
-  width: 1230px;
+  min-width: 90%;
   height: 550px;
   margin: 50px 200px 20px 80px;
 }
@@ -531,6 +532,9 @@ methods: {
   },
   Jump2:function(){
     this.$router.push({path:'/About'})
+  },
+  Jump4:function(){
+    this.$router.push({path:'/Broadcast'})
   },
   Jump3:function(){
     console.log(11111)

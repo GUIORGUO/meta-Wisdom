@@ -17,6 +17,8 @@
     "element-plus": "^1.0.2-beta.28",
     "element-ui": "^2.15.6",
     "flv.js": "^1.6.2",
+    "lib-flexible": "^0.3.2",
+    "lodash": "^4.17.21",
     "qs": "^6.10.2",
     "vue": "^3.2.23",
     "vue-axios": "^3.4.0",
@@ -34,6 +36,7 @@
     "@vue/compiler-sfc": "^3.2.23",
     "axios": "^0.24.0",
     "node-sass": "^4.14.1",
+    "px2rem-loader": "^0.1.9",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-element": "^1.0.1",
     "vue-cli-plugin-element-plus": "0.0.13"

@@ -1,6 +1,10 @@
 <template>
 <!-- 右侧双层图表 -----访客量统计-->
-  <div id="myChart123" :data="option" :style="{ width: '330px', height: '300px' }"></div>
+<el-row type="flex" justify="center">
+       <el-col :span="24" >
+          <div id="myChart123" :data="option" :style="{ width: '330px', height: '340px' }"></div>
+        </el-col>
+</el-row>
 </template>
 
 <script>
@@ -15,8 +19,7 @@ export default {
   
     onMounted(() => {
 
-      let base = +new Date(2021
-      , 10, 1);
+      let base = +new Date(2021, 10, 1);
       let oneDay = 24 * 3600 * 1000;
       let valueBase = Math.random() * 300;
       let valueBase2 = Math.random() * 50;
@@ -41,7 +44,7 @@ export default {
           left: "center",
           text: "访客量统计",
           textStyle:{
-              color:'#90edef',
+              color:'#fff',
           },
           
         },

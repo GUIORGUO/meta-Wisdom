@@ -3,9 +3,9 @@
   <!-- 路由跳转 -->
 <!-- 中间图 -->
    <!-- 千万注意大小写myChart2如果写错，就什么也出不来 -->
-   <el-row type="flex" justify="center">
+   <el-row type="flex" justify="center" :span="24">
        <el-col :span="24" >
-            <div ref="myChart4" style="min-width:650px;height:640px;"></div>   
+            <div ref="myChart4" style="min-width:200px;min-height:340px;"></div>   
        </el-col>
    </el-row>
   
@@ -138,7 +138,7 @@ export default {
             //  图表配置信息
 
             const option = {
-            backgroundColor: '#161627',
+            // backgroundColor: '#161627',
             // title: {
             //     text: '视频类型偏好',
             //     left: 'center',
@@ -147,7 +147,7 @@ export default {
             //     }
             // },
             legend: {
-                bottom: 5,
+                top: 20,
                 data: ['Beijing', 'Shanghai', 'Guangzhou'],
                 itemGap: 20,
                 textStyle: {
@@ -156,6 +156,7 @@ export default {
                 },
                 selectedMode: 'single'
             },
+            
             radar: {
                 indicator: [
                 { name: '学习类', max: 300 },

@@ -1,10 +1,23 @@
 <template>
   <div class="common-layout">
     <el-container>
-      <!-- 头部 -->
-        <el-header >
+         <!-- 主体  -->
+        <el-main>
           <div class="header">
-            <el-row :gutter="10" style="margin-left:45px;">
+            <el-row :gutter="10" :span="24">
+              <el-col :span="8">
+                <dv-decoration-3 style="width:250px;height:30px;" />
+              </el-col>
+              <el-col :span="8">
+                <dv-decoration-5 style="width:300px;height:40px;" />
+              </el-col>
+              <el-col :span="8">
+                <dv-decoration-3 style="width:250px;height:30px;" />
+              </el-col>
+            </el-row>
+          </div>
+     
+            <!-- <el-row :gutter="10" style="margin-left:45px;">
               <el-col :span="7">
                 <h1 id="header" title="MARVEL(奇迹实验室)">
                  <a href="" class="clickstat" eid="click/navi/logo" eid_desc="点击/导航/logo">
@@ -55,20 +68,18 @@
                 <video id="myvideo1" controls  autoplay muted></video>
               </div>
             </el-col>
-           </el-row>
+           </el-row> -->
             
               
-          </div>
-        </el-header>
+       
       
-        <el-container>
+        
         <!-- 侧栏
         <el-aside width="200px">
 
         </el-aside> -->
 
-        <!-- 主体  -->
-        <el-main>
+       
 
           <!-- 视频流盒子 -->
           <div class="flv-box" style="margin-left:120px;">
@@ -183,7 +194,7 @@
 
        </el-container>
    
-     </el-container>
+    
   </div>
 </template>
 
@@ -389,15 +400,25 @@ export default {
 
 <style scoped>
 /* 头部 */
-.el-header
+/* .el-header
  {
-  /* background-image: url(../assets/炫酷行星.gif); */
+  background-image: url(../assets/炫酷行星.gif);
   background-color: #070b1c;
   background-size:100% 550px;
   color: var(--el-text-color-primary);
   text-align: center;
   line-height: 60px;
-  height: 550px;
+  height: 100px;
+} */
+.header
+ {
+  
+  /* background-color: #070b1c; */
+  background-size:100% 550px;
+  color: var(--el-text-color-primary);
+  text-align: center;
+  line-height: 60px;
+  height: 100px;
 }
 
 .hy-nav-item {
@@ -474,7 +495,10 @@ export default {
 /* end视频流盒子 */
 
 .el-main{
-  background: radial-gradient(ellipse at bottom, #070500a8 0%, #070500 100%);
+  /* background: radial-gradient(ellipse at bottom, #070500a8 0%, #070500 100%); */
+  background-image: url(https://raw.githubusercontent.com/babybrotherzb/my-datav/master/build/static/media/bg.4ad07e23.png);
+  height:100%;
+  background-size:100%;
 }
 .el-card{
   height: 260px;

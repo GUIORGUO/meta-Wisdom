@@ -2054,47 +2054,6 @@ export default {
   },
   //启动函数
   setup() {
-    //   const list = ref([    //创建响应式的数据对象
-    //   {
-
-    //     title: "Vue3.0 无缝滚动组件展示数据第1条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第2条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第3条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第4条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第5条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第6条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第7条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第8条",
-    //     date: Date.now(),
-    //   },
-    //   {
-    //     title: "Vue3.0 无缝滚动组件展示数据第9条",
-    //     date: Date.now(),
-    //   },
-    // ]);
-
-    // return {list};
 
     const state = reactive({
       //创建响应式的数据对象
@@ -2139,6 +2098,7 @@ export default {
 
   created() {
     if (flv1.isSupported()) {
+      //创建flv的名称player1不可以一样 ， flv相当于类
       this.player1 = flv1.createPlayer({
         type: "flv",
         isLive: true,
@@ -2220,7 +2180,8 @@ export default {
     // });
   },
   mounted() {
-        this.getVideoInfo();
+    //调用方法
+    this.getVideoInfo();
     //调用
     var video1 = document.querySelector("#myvideo1");
     this.player1.attachMediaElement(video1);
@@ -2264,9 +2225,12 @@ export default {
     // });
   },
 
-  methods: {
-    getVideoInfo() {
-      getVideoInfo().then((res) => {
+  methods: {   //里面配置 方法
+    //定义一个方法
+    getVideoInfo() {//方法名 vue管理的是这个getvideoinfo（）方法
+      //引用这个方法
+      getVideoInfo().then((res) => {   //箭头函数不是vue管理的，会往外面找方法
+        console.log('响应的数据');
         console.log(res);
         var data = [];
         res.datalist.forEach((item) => {
@@ -2277,7 +2241,8 @@ export default {
           data.push(temp);
         });
         this.config2.data = data;
-        this.config2 = { ...this.config2 }
+        this.config2 = { ...this.config2 } //更新数据自动刷新状态   
+        //（datav中状态更新：完成赋值操作后使用ES6拓展运算符生成新的props对象）
       });
     },
     onClick1() {

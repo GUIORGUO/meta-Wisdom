@@ -1,4 +1,5 @@
 import axios from "../http/request"
+//接口封装界面
 //请求示例
 //get
 export const getUserInfo = (data) => {
@@ -41,6 +42,7 @@ export const mokePost = (data) => {
         }
     })
 }
+//api封装，其他页面直接调用即可
 export const getVideoInfo = (data) => {
     return axios({
         url: "/getVideoInfo1",
