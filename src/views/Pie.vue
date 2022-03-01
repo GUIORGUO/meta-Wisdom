@@ -4,8 +4,6 @@
   <el-row type="flex" justify="center" :span="24">
     <el-col :span="24">
       <div
-        id="myChartPi"
-        :data="option2"
         ref="myChartPi"
         :style="{ minwidth: '250px', minHeight: '360px' }"
       ></div>
@@ -16,8 +14,6 @@
 <script>
 // 引入echarts
 import * as echarts from "echarts";
-import { onMounted } from "vue";
-import { markRaw } from "vue";
 export default {
   data() {
     return {};
@@ -110,7 +106,7 @@ export default {
     //初始化图表
     // let myChart = echarts.init(document.getElementById("myChart123"));
     //   var myChartPi = echarts.init(document.getElementById("myChartPi"));
-    var myChartPi = echarts.init(this.$refs.myChartPi, "macarons");
+    var myChartPi = echarts.init(that.$refs.myChartPi, "macarons");
     //指定配置项和数据显示
     // myChart.setOption(option);
     myChartPi.setOption(option2);
