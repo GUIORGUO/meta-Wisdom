@@ -1,99 +1,146 @@
 <template>
-<!-- 柱状图 -->
-  <div class="Device" >
-   <el-row type="flex" justify="center">
-       <el-col :span="24" >
-            <div id="myChart12" :data="option" :style="{ minwidth: '250px', minHeight: '360px'}"></div>
-            
-      </el-col>
-   </el-row>
+ <div class="chartNum">
+    <h3 class="orderTitle">用户数量</h3>
+    <div class="box-item">
+     <li :class="{'number-item': !isNaN(item), 'mark-item': isNaN(item) }"
+      v-for="(item,index) in orderNum"
+      :key="index">
+       <span v-if="!isNaN(item)">
+        <i ref="numberItem" id="Number">0123456789</i>
+       </span>
+      <span class="comma" v-else>{{item}}</span>
+     </li>
+    </div>
    </div>
 </template>
-
 <script>
-// 引入echarts
-import * as echarts from "echarts";
-import { onMounted } from "vue";
-//axios获取rap2数据
-import{ getLikeInfo }from "@/api/index";
-import {EleResize} from '../assets/esresize.js'
-
-export default {
-     setup() {
-  
-        onMounted(() => {
-            // Generate data
-           var chartDom = document.getElementById('main');
-var myChart = echarts.init(chartDom);
-var option;
-
-option = {
-  title: {
-    text: 'Step Line'
+ export default {
+  data() {
+   return {
+    orderNum: ['0', '0', ',', '0', '0', '0', ',', '0', '0', '0'], // 默认订单总数
+   }
   },
-  tooltip: {
-    trigger: 'axis'
+  mounted() {
+    this.toOrderNum(11); // 这里输入数字即可调用
+    // this.increaseNumber();
+    setInterval(() => {
+      let number = document.getElementById('Number')
+      let random = getRandomNumber(0,10)
+      number.style.transform = `translate(-50%, -${random * 10}%)`
+      }, 2000)
+      function getRandomNumber (min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min)
+      }
+    
   },
-  legend: {
-    data: ['Step Start', 'Step Middle', 'Step End']
-  },
-  grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
-  },
-  toolbox: {
-    feature: {
-      saveAsImage: {}
-    }
-  },
-  xAxis: {
-    type: 'category',
-    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  },
-  yAxis: {
-    type: 'value'
-  },
-  series: [
-    {
-      name: 'Step Start',
-      type: 'line',
-      step: 'start',
-      data: [120, 132, 101, 134, 90, 230, 210]
-    },
-    {
-      name: 'Step Middle',
-      type: 'line',
-      step: 'middle',
-      data: [220, 282, 201, 234, 290, 430, 410]
-    },
-    {
-      name: 'Step End',
-      type: 'line',
-      step: 'end',
-      data: [450, 432, 401, 454, 590, 530, 510]
-    }
-  ]
-};
-                    //初始化图表
-                  // let myChart = echarts.init(document.getElementById("myChart123"));
-                  let myChart2 = echarts.init(document.getElementById("myChart12"));
-                  //指定配置项和数据显示
-                  // myChart.setOption(option);
-                  myChart2.setOption(option);  
-                
-                  //全局设置Echrts - 根据窗口的大小变更图表
-                  window.onresize = function () {
-                    // 自适应大小
-                  myChart2.resize();
-                  };  
-                   
-                     
-        });
+  methods: {
+   // 定时增长数字
+     increaseNumber () {
+         let self = this
+         this.timer = setInterval(() => {
+         self.newNumber = self.newNumber + getRandomNumber(1, 100)
+         self.setNumberTransform()
+         }, 3000)
      },
-};
+   
+    // 设置文字滚动
+   setNumberTransform () {
+    let numberItems = this.$refs.numberItem
+    let numberArr = this.computeNumber.filter(item => !isNaN(item))
+    for (let index = 0; index < numberItems.length; index++) {
+    let elem = numberItems[index]
+    elem.style.transform = `translate(-50%, -${numberArr[index] * 10}%)`
+    }
+   },
+   // 处理总订单数字
+   toOrderNum(num) {
+      num = num.toString()
+      // 把订单数变成字符串
+      if (num.length < 8) {
+         num = '0' + num // 如未满八位数，添加"0"补位
+         this.toOrderNum(num) // 递归添加"0"补位
+      } else if (num.length === 8) {
+      // 订单数中加入逗号
+      num = num.slice(0, 2) + ',' + num.slice(2, 5) + ',' + num.slice(5, 8)
+      this.orderNum = num.split('') // 将其便变成数据，渲染至滚动数组
+      } else {
+      // 订单总量数字超过八位显示异常
+      this.$message.warning('订单总量数字过大，显示异常，请联系客服')
+      }
+    },
+  }
+ }
 </script>
-<style lang="scss" scoped>
+<style scoped lang='scss'>
+  /*订单总量滚动数字设置*/
+ .box-item {
+  position: relative;
+  height: 100px;
+  font-size: 54px;
+  line-height: 41px;
+  text-align: center;
+  list-style: none;
+  color: #2D7CFF;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  /*文字禁止编辑*/
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -ms-user-select: none; /*IE10*/
+  -khtml-user-select: none; /*早期浏览器*/
+  user-select: none;
+  /* overflow: hidden; */
+ }
+ /* 默认逗号设置 */
+ .mark-item {
+  width: 10px;
+  height: 100px;
+  margin-right: 5px;
+  margin-top:-19px;
+  line-height: 10px;
+  font-size: 48px;
+  position: relative;
+  & > span {
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   writing-mode: vertical-rl;
+   text-orientation: upright;
+  }
+ }
+ /*滚动数字设置*/
+ .number-item {
+  width: 45px;
+  height: 75px;
+  list-style: none;
+  margin-right: 5px;
+  // background:rgba(250,250,250,1);
+  background: url(https://img.jbzj.com/file_images/article/201911/2019112909090958.png) no-repeat center center;
+  background-size: 100% 100%;
+  border-radius:4px;
+  border:1px solid rgba(221,221,221,1);
+  & > span {
+   position: relative;
+   display: inline-block;
+   margin-right: 10px;
+   width: 100%;
+   height: 100%;
+   writing-mode: vertical-rl;
+   text-orientation: upright;
+   overflow: hidden;
+   & > i {
+    font-style: normal;
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    transform: translate(-50%,0);
+    transition: transform 1s ease-in-out;
+    letter-spacing: 10px;
+   }
+  }
+ }
  
+ .number-item:last-child {
+  margin-right: 0;
+ }
 </style>

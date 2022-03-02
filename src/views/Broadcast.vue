@@ -23,22 +23,21 @@
             </el-row>
             </div>
             <!-- 左侧部分 -->
-            <div class="left" :style="conheight">
-
-            <el-row :span="24" type="flex" justify="center" :gutter="5">
+            <div class="main-A" :style="conheight">
+             <el-row :span="24" type="flex" justify="center" :gutter="5">
                 <!-- <el-col :xs="2" :ms="2" :md="4" :lg="6" :xl="8"> -->
                 <el-col :span="6">
                     <div class="main" :style="conheight">    
-                        <el-row type="flex" justify="center">
+                        <el-row type="flex" justify="center" :span="24">
                             <el-col :span="24">
-                            <dv-border-box-10 :style="{ minwidth: '250px', minHeight: '230px'}">
+                            <dv-border-box-10>
                                     <div><Scroll style="padding:40px 5px 12px 18px" /></div>
                             </dv-border-box-10> 
                             </el-col>
                         </el-row>
                         <el-row type="flex" justify="center" style="margin-top:10px;" :span="24">
                             <el-col :span="24">
-                            <dv-border-box-10 :style="{minwidth:'100px', minHeight:'200px'}">
+                            <dv-border-box-10 >
                                     <div><Device style="padding:40px 5px 0px 18px" /></div>
                             </dv-border-box-10> 
                             </el-col>
@@ -153,7 +152,7 @@
                                                                <el-col :span="24">
                                                                    <video
                                                                     class="card-video"
-                                                                    id="myvideo10"
+                                                                    id="myvideo12"
                                                                     controls
                                                                     autoplay
                                                                     muted
@@ -174,7 +173,7 @@
                                                                             <el-col :span="10">
                                                                                 <div style=" overflow:hidden; font-size:12px;" id="str">
                                                                                     <el-button
-                                                                                    @click="onClick10()"
+                                                                                    @click="onClick12()"
                                                                                     type="text"
                                                                                     class="button"
                                                                                     >点击播放</el-button
@@ -195,7 +194,7 @@
                                                                <el-col :span="24">
                                                                    <video
                                                                     class="card-video"
-                                                                    id="myvideo10"
+                                                                    id="myvideo13"
                                                                     controls
                                                                     autoplay
                                                                     muted
@@ -216,7 +215,7 @@
                                                                             <el-col :span="10">
                                                                                 <div style=" overflow:hidden; font-size:12px;" id="str">
                                                                                     <el-button
-                                                                                    @click="onClick10()"
+                                                                                    @click="onClick13()"
                                                                                     type="text"
                                                                                     class="button"
                                                                                     >点击播放</el-button
@@ -400,6 +399,28 @@
     width: 100%;
     height: 100%;
 }
+.flv_box12{
+    /* 1vw = 视口宽度的1%，视口宽1920px，那么1vw 等于19.2px */
+    /* 1vh = 视口高度的1%，视口高1000px，那么1vh 等于10px */
+    width: 40vh; 
+    height: 30vh;   
+    margin-top: 10px;
+}
+#myvideo12{
+    width: 100%;
+    height: 100%;
+}
+.flv_box13{
+    /* 1vw = 视口宽度的1%，视口宽1920px，那么1vw 等于19.2px */
+    /* 1vh = 视口高度的1%，视口高1000px，那么1vh 等于10px */
+    width: 40vh; 
+    height: 30vh;   
+    margin-top: 10px;
+}
+#myvideo13{
+    width: 100%;
+    height: 100%;
+}
 .Rank{
     color: #fff;
     padding:10px;
@@ -412,6 +433,8 @@ import { defineComponent, reactive, ref, onMounted, toRefs } from "vue";
 import * as echarts from "echarts";
 import flv10 from 'flv.js';
 import flv11 from 'flv.js';
+import flv12 from 'flv.js';
+import flv13 from 'flv.js';
 import Scroll from "./Scroll.vue";
 import Second from "./Second.vue";
 import Device from "./Device.vue";
@@ -431,6 +454,12 @@ export default {
         return{
             player10: null,
             playing10: false,
+            player11: null,
+            playing11: false,
+            player12: null,
+            playing12: false,
+            player13: null,
+            playing13: false,
             conheight:{
                 height:'',
             },
@@ -478,7 +507,7 @@ export default {
                 url: "http://localhost:10076/live?port=1935&app=live&stream=test", //视频资源路径  支持：http
             });
             }
-            if (flv11.isSupported()) {
+        if (flv11.isSupported()) {
             this.player11 = flv11.createPlayer({
                 type: "flv",
                 isLive: true,
@@ -486,6 +515,24 @@ export default {
                 url: "http://localhost:10076/live?port=1935&app=live&stream=test", //视频资源路径  支持：http
             });
             }
+        if (flv12.isSupported()) {
+            this.player12 = flv12.createPlayer({
+                type: "flv",
+                isLive: true,
+                //   type: "video/mp4",
+                url: "http://localhost:10076/live?port=1935&app=live&stream=test", //视频资源路径  支持：http
+            });
+            }
+
+         if (flv13.isSupported()) {
+            this.player13 = flv13.createPlayer({
+                type: "flv",
+                isLive: true,
+                //   type: "video/mp4",
+                url: "http://localhost:10076/live?port=1935&app=live&stream=test", //视频资源路径  支持：http
+            });
+            }
+
         window.addEventListener('resize', this.getHeight);
         this.getHeight()
      },
@@ -510,6 +557,27 @@ export default {
                 this.player11.pause()
                 this.playing11 = false;
             },
+        onClick12(){
+            console.log('播放')
+                this.player12.play()
+                this.playing12 = true;
+            },
+        clickStop12(){
+                console.log('暂停')
+                this.player12.pause()
+                this.playing12 = false;
+            },
+        
+         onClick13(){
+            console.log('播放')
+                this.player13.play()
+                this.playing13 = true;
+            },
+        clickStop13(){
+                console.log('暂停')
+                this.player13.pause()
+                this.playing13 = false;
+            },
 
 
         getHeight(){
@@ -525,6 +593,13 @@ export default {
         this.player11.attachMediaElement(video11)
         this.player11.load()
 
+        var video12 = document.querySelector('#myvideo12')
+        this.player12.attachMediaElement(video12)
+        this.player12.load()
+
+        var video13 = document.querySelector('#myvideo13')
+        this.player13.attachMediaElement(video13)
+        this.player13.load()
         //字体大小随盒子div大小变化
         window.onload = function(){
             // var fonts;
