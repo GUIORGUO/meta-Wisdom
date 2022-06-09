@@ -1,0 +1,274 @@
+{
+    "sourceFile": "src/router/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 64,
+            "patches": [
+                {
+                    "date": 1654275896689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1654323153671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,8 +172,13 @@\n   path: '/Meta',\n   name: 'Meta',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n },\n+{\n+  path: '/Meta',\n+  name: 'Meta',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n+},\n \n \n //404路径访问 错误处理机制\n {\n"
+                },
+                {
+                    "date": 1654323161389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,9 +173,9 @@\n   name: 'Meta',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n },\n {\n-  path: '/Meta',\n+  path: '/W',\n   name: 'Meta',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n },\n \n"
+                },
+                {
+                    "date": 1654323172850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,10 +173,10 @@\n   name: 'Meta',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n },\n {\n-  path: '/W',\n-  name: 'Meta',\n+  path: '/Woman',\n+  name: 'Woman',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n },\n \n \n"
+                },
+                {
+                    "date": 1654323183718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n-\n+import\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n@@ -175,9 +175,9 @@\n },\n {\n   path: '/Woman',\n   name: 'Woman',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Woman.vue')\n },\n \n \n //404路径访问 错误处理机制\n"
+                },
+                {
+                    "date": 1654323190154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n-import\n+import Wo\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654323195316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n-import Wo\n+import We from 'core-js/library/fn/weak-set'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654323210180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n-import We from 'core-js/library/fn/weak-set'\n+import Woman from '../views/metaverse/Meta.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654323216434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n-import Woman from '../views/metaverse/Meta.vue'\n+import Woman from '../views/metaverse/Woman.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654329380803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n import Woman from '../views/metaverse/Woman.vue'\n+\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654329386590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n import Woman from '../views/metaverse/Woman.vue'\n-\n+i m\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654329413070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n import Woman from '../views/metaverse/Woman.vue'\n-i m\n+import \n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654329418615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n import Woman from '../views/metaverse/Woman.vue'\n-import \n+import Ve\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654329424698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n import Woman from '../views/metaverse/Woman.vue'\n-import Ve\n+import Verse from\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654329430543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n import Woman from '../views/metaverse/Woman.vue'\n-import Verse from\n+import Verse from '../views/metaverse/Woman.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654329436110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n import Woman from '../views/metaverse/Woman.vue'\n-import Verse from '../views/metaverse/Woman.vue'\n+import Verse from '../views/metaverse/Verse.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654329446218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,8 +178,13 @@\n   path: '/Woman',\n   name: 'Woman',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Woman.vue')\n },\n+{\n+  path: '/Woman',\n+  name: 'Woman',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Woman.vue')\n+},\n \n \n //404路径访问 错误处理机制\n {\n"
+                },
+                {
+                    "date": 1654329452251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,9 +179,9 @@\n   name: 'Woman',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Woman.vue')\n },\n {\n-  path: '/Woman',\n+  path: '/Verse',\n   name: 'Woman',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Woman.vue')\n },\n \n"
+                },
+                {
+                    "date": 1654329457447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,9 +180,9 @@\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Woman.vue')\n },\n {\n   path: '/Verse',\n-  name: 'Woman',\n+  name: 'Verse',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Woman.vue')\n },\n \n \n"
+                },
+                {
+                    "date": 1654331603104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n \n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n+import Meta from '../views/metaverse/Meta.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n@@ -181,9 +182,9 @@\n },\n {\n   path: '/Verse',\n   name: 'Verse',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Woman.vue')\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Verse.vue')\n },\n \n \n //404路径访问 错误处理机制\n"
+                },
+                {
+                    "date": 1654331616789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n /* 元宇宙 */\n import Top from '../views/metaverse/Top.vue'\n import Meta from '../views/metaverse/Meta.vue'\n-import Meta from '../views/metaverse/Meta.vue'\n+import Meta1 from '../views/metaverse/Meta1.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n@@ -175,8 +175,13 @@\n   name: 'Meta',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n },\n {\n+  path: '/Meta',\n+  name: 'Meta',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n+},\n+{\n   path: '/Woman',\n   name: 'Woman',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Woman.vue')\n },\n"
+                },
+                {
+                    "date": 1654331622576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -175,11 +175,11 @@\n   name: 'Meta',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n },\n {\n-  path: '/Meta',\n-  name: 'Meta',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n+  path: '/Meta1',\n+  name: 'Meta1',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta1.vue')\n },\n {\n   path: '/Woman',\n   name: 'Woman',\n"
+                },
+                {
+                    "date": 1654345961740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,8 +189,13 @@\n   path: '/Verse',\n   name: 'Verse',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Verse.vue')\n },\n+{\n+  path: '/Verse',\n+  name: 'Verse',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Verse.vue')\n+},\n \n \n //404路径访问 错误处理机制\n {\n"
+                },
+                {
+                    "date": 1654345972278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -190,10 +190,10 @@\n   name: 'Verse',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Verse.vue')\n },\n {\n-  path: '/Verse',\n-  name: 'Verse',\n+  path: '/Line',\n+  name: 'Line',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Verse.vue')\n },\n \n \n"
+                },
+                {
+                    "date": 1654345982045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n import Meta from '../views/metaverse/Meta.vue'\n import Meta1 from '../views/metaverse/Meta1.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n+import Verse from '../views/metaverse/Verse.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n@@ -192,9 +193,9 @@\n },\n {\n   path: '/Line',\n   name: 'Line',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Verse.vue')\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Line.vue')\n },\n \n \n //404路径访问 错误处理机制\n"
+                },
+                {
+                    "date": 1654345992073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n import Meta from '../views/metaverse/Meta.vue'\n import Meta1 from '../views/metaverse/Meta1.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n-import Verse from '../views/metaverse/Verse.vue'\n+import Line from '../views/metaverse/Line.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654346017462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n import Meta from '../views/metaverse/Meta.vue'\n import Meta1 from '../views/metaverse/Meta1.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n-import Line from '../views/metaverse/Line.vue'\n+import Line1 from '../views/metaverse/Line.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654346024576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n import Meta from '../views/metaverse/Meta.vue'\n import Meta1 from '../views/metaverse/Meta1.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n-import Line1 from '../views/metaverse/Line.vue'\n+import Line1 from '../views/metaverse/Line1.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n@@ -192,9 +192,9 @@\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Verse.vue')\n },\n {\n   path: '/Line',\n-  name: 'Line',\n+  name: 'Line1',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Line.vue')\n },\n \n \n"
+                },
+                {
+                    "date": 1654356255802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,12 +191,17 @@\n   name: 'Verse',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Verse.vue')\n },\n {\n-  path: '/Line',\n+  path: '/Line1',\n   name: 'Line1',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Line.vue')\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Line1.vue')\n },\n+{\n+  path: '/Line1',\n+  name: 'Line1',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Line1.vue')\n+},\n \n \n //404路径访问 错误处理机制\n {\n"
+                },
+                {
+                    "date": 1654356261132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,9 +196,9 @@\n   name: 'Line1',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Line1.vue')\n },\n {\n-  path: '/Line1',\n+  path: '/Robot',\n   name: 'Line1',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Line1.vue')\n },\n \n"
+                },
+                {
+                    "date": 1654356267919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -197,10 +197,10 @@\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Line1.vue')\n },\n {\n   path: '/Robot',\n-  name: 'Line1',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Line1.vue')\n+  name: 'Robot',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n },\n \n \n //404路径访问 错误处理机制\n"
+                },
+                {
+                    "date": 1654356280383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n import Meta1 from '../views/metaverse/Meta1.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n+import Line1 from '../views/metaverse/Line1.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654356286109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n import Meta1 from '../views/metaverse/Meta1.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n-import Line1 from '../views/metaverse/Line1.vue'\n+import Robot from '../views/metaverse/Line1.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654356291534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n import Meta1 from '../views/metaverse/Meta1.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n-import Robot from '../views/metaverse/Line1.vue'\n+import Robot from '../views/metaverse/Rob.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654436382248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,10 @@\n import Meta1 from '../views/metaverse/Meta1.vue'\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n-import Robot from '../views/metaverse/Rob.vue'\n+import Robot from '../views/metaverse/Robot.vue'\n+import data from '../views/DATA.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654436387665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n import Robot from '../views/metaverse/Robot.vue'\n-import data from '../views/DATA.vue'\n+import Time from '../views/DATA.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654436409659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n import Robot from '../views/metaverse/Robot.vue'\n-import Time from '../views/DATA.vue'\n+import Time from '../views/Time.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n@@ -202,10 +202,14 @@\n   path: '/Robot',\n   name: 'Robot',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n },\n+{\n+  path: '/Robot',\n+  name: 'Robot',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n+},\n \n-\n //404路径访问 错误处理机制\n {\n     path:'/:pathMatch(.*)',\n     redirect:'/404',\n"
+                },
+                {
+                    "date": 1654436415429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -203,9 +203,10 @@\n   name: 'Robot',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n },\n {\n-  path: '/Robot',\n+  path: '/Time\n+  ',\n   name: 'Robot',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n },\n \n"
+                },
+                {
+                    "date": 1654436422011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -203,11 +203,10 @@\n   name: 'Robot',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n },\n {\n-  path: '/Time\n-  ',\n-  name: 'Robot',\n+  path: '/Time',\n+  name: 'Time',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n },\n \n //404路径访问 错误处理机制\n"
+                },
+                {
+                    "date": 1654436514131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n import Robot from '../views/metaverse/Robot.vue'\n-import Time from '../views/Time.vue'\n+import Time from '../views/metaverse//Time.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n@@ -205,9 +205,9 @@\n },\n {\n   path: '/Time',\n   name: 'Time',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n },\n \n //404路径访问 错误处理机制\n {\n"
+                },
+                {
+                    "date": 1654481971470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n import Robot from '../views/metaverse/Robot.vue'\n-import Time from '../views/metaverse//Time.vue'\n+import Time from '../views/metaverse/Time.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n@@ -207,8 +207,13 @@\n   path: '/Time',\n   name: 'Time',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n },\n+{\n+  path: '/Time',\n+  name: 'Time',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n+},\n \n //404路径访问 错误处理机制\n {\n     path:'/:pathMatch(.*)',\n"
+                },
+                {
+                    "date": 1654481988375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -203,9 +203,9 @@\n   name: 'Robot',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n },\n {\n-  path: '/Time',\n+  path: '/MIX',\n   name: 'Time',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n },\n {\n"
+                },
+                {
+                    "date": 1654481993514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -204,9 +204,9 @@\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Robot.vue')\n },\n {\n   path: '/MIX',\n-  name: 'Time',\n+  name: 'MIX',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n },\n {\n   path: '/Time',\n"
+                },
+                {
+                    "date": 1654482005099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n import Robot from '../views/metaverse/Robot.vue'\n import Time from '../views/metaverse/Time.vue'\n+import Time from '../views/metaverse/Time.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n@@ -205,9 +206,9 @@\n },\n {\n   path: '/MIX',\n   name: 'MIX',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/MIX.vue')\n },\n {\n   path: '/Time',\n   name: 'Time',\n"
+                },
+                {
+                    "date": 1654482014032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,10 @@\n import Woman from '../views/metaverse/Woman.vue'\n import Verse from '../views/metaverse/Verse.vue'\n import Line1 from '../views/metaverse/Line1.vue'\n import Robot from '../views/metaverse/Robot.vue'\n+import MIX from '../views/metaverse/MIX.vue'\n import Time from '../views/metaverse/Time.vue'\n-import Time from '../views/metaverse/Time.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654484842150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n import Line1 from '../views/metaverse/Line1.vue'\n import Robot from '../views/metaverse/Robot.vue'\n import MIX from '../views/metaverse/MIX.vue'\n import Time from '../views/metaverse/Time.vue'\n+import Time from '../views/metaverse/Time.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654484848664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n import Line1 from '../views/metaverse/Line1.vue'\n import Robot from '../views/metaverse/Robot.vue'\n import MIX from '../views/metaverse/MIX.vue'\n import Time from '../views/metaverse/Time.vue'\n-import Time from '../views/metaverse/Time.vue'\n+import Xingneng  from '../views/metaverse/Time.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654484857991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n import Line1 from '../views/metaverse/Line1.vue'\n import Robot from '../views/metaverse/Robot.vue'\n import MIX from '../views/metaverse/MIX.vue'\n import Time from '../views/metaverse/Time.vue'\n-import Xingneng  from '../views/metaverse/Time.vue'\n+import Xingneng from '../views/metaverse/Xingneng.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654484866847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,8 +214,13 @@\n   path: '/Time',\n   name: 'Time',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n },\n+{\n+  path: '/Time',\n+  name: 'Time',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n+},\n \n //404路径访问 错误处理机制\n {\n     path:'/:pathMatch(.*)',\n"
+                },
+                {
+                    "date": 1654484876289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,10 +215,10 @@\n   name: 'Time',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n },\n {\n-  path: '/Time',\n-  name: 'Time',\n+  path: '/Xingneng',\n+  name: 'Xingneng',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n },\n \n //404路径访问 错误处理机制\n"
+                },
+                {
+                    "date": 1654487770922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -217,10 +217,10 @@\n },\n {\n   path: '/Xingneng',\n   name: 'Xingneng',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Time.vue')\n-},\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Xingneng.vue')\n+},]\n \n //404路径访问 错误处理机制\n {\n     path:'/:pathMatch(.*)',\n"
+                },
+                {
+                    "date": 1654487776602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -218,9 +218,14 @@\n {\n   path: '/Xingneng',\n   name: 'Xingneng',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Xingneng.vue')\n-},]\n+},\n+{\n+  path: '/Xingneng',\n+  name: 'Xingneng',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Xingneng.vue')\n+},\n \n //404路径访问 错误处理机制\n {\n     path:'/:pathMatch(.*)',\n"
+                },
+                {
+                    "date": 1654487782417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,9 +220,9 @@\n   name: 'Xingneng',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Xingneng.vue')\n },\n {\n-  path: '/Xingneng',\n+  path: '/Sigetu',\n   name: 'Xingneng',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Xingneng.vue')\n },\n \n"
+                },
+                {
+                    "date": 1654487790115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -221,10 +221,10 @@\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Xingneng.vue')\n },\n {\n   path: '/Sigetu',\n-  name: 'Xingneng',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Xingneng.vue')\n+  name: 'Sigetu',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Sigetu.vue')\n },\n \n //404路径访问 错误处理机制\n {\n"
+                },
+                {
+                    "date": 1654487797693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n import Robot from '../views/metaverse/Robot.vue'\n import MIX from '../views/metaverse/MIX.vue'\n import Time from '../views/metaverse/Time.vue'\n import Xingneng from '../views/metaverse/Xingneng.vue'\n+import Xingneng from '../views/metaverse/Xingneng.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654487804019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n import Robot from '../views/metaverse/Robot.vue'\n import MIX from '../views/metaverse/MIX.vue'\n import Time from '../views/metaverse/Time.vue'\n import Xingneng from '../views/metaverse/Xingneng.vue'\n-import Xingneng from '../views/metaverse/Xingneng.vue'\n+import Sigetu from '../views/metaverse/Xingneng.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654496036134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,10 @@\n import Robot from '../views/metaverse/Robot.vue'\n import MIX from '../views/metaverse/MIX.vue'\n import Time from '../views/metaverse/Time.vue'\n import Xingneng from '../views/metaverse/Xingneng.vue'\n-import Sigetu from '../views/metaverse/Xingneng.vue'\n+import Sigetu from '../views/metaverse/Sigetu.vue'\n+import Sigetu from '../views/metaverse/Sigetu.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654496046768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n import MIX from '../views/metaverse/MIX.vue'\n import Time from '../views/metaverse/Time.vue'\n import Xingneng from '../views/metaverse/Xingneng.vue'\n import Sigetu from '../views/metaverse/Sigetu.vue'\n-import Sigetu from '../views/metaverse/Sigetu.vue'\n+import Duibi from '../views/metaverse/Sigetu.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                },
+                {
+                    "date": 1654496057598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n import MIX from '../views/metaverse/MIX.vue'\n import Time from '../views/metaverse/Time.vue'\n import Xingneng from '../views/metaverse/Xingneng.vue'\n import Sigetu from '../views/metaverse/Sigetu.vue'\n-import Duibi from '../views/metaverse/Sigetu.vue'\n+import Duibi from '../views/metaverse/Duibi.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n@@ -226,8 +226,13 @@\n   path: '/Sigetu',\n   name: 'Sigetu',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Sigetu.vue')\n },\n+{\n+  path: '/Sigetu',\n+  name: 'Sigetu',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Sigetu.vue')\n+},\n \n //404路径访问 错误处理机制\n {\n     path:'/:pathMatch(.*)',\n"
+                },
+                {
+                    "date": 1654496063512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,9 +227,9 @@\n   name: 'Sigetu',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Sigetu.vue')\n },\n {\n-  path: '/Sigetu',\n+  path: '/Dui比；',\n   name: 'Sigetu',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Sigetu.vue')\n },\n \n"
+                },
+                {
+                    "date": 1654496070468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,10 +227,10 @@\n   name: 'Sigetu',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Sigetu.vue')\n },\n {\n-  path: '/Dui比；',\n-  name: 'Sigetu',\n+  path: '/Duibi',\n+  name: 'Duibi',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Sigetu.vue')\n },\n \n //404路径访问 错误处理机制\n"
+                },
+                {
+                    "date": 1654499250879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -229,10 +229,15 @@\n },\n {\n   path: '/Duibi',\n   name: 'Duibi',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Sigetu.vue')\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Duibi.vue')\n },\n+{\n+  path: '/Duibi',\n+  name: 'Duibi',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Duibi.vue')\n+},\n \n //404路径访问 错误处理机制\n {\n     path:'/:pathMatch(.*)',\n"
+                },
+                {
+                    "date": 1654499271786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -232,9 +232,9 @@\n   name: 'Duibi',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Duibi.vue')\n },\n {\n-  path: '/Duibi',\n+  path: '/DynamicList',\n   name: 'Duibi',\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Duibi.vue')\n },\n \n"
+                },
+                {
+                    "date": 1654499285277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n import Time from '../views/metaverse/Time.vue'\n import Xingneng from '../views/metaverse/Xingneng.vue'\n import Sigetu from '../views/metaverse/Sigetu.vue'\n import Duibi from '../views/metaverse/Duibi.vue'\n+import Duibi from '../views/metaverse/Duibi.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n@@ -233,10 +234,10 @@\n   component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Duibi.vue')\n },\n {\n   path: '/DynamicList',\n-  name: 'Duibi',\n-  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Duibi.vue')\n+  name: 'DynamicList',\n+  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/DynamicList.vue')\n },\n \n //404路径访问 错误处理机制\n {\n"
+                },
+                {
+                    "date": 1654499295473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n import Time from '../views/metaverse/Time.vue'\n import Xingneng from '../views/metaverse/Xingneng.vue'\n import Sigetu from '../views/metaverse/Sigetu.vue'\n import Duibi from '../views/metaverse/Duibi.vue'\n-import Duibi from '../views/metaverse/Duibi.vue'\n+import DynamicList from '../views/metaverse/Duibi.vue'\n const routes = [\n        /*项目 默认根目录引导 首页*/\n   {\n     path: '/',\n"
+                }
+            ],
+            "date": 1654275896689,
+            "name": "Commit-0",
+            "content": "import { createRouter, createWebHistory } from 'vue-router'\nimport Home from '../views/Home.vue'\nimport Video from '../views/Video.vue'\nimport First from '../views/First.vue'\nimport Second from '../views/Second.vue'\nimport Scroll from '../views/Scroll.vue'\nimport Third from '../views/Third.vue'\nimport Team from '../views/Team.vue'\nimport Index from '../views/Index.vue'\nimport User from '../views/User.vue'\nimport Broadcast from '../views/Broadcast.vue'\nimport Traffic from '../views/Traffic.vue'\nimport Device from '../views/Device.vue'\nimport Pie from '../views/Pie.vue'\nimport Line from '../views/Line.vue'\nimport Numberitem from '../views/Numberitem.vue'\nimport Font from '../views/Font.vue'\nimport Login from '../views/Login.vue'\nimport Register from '../views/Register.vue'\nimport Video1 from '../views/Video1.vue'\nimport Video2 from '../views/Video2.vue'\nimport Numberitem1 from '../views/Numberitem1.vue'\nimport Numberitem2 from '../views/Numberitem2.vue'\nimport data from '../views/DATA.vue'\n\n/* 元宇宙 */\nimport Top from '../views/metaverse/Top.vue'\nimport Meta from '../views/metaverse/Meta.vue'\n\nconst routes = [\n       /*项目 默认根目录引导 首页*/\n  {\n    path: '/',\n    name: 'Home',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Home.vue')\n  },\n  \n\n  {\n    path: '/Video',\n    name: 'Video',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Video.vue')\n  },\n\n  {\n    path: '/Broadcast',\n    name: 'Broadcast',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Broadcast.vue')\n  },\n\n  {\n    path: '/Traffic',\n    name: 'Traffic',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Traffic.vue')\n  },\n  {\n    path: '/First',\n    name: 'First',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/First.vue')\n  },\n\n  {\n    path: '/Second',\n    name: 'Second',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Second.vue')\n  },\n  {\n    path: '/Third',\n    name: 'Third',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Third.vue')\n  },\n  {\n    path: '/Team',\n    name: 'Team',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Team.vue')\n  },\n  {\n    path: '/Index',\n    name: 'Index',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Index.vue')\n  },\n  {\n    path: '/Scroll',\n    name: 'Scroll',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Scroll.vue')\n  },\n  {\n    path: '/About',\n    name: 'About',\n    // route level code-splitting\n    // this generates a separate chunk (about.[hash].js) for this route\n    // which is lazy-loaded when the route is visited.\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/About.vue')\n  },\n  {\n    path: '/User',\n    name: 'User',\n    // route level code-splitting\n    // this generates a separate chunk (about.[hash].js) for this route\n    // which is lazy-loaded when the route is visited.\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/User.vue')\n  },\n  {\n    path: '/Device',\n    name: 'Device',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Device.vue')\n  },\n  {\n    path: '/Pie',\n    name: 'Pie',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Pie.vue')\n  },\n  {\n    path: '/Line',\n    name: 'Line',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Line.vue')\n  },\n  {\n    path: '/Numberitem',\n    name: 'Numberitem',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Numberitem.vue')\n  },\n  \n  {\n    path: '/Font',\n    name: 'Font',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Font.vue')\n  },\n  {\n    path: '/Login',\n    name: 'Login',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Login.vue')\n  },\n  {\n    path: '/Register',\n    name: 'Register',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Register.vue')\n  },\n  {\n    path: '/Video1',\n    name: 'Video1',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Video1.vue')\n  },\n  {\n    path: '/Video2',\n    name: 'Video2',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Video2.vue')\n  },\n  {\n    path: '/Numberitem1',\n    name: 'Numberitem1',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Numberitem1.vue')\n  },\n  {\n    path: '/Numberitem2',\n    name: 'Numberitem2',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/Numberitem2.vue')\n  },\n  {\n    path: '/DATA',\n    name: 'DATA',\n    component: () => import(/* webpackChunkName: \"about\" */ '../views/DATA.vue')\n  },\n  \n/* 元宇宙 */\n{\n  path: '/Top',\n  name: 'Top',\n  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Top.vue')\n},\n{\n  path: '/Meta',\n  name: 'Meta',\n  component: () => import(/* webpackChunkName: \"about\" */ '../views/metaverse/Meta.vue')\n},\n\n\n//404路径访问 错误处理机制\n{\n    path:'/:pathMatch(.*)',\n    redirect:'/404',\n},\n{\n  path:'/404',\n  name:'404',\n  component:() => import('../views/404.vue')\n}\n]\nconst router = createRouter({\n  history: createWebHistory(process.env.BASE_URL),\n  routes\n})\n\n\n\n\nexport default router\n"
+        }
+    ]
+}

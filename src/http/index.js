@@ -37,7 +37,7 @@ const hideLoading = () => {
 
 //请求拦截器 
 instance.interceptors.request.use((config) => {
-        showLoading()
+        // showLoading()
         // 每次发送请求之前判断是否存在token，如果存在，则统一在http请求的header都加上token，不用每次请求都手动添加了
         const token = window.localStorage.getItem('token');
         token && (config.headers.Authorization = token)
@@ -52,7 +52,7 @@ instance.interceptors.request.use((config) => {
 
 //响应拦截器
 instance.interceptors.response.use((response) => {
-    hideLoading()
+    // hideLoading()
     //响应成功
     console.log('拦截器报错');
     return response.data;

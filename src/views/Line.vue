@@ -1,14 +1,15 @@
 <template>
- <div class="chartNum">
+<div class="chartNum">
     <h3 class="orderTitle">用户数量</h3>
     <div class="box-item">
+      <!-- :class动态绑定css     isNaN()计算一个参数，检查它是否为数值(NaN不是数值)。  索引index。每一项item-->
      <li :class="{'number-item': !isNaN(item), 'mark-item': isNaN(item) }"
       v-for="(item,index) in orderNum"
       :key="index">
        <span v-if="!isNaN(item)">
         <i ref="numberItem" id="Number">0123456789</i>
        </span>
-      <span class="comma" v-else>{{item}}</span>
+      <span class=" comma" v-else>{{item}}</span>
      </li>
     </div>
    </div>
@@ -21,39 +22,44 @@
    }
   },
   mounted() {
-    this.toOrderNum(11); // 这里输入数字即可调用
+    this.toOrderNum('9668'); // 这里输入数字即可调用
+
     // this.increaseNumber();
-    setInterval(() => {
-      let number = document.getElementById('Number')
-      let random = getRandomNumber(0,10)
-      number.style.transform = `translate(-50%, -${random * 10}%)`
-      }, 2000)
-      function getRandomNumber (min, max) {
-      return Math.floor(Math.random() * (max - min + 1) + min)
-      }
-    
+    // setInterval(() => {
+    //   function getRandomNumber (min, max) {
+    //   return Math.floor(Math.random() * (max - min + 1) + min)
+    //   }
+    //   let number = document.getElementById('Number')
+    //   let random = getRandomNumber(0,10)
+    //   number.style.transform = `translate(-50%, -${random * 10}%)`
+    //   }, 2000)
+      
   },
   methods: {
-   // 定时增长数字
-     increaseNumber () {
-         let self = this
-         this.timer = setInterval(() => {
-         self.newNumber = self.newNumber + getRandomNumber(1, 100)
-         self.setNumberTransform()
-         }, 3000)
-     },
+  //  // 定时增长数字
+  //    increaseNumber () {
+  //        let self = this
+  //        function getRandomNumber (min, max) {
+  //         return Math.floor(Math.random() * (max - min + 1) + min)
+  //         }
+  //        this.timer = setInterval(() => {
+  //        self.newNumber = self.newNumber + getRandomNumber(1, 10)
+  //        self.setNumberTransform()
+  //        }, 3000)
+  //    },
    
-    // 设置文字滚动
-   setNumberTransform () {
-    let numberItems = this.$refs.numberItem
-    let numberArr = this.computeNumber.filter(item => !isNaN(item))
-    for (let index = 0; index < numberItems.length; index++) {
-    let elem = numberItems[index]
-    elem.style.transform = `translate(-50%, -${numberArr[index] * 10}%)`
-    }
-   },
+      /// 设置文字滚动
+    setNumberTransform () {
+      const numberItems = this.$refs.numberItem // 拿到数字的ref，计算元素数量
+      const numberArr = this.orderNum.filter(item => !isNaN(item))
+      // 结合CSS 对数字字符进行滚动,显示订单数量
+      for (let index = 0; index < numberItems.length; index++) {
+      const elem = numberItems[index]
+      elem.style.transform = `translate(-50%, -${numberArr[index] * 10}%)`
+      }
+    },
    // 处理总订单数字
-   toOrderNum(num) {
+    toOrderNum(num) {
       num = num.toString()
       // 把订单数变成字符串
       if (num.length < 8) {

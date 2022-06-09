@@ -26,7 +26,7 @@
             <div class="main-A" :style="conheight">
              <el-row :span="24" type="flex" justify="center" :gutter="5">
                 <!-- <el-col :xs="2" :ms="2" :md="4" :lg="6" :xl="8"> -->
-                <el-col :span="6">
+                <el-col :span="6" >
                     <div class="main" :style="conheight">    
                         <el-row type="flex" justify="center" :span="24">
                             <el-col :span="24">
@@ -43,10 +43,10 @@
                             </el-col>
                         </el-row>
                         <!-- 图片轮播 -->
-                        <el-row type="flex" justify="center" style="margin-top:10px;" :span="24">
+                        <el-row type="flex" justify="center" style="margin-top:10px;" >
                             <el-col :span="24">
                             <dv-border-box-10 >
-                                <el-carousel direction="vertical" style="padding:20px 10px 10px 10px" :style="{ minwidth: '250px', minHeight: '360px'}">
+                                <el-carousel direction="vertical" style="padding:20px 10px 10px 10px" :style="{ minwidth: '450px', minHeight: '360px'}">
                                     <el-carousel-item v-for="item in 3" :key="item" :style="{ minwidth: '250px', minHeight: '340px'}">
                                         <h3 class="small">{{ item }}</h3>
                                     </el-carousel-item>
@@ -59,7 +59,16 @@
                 <!-- 视频盒子 -->
                 <el-col :span="12">
                     <div class="medium" :style="conheight">
-                        <el-row type="flex" class="row-bg" justify="center" :span="24">
+                        <el-row type="flex" class="row-bg" justify="center" :span="24" style="margin-top:16px;margin-left:10%;margin-right:10%">
+                            <el-col :span="24">
+                                <div>
+                                   <dv-border-box-12>
+                                        <div><Font class="title" style="padding:10" /></div>
+                                   </dv-border-box-12>
+                                </div>
+                            </el-col>
+                        </el-row>
+                        <el-row type="flex" class="row-bg" justify="center" :span="24" style="margin-top:16px;">
                             <el-col :span="24">
                                 <dv-border-box-11 title="终端数据信息流">
                                     <div class="video-box">
@@ -289,12 +298,12 @@
         /* min-height: 850px; */
     }
     .main{
-        margin-top:20px;
+        margin-top:10px;
     }
     .datav-header{
         max-width:1000px;
         max-height:100px;
-        margin-top:-40px;
+        margin-top:-55px;
         /* 弹性盒居中排列 justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式*/
         display:flex;
         justify-content: center;
@@ -310,9 +319,9 @@
         display:flex;
         justify-content: center;
     }
-    @media only screen and (max-width: 2560px) { div{ font-size: 20px; }}
-    @media only screen and (max-width: 1200px) { div{ font-size: 18px; }}
-    @media only screen and (max-width: 1100px) { div{ font-size: 17px; }}
+    @media only screen and (max-width: 2560px) { div{ font-size: 25px; }}
+    @media only screen and (max-width: 1200px) { div{ font-size: 20px; }}
+    @media only screen and (max-width: 1100px) { div{ font-size: 18px; }}
     @media only screen and (max-width: 1000px) { div{ font-size: 16px; }}
     @media only screen and (max-width: 900px) { div{ font-size: 14px; }}
     @media only screen and (max-width: 800px) { div{ font-size: 10px; }}
@@ -439,6 +448,7 @@ import Scroll from "./Scroll.vue";
 import Second from "./Second.vue";
 import Device from "./Device.vue";
 import Map from "./Map.vue";
+import Font from "./Font.vue";
 import { Vue3SeamlessScroll } from "vue3-seamless-scroll";
 import Pie from './Pie.vue';
 export default {
@@ -449,6 +459,7 @@ export default {
         Pie,
         Second,
         Map,
+        Font,
     },
     data(){
         return{
@@ -512,7 +523,7 @@ export default {
                 type: "flv",
                 isLive: true,
                 //   type: "video/mp4",
-                url: "http://localhost:10076/live?port=1935&app=live&stream=test", //视频资源路径  支持：http
+                url: "http://localhost:10076/live?port=1935&app=live&stream=test1", //视频资源路径  支持：http
             });
             }
         if (flv12.isSupported()) {
@@ -621,61 +632,6 @@ export default {
     }
     
 
-
-//     data() {
-//         return {
-//             screenWidth: document.body.clientWidth
-
-
-
-//         };
-//     },
-//     mounted() {
-//         const that = this;
-//         window.onresize = () => (() => {
-//             window.screenWidth = document.body.clientWidth;
-//             that.screenWidth = window.screenWidth;
-//         })();
-//     },
-//     watch: {
-//         screenWidth(val) {
-//             // 为了避免频繁触发resize函数导致页面卡顿，使用定时器
-//             if (!this.timer) {
-//                 // 一旦监听到的screenWidth值改变，就将其重新赋给data里的screenWidth
-//                 this.screenWidth = val;
-//                 this.timer = true;
-//                 const that = this;
-//                 setTimeout(function () {
-//                     that.sjcount(that.screenWidth);//窗口大小变化后执行的方法
-//                     that.reload();//窗口大小变化后执行的方法
-//                     that.timer = false;
-//                 }, 10);
-//             }
-//         }
-//     },
- 
-// methods: {
-// reload() {
-//             this.isAlive = false;
-//             this.$nextTick(function () {
-//                 this.isAlive = true;
-//             });
-//         },
-//         sjcount(screewidth) {
-//             if (screewidth >= 1920) {
-//                 this.numeral = 8;
-//             } else if (screewidth >= 1680) {
-//                 this.numeral = 7;
-//             } else if (screewidth >= 1600) {
-//                 this.numeral = 5;
-//             } else if (screewidth >= 1280) {
-//                 this.numeral = 5;
-//             } else if (screewidth >= 1024) {
-//                 this.numeral = 4;
-//             }
-//         },
- 
-// },
     
 }
 </script>

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/main.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1654484176129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1654484183928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n // import axios from './axios/config'    \n // import QS from 'qs'\n import vue3SeamlessScroll from \"vue3-seamless-scroll\"\n import Vue from 'vue'\n-import VueAnimateNumber from './node_modules/vue-animate-number'\n+import VueAnimateNumber from '../node_modules/vue-animate-number'\n \n \n \n const app = createApp(App)\n"
+                },
+                {
+                    "date": 1654484204187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import store from './store'\n import './plugins/element.js'\n import installElementPlus from './plugins/element'\n // import dataV from '../node_modules/@jiaminghi/data-view'\n-import dataV from '../node_modules/@jiaminghi/data-view'\n+import dataV from './node_modules/@jiaminghi/data-view'\n // import dataV from '../node_modules/@jiaminghi/data-view'\n import * as echarts from 'echarts'\n import axios from 'axios'\n import Vuelidate from 'vuelidate'\n"
+                }
+            ],
+            "date": 1654484176129,
+            "name": "Commit-0",
+            "content": "import { createApp } from 'vue'\nimport App from './App.vue'\nimport router from './router'\nimport store from './store'\nimport './plugins/element.js'\nimport installElementPlus from './plugins/element'\n// import dataV from '../node_modules/@jiaminghi/data-view'\nimport dataV from '../node_modules/@jiaminghi/data-view'\n// import dataV from '../node_modules/@jiaminghi/data-view'\nimport * as echarts from 'echarts'\nimport axios from 'axios'\nimport Vuelidate from 'vuelidate'\n// import axios from './axios/config'    \n// import QS from 'qs'\nimport vue3SeamlessScroll from \"vue3-seamless-scroll\"\nimport Vue from 'vue'\nimport VueAnimateNumber from './node_modules/vue-animate-number'\n\n\n\nconst app = createApp(App)\ninstallElementPlus(app)\napp.use(store).use(router).use(dataV).use(vue3SeamlessScroll).use(Vuelidate).use(VueAnimateNumber).mount('#app')\napp.config.globalProperties.$echarts = echarts\napp.config.globalProperties.$axios = axios   //普通app.use无法处理，必须使用赋值方式进行装载原型链添加方法\n  "
+        }
+    ]
+}

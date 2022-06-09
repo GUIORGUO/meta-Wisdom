@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/views/metaverse/Video10.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1654313873642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1654317775131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n             hasVideo: true,\n             enableStashBuffer: true,\n             //   type: \"video/mp4\",\n             //url: \"http://10.208.104.242:6901/flv/test\", //视频资源路径  支持：http\n-            url: \"http://localhost:10076/live?port=1935&app=live&stream=test\",\n+            url: \"http://localhost:10076/live?port=1935&app=live&stream=test1\",\n         });\n         }\n       \n     },\n"
+                },
+                {
+                    "date": 1654332167283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,7 +99,7 @@\n }\n \n #myvideo10 {\n   width: 95%;\n-  height: 35vh;\n+  height: 30vh;\n }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654332177258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,7 +99,7 @@\n }\n \n #myvideo10 {\n   width: 95%;\n-  height: 30vh;\n+  height: 32vh;\n }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654438781787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,7 +99,7 @@\n }\n \n #myvideo10 {\n   width: 95%;\n-  height: 32vh;\n+  height: 35vh;\n }\n </style>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1654313873642,
+            "name": "Commit-0",
+            "content": "<template>\n        <div>\n                <div class=\"video-box\">\n                     <el-row type=\"flex\" justify=\"center\" style=\"margin-top:-25px;padding:5px;\">\n                            <el-col :span=\"24\">\n                                  <video\n                                        class=\"card-video\"\n                                         id=\"myvideo10\"\n                                         controls\n                                          autoplay\n                                          muted\n                                  ></video>\n                            </el-col>\n                      </el-row>\n                </div>\n        </div>\n                        \n</template>\n\n<script>\nimport { Search, Edit, Check, Message, Star, Delete } from '@element-plus/icons';\nimport { defineComponent, reactive, ref, onMounted, toRefs } from \"vue\";\nimport flv10 from \"flv.js\";\nimport { Vue3SeamlessScroll } from \"vue3-seamless-scroll\";\nimport { getVideoInfo } from \"@/api\";\n\nexport default {\n  data() {\n    return {\n      player10: null,\n     \n     };\n  },\n  created() {\n        if (flv10.isSupported()) {\n        //创建flv的名称player1不可以一样 ， flv相当于类\n        this.player10 = flv10.createPlayer({\n            type: \"flv\",\n            isLive: true,\n            hasAudio: false,\n            hasVideo: true,\n            enableStashBuffer: true,\n            //   type: \"video/mp4\",\n            //url: \"http://10.208.104.242:6901/flv/test\", //视频资源路径  支持：http\n            url: \"http://localhost:10076/live?port=1935&app=live&stream=test\",\n        });\n        }\n      \n    },\n  mounted() {\n    //调用方法\n    this.getVideoInfo();\n    //调用\n    var video10 = document.querySelector(\"#myvideo10\");\n    this.player10.attachMediaElement(video10);\n    this.player10.load();\n\n   },\n    methods: {\n        //定义一个方法\n        getVideoInfo() {//方法名 vue管理的是这个getvideoinfo（）方法\n        //引用这个方法\n        getVideoInfo().then((res) => {   //箭头函数不是vue管理的，会往外面找方法\n            console.log('响应的数据');\n            console.log(res);\n            var data = [];\n            res.datalist.forEach((item) => {\n            var temp = [\n                '<span style=\"color:' + item.Color + ';\">' + item.Name + \"</span>\",\n                '<span style=\"color:' + item.Color + ';\">' + item.ID + \"</span>\",\n            ];\n            data.push(temp);\n            });\n            this.config2.data = data;\n            this.config2 = { ...this.config2 } //更新数据自动刷新状态   \n            //（datav中状态更新：完成赋值操作后使用ES6拓展运算符生成新的props对象）\n        });\n        },\n        onClick10() {\n        console.log(\"播放\");\n        this.player10.play();\n        this.playing10 = true;\n        },\n        clickStop10() {\n        console.log(\"暂停\");\n        this.player10.pause();\n        this.playing10 = false;\n        },\n        \n    },\n};\n\n</script>\n<style scoped>\n/* 视频流盒子 */\n.flv_box10 {\n  width: 30vh;\n  height: 20vh;\n}\n\n#myvideo10 {\n  width: 95%;\n  height: 35vh;\n}\n</style>"
+        }
+    ]
+}

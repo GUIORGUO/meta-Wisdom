@@ -1,0 +1,386 @@
+{
+    "sourceFile": "src/views/Map.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 92,
+            "patches": [
+                {
+                    "date": 1654418638099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1654418661344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,22 @@\n   <div id=\"first\">\n   <!-- 路由跳转 -->\n <!-- 中间图 -->\n    <!-- 千万注意大小写myChart2如果写错，就什么也出不来 -->\n+   <div class=\"Woman\" >\n+    <el-row type=\"flex\" justify=\"center\" style=\"margin-top:40px;\">\n+       <el-col :span=\"24\">\n+            <h3 class=\"title\">\n+                生命值度量\n+            </h3>\n+      </el-col>\n+   </el-row>\n+   <el-row type=\"flex\" justify=\"center\" >\n+       <el-col :span=\"24\">\n+            <div id=\"main\" :data=\"option4\" :style=\"{ minwidth: '240px', minHeight: '400px'}\"></div>\n+      </el-col>\n+   </el-row>\n+   </div>\n    <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n        <el-col :span=\"24\" >\n             <div ref=\"myChart4\" style=\"min-width:200px;min-height:340px;\"></div>   \n        </el-col>\n@@ -247,5 +261,14 @@\n     },\n   \n }\n </script>\n-st\n\\ No newline at end of file\n+<style scoped>\n+.title{\n+    font-size:26px;\n+    font-family: \"微软雅黑\";\n+    color:rgb(239, 250, 248);\n+    line-height: 1.3;\n+    display: flex;\n+    justify-content:center;\n+}\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654418671705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,15 +12,15 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-            <div id=\"main\" :data=\"option4\" :style=\"{ minwidth: '240px', minHeight: '400px'}\"></div>\n+             <div ref=\"myChart4\" style=\"min-width:200px;min-height:340px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n    <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n        <el-col :span=\"24\" >\n-            <div ref=\"myChart4\" style=\"min-width:200px;min-height:340px;\"></div>   \n+           \n        </el-col>\n    </el-row>\n   \n  \n"
+                },
+                {
+                    "date": 1654418677332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,14 +16,9 @@\n              <div ref=\"myChart4\" style=\"min-width:200px;min-height:340px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n-   <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n-       <el-col :span=\"24\" >\n-           \n-       </el-col>\n-   </el-row>\n-  \n+\n  \n </div>\n \n </template>\n"
+                },
+                {
+                    "date": 1654418717184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n    <div class=\"Woman\" >\n     <el-row type=\"flex\" justify=\"center\" style=\"margin-top:40px;\">\n        <el-col :span=\"24\">\n             <h3 class=\"title\">\n-                生命值度量\n+                she值度量\n             </h3>\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n"
+                },
+                {
+                    "date": 1654418804446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n    <div class=\"Woman\" >\n     <el-row type=\"flex\" justify=\"center\" style=\"margin-top:40px;\">\n        <el-col :span=\"24\">\n             <h3 class=\"title\">\n-                she值度量\n+                设备值度量\n             </h3>\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n@@ -155,9 +155,9 @@\n             //     color: '#6ef0f0'\n             //     }\n             // },\n             legend: {\n-                top: 20,\n+                top: 10,\n                 data: ['Beijing', 'Shanghai', 'Guangzhou'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n"
+                },
+                {
+                    "date": 1654418811406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n             //     color: '#6ef0f0'\n             //     }\n             // },\n             legend: {\n-                top: 10,\n+                top: 0,\n                 data: ['Beijing', 'Shanghai', 'Guangzhou'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n"
+                },
+                {
+                    "date": 1654418819160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n             //     color: '#6ef0f0'\n             //     }\n             // },\n             legend: {\n-                top: 0,\n+                top: -10,\n                 data: ['Beijing', 'Shanghai', 'Guangzhou'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n"
+                },
+                {
+                    "date": 1654418825907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n             //     color: '#6ef0f0'\n             //     }\n             // },\n             legend: {\n-                top: -10,\n+                top: 0,\n                 data: ['Beijing', 'Shanghai', 'Guangzhou'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n"
+                },
+                {
+                    "date": 1654422200616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['Beijing', 'Shanghai', 'Guangzhou'],\n+                data: ['机器人', 'Shanghai', 'Guangzhou'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422206212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['机器人', 'Shanghai', 'Guangzhou'],\n+                data: ['机器人', '机器狗', 'Guangzhou'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422214936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['机器人', '机器狗', 'Guangzhou'],\n+                data: ['机器人', '网络', 'Guangzhou'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422220286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['机器人', '网络', 'Guangzhou'],\n+                data: ['设备', '网络', 'Guangzhou'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422227855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['设备', '网络', 'Guangzhou'],\n+                data: ['设备', '网络', '软件'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422240338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['设备', '网络', '软件'],\n+                data: ['硬件情况', '网络', '软件'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422247753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['硬件情况', '网络', '软件'],\n+                data: ['硬件情况', '网络情况', '软件情况'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422317962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -167,9 +167,9 @@\n             },\n             \n             radar: {\n                 indicator: [\n-                { name: '学习类', max: 300 },\n+                { name: '设备情况', max: 300 },\n                 { name: '游戏类', max: 250 },\n                 { name: '生活类', max: 300 },\n                 { name: '影视类', max: 5 },\n                 { name: '时尚类', max: 200 },\n"
+                },
+                {
+                    "date": 1654422324510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,9 +168,9 @@\n             \n             radar: {\n                 indicator: [\n                 { name: '设备情况', max: 300 },\n-                { name: '游戏类', max: 250 },\n+                { name: '网络zhuang', max: 250 },\n                 { name: '生活类', max: 300 },\n                 { name: '影视类', max: 5 },\n                 { name: '时尚类', max: 200 },\n                 { name: '动画类', max: 100 }\n"
+                },
+                {
+                    "date": 1654422338483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,10 +168,10 @@\n             \n             radar: {\n                 indicator: [\n                 { name: '设备情况', max: 300 },\n-                { name: '网络zhuang', max: 250 },\n-                { name: '生活类', max: 300 },\n+                { name: '网络状况', max: 250 },\n+                { name: 'CPU', max: 300 },\n                 { name: '影视类', max: 5 },\n                 { name: '时尚类', max: 200 },\n                 { name: '动画类', max: 100 }\n                 ],\n"
+                },
+                {
+                    "date": 1654422345858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,9 +170,9 @@\n                 indicator: [\n                 { name: '设备情况', max: 300 },\n                 { name: '网络状况', max: 250 },\n                 { name: 'CPU', max: 300 },\n-                { name: '影视类', max: 5 },\n+                { name: '', max: 5 },\n                 { name: '时尚类', max: 200 },\n                 { name: '动画类', max: 100 }\n                 ],\n                 shape: 'circle',\n"
+                },
+                {
+                    "date": 1654422350946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,11 +168,11 @@\n             \n             radar: {\n                 indicator: [\n                 { name: '设备情况', max: 300 },\n-                { name: '网络状况', max: 250 },\n+                { name: '网络', max: 250 },\n                 { name: 'CPU', max: 300 },\n-                { name: '', max: 5 },\n+                { name: '内存', max: 5 },\n                 { name: '时尚类', max: 200 },\n                 { name: '动画类', max: 100 }\n                 ],\n                 shape: 'circle',\n"
+                },
+                {
+                    "date": 1654422363675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -167,13 +167,13 @@\n             },\n             \n             radar: {\n                 indicator: [\n-                { name: '设备情况', max: 300 },\n+                { name: '设备', max: 300 },\n                 { name: '网络', max: 250 },\n                 { name: 'CPU', max: 300 },\n                 { name: '内存', max: 5 },\n-                { name: '时尚类', max: 200 },\n+                { name: '主ba', max: 200 },\n                 { name: '动画类', max: 100 }\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n"
+                },
+                {
+                    "date": 1654422374079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -171,10 +171,10 @@\n                 { name: '设备', max: 300 },\n                 { name: '网络', max: 250 },\n                 { name: 'CPU', max: 300 },\n                 { name: '内存', max: 5 },\n-                { name: '主ba', max: 200 },\n-                { name: '动画类', max: 100 }\n+                { name: '主板', max: 200 },\n+                { name: '硬盘', max: 100 }\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n                 axisName: {\n"
+                },
+                {
+                    "date": 1654422449506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -167,9 +167,9 @@\n             },\n             \n             radar: {\n                 indicator: [\n-                { name: '设备', max: 300 },\n+                { name: '工作空间', max: 300 },\n                 { name: '网络', max: 250 },\n                 { name: 'CPU', max: 300 },\n                 { name: '内存', max: 5 },\n                 { name: '主板', max: 200 },\n"
+                },
+                {
+                    "date": 1654422455020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,9 +168,9 @@\n             \n             radar: {\n                 indicator: [\n                 { name: '工作空间', max: 300 },\n-                { name: '网络', max: 250 },\n+                { name: '工作', max: 250 },\n                 { name: 'CPU', max: 300 },\n                 { name: '内存', max: 5 },\n                 { name: '主板', max: 200 },\n                 { name: '硬盘', max: 100 }\n"
+                },
+                {
+                    "date": 1654422465810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,10 +168,10 @@\n             \n             radar: {\n                 indicator: [\n                 { name: '工作空间', max: 300 },\n-                { name: '工作', max: 250 },\n-                { name: 'CPU', max: 300 },\n+                { name: '工作速度', max: 250 },\n+                { name: '工作zai he', max: 300 },\n                 { name: '内存', max: 5 },\n                 { name: '主板', max: 200 },\n                 { name: '硬盘', max: 100 }\n                 ],\n"
+                },
+                {
+                    "date": 1654422471016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,9 +169,9 @@\n             radar: {\n                 indicator: [\n                 { name: '工作空间', max: 300 },\n                 { name: '工作速度', max: 250 },\n-                { name: '工作zai he', max: 300 },\n+                { name: '工作载核', max: 300 },\n                 { name: '内存', max: 5 },\n                 { name: '主板', max: 200 },\n                 { name: '硬盘', max: 100 }\n                 ],\n"
+                },
+                {
+                    "date": 1654422477627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,9 +170,9 @@\n                 indicator: [\n                 { name: '工作空间', max: 300 },\n                 { name: '工作速度', max: 250 },\n                 { name: '工作载核', max: 300 },\n-                { name: '内存', max: 5 },\n+                { name: '精', max: 5 },\n                 { name: '主板', max: 200 },\n                 { name: '硬盘', max: 100 }\n                 ],\n                 shape: 'circle',\n"
+                },
+                {
+                    "date": 1654422490025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,11 +170,11 @@\n                 indicator: [\n                 { name: '工作空间', max: 300 },\n                 { name: '工作速度', max: 250 },\n                 { name: '工作载核', max: 300 },\n-                { name: '精', max: 5 },\n+                { name: '精度', max: 5 },\n                 { name: '主板', max: 200 },\n-                { name: '硬盘', max: 100 }\n+                { name: '自由度', max: 100 }\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n                 axisName: {\n"
+                },
+                {
+                    "date": 1654422501744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -171,9 +171,9 @@\n                 { name: '工作空间', max: 300 },\n                 { name: '工作速度', max: 250 },\n                 { name: '工作载核', max: 300 },\n                 { name: '精度', max: 5 },\n-                { name: '主板', max: 200 },\n+                { name: '分辨率', max: 200 },\n                 { name: '自由度', max: 100 }\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n"
+                },
+                {
+                    "date": 1654422508266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['硬件情况', '网络情况', '软件情况'],\n+                data: ['', '网络情况', '软件情况'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422514472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['', '网络情况', '软件情况'],\n+                data: ['智能机器人', '网络情况', '软件情况'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422523323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['智能机器人', '网络情况', '软件情况'],\n+                data: ['智能机器人', '', '软件情况'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422530457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['智能机器人', '', '软件情况'],\n+                data: ['智机器人', '', '软件情况'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422544417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['智机器人', '', '软件情况'],\n+                data: ['聊天机器人', '', '软件情况'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422561523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['聊天机器人', '', '软件情况'],\n+                data: ['聊天机器人', '工业机器人', '软件情况'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422568754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['聊天机器人', '工业机器人', '软件情况'],\n+                data: ['智能机器人', '工业机器人', '软件情况'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422583785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['智能机器人', '工业机器人', '软件情况'],\n+                data: ['A机器人', '工业机器人', ''],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422596473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['A机器人', '工业机器人', ''],\n+                data: ['AI机器人', '工业机器人', 'jia'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422612265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['AI机器人', '工业机器人', 'jia'],\n+                data: ['AI机器人', '工业机器人', '小型'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n"
+                },
+                {
+                    "date": 1654422645099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n             //     }\n             // },\n             legend: {\n                 top: 0,\n-                data: ['AI机器人', '工业机器人', '小型'],\n+                data: ['AI机器人', '工业机器人', '小型机器人'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 14\n@@ -212,9 +212,9 @@\n                 itemStyle: {\n                     color: '#6ef0f0'\n                 },\n                 areaStyle: {\n-                    opacity: 0.1\n+                    opacity: 0.2\n                 }\n                 },\n                 {\n                 name: 'Shanghai',\n"
+                },
+                {
+                    "date": 1654422651483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -212,9 +212,9 @@\n                 itemStyle: {\n                     color: '#6ef0f0'\n                 },\n                 areaStyle: {\n-                    opacity: 0.2\n+                    opacity: 0.1\n                 }\n                 },\n                 {\n                 name: 'Shanghai',\n"
+                },
+                {
+                    "date": 1654422665478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -203,9 +203,9 @@\n                 }\n             },\n             series: [\n                 {\n-                name: 'Beijing',\n+                name: 'AI机器人',\n                 type: 'radar',\n                 lineStyle: lineStyle,\n                 data: dataBJ,\n                 symbol: 'none',\n"
+                },
+                {
+                    "date": 1654422671566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,9 +216,9 @@\n                     opacity: 0.1\n                 }\n                 },\n                 {\n-                name: 'Shanghai',\n+                name: '工业机器人',\n                 type: 'radar',\n                 lineStyle: lineStyle,\n                 data: dataSH,\n                 symbol: 'none',\n"
+                },
+                {
+                    "date": 1654422676897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,8 +224,9 @@\n                 symbol: 'none',\n                 itemStyle: {\n                     // color: '#ecf5ff'\n                     color: '#656dbb'\n+                    font\n                 },\n                 areaStyle: {\n                     opacity: 0.05\n                 }\n"
+                },
+                {
+                    "date": 1654422682537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,9 +224,9 @@\n                 symbol: 'none',\n                 itemStyle: {\n                     // color: '#ecf5ff'\n                     color: '#656dbb'\n-                    font\n+                    fontSize:''\n                 },\n                 areaStyle: {\n                     opacity: 0.05\n                 }\n"
+                },
+                {
+                    "date": 1654422692128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -223,10 +223,10 @@\n                 data: dataSH,\n                 symbol: 'none',\n                 itemStyle: {\n                     // color: '#ecf5ff'\n-                    color: '#656dbb'\n-                    fontSize:''\n+                    color: '#656dbb',\n+                    fontSize:'10px;'\n                 },\n                 areaStyle: {\n                     opacity: 0.05\n                 }\n"
+                },
+                {
+                    "date": 1654422705073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,9 +224,9 @@\n                 symbol: 'none',\n                 itemStyle: {\n                     // color: '#ecf5ff'\n                     color: '#656dbb',\n-                    fontSize:'10px;'\n+                    fontSize:'20px;'\n                 },\n                 areaStyle: {\n                     opacity: 0.05\n                 }\n"
+                },
+                {
+                    "date": 1654422731860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -231,9 +231,9 @@\n                     opacity: 0.05\n                 }\n                 },\n                 {\n-                name: 'Guangzhou',\n+                name: '',\n                 type: 'radar',\n                 lineStyle: lineStyle,\n                 data: dataGZ,\n                 symbol: 'none',\n"
+                },
+                {
+                    "date": 1654422784497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:200px;min-height:340px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:340px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n@@ -231,9 +231,9 @@\n                     opacity: 0.05\n                 }\n                 },\n                 {\n-                name: '',\n+                name: '小型机器人',\n                 type: 'radar',\n                 lineStyle: lineStyle,\n                 data: dataGZ,\n                 symbol: 'none',\n"
+                },
+                {
+                    "date": 1654422810044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:340px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:430px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654422823914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:430px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:40px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654422858334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,15 @@\n    <div class=\"Woman\" >\n     <el-row type=\"flex\" justify=\"center\" style=\"margin-top:40px;\">\n        <el-col :span=\"24\">\n             <h3 class=\"title\">\n-                设备值度量\n+                机器人度量\n             </h3>\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:40px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:400px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654432893226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n    <div class=\"Woman\" >\n     <el-row type=\"flex\" justify=\"center\" style=\"margin-top:40px;\">\n        <el-col :span=\"24\">\n             <h3 class=\"title\">\n-                机器人度量\n+                机器人运作情况度量\n             </h3>\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n"
+                },
+                {
+                    "date": 1654432937540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n                 data: ['AI机器人', '工业机器人', '小型机器人'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n-                fontSize: 14\n+                fontSize: 6\n                 },\n                 selectedMode: 'single'\n             },\n             \n"
+                },
+                {
+                    "date": 1654432943536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n                 data: ['AI机器人', '工业机器人', '小型机器人'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n-                fontSize: 6\n+                fontSize: 20\n                 },\n                 selectedMode: 'single'\n             },\n             \n"
+                },
+                {
+                    "date": 1654432971364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -211,8 +211,9 @@\n                 symbol: 'none',\n                 itemStyle: {\n                     color: '#6ef0f0'\n                 },\n+                \n                 areaStyle: {\n                     opacity: 0.1\n                 }\n                 },\n"
+                },
+                {
+                    "date": 1654433007421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,8 +200,12 @@\n                 lineStyle: {\n                     color: '#1b418c'\n                 }\n                 }\n+                textStyle: {\n+                color: '#fff',\n+                fontSize: 20\n+                },\n             },\n             series: [\n                 {\n                 name: 'AI机器人',\n"
+                },
+                {
+                    "date": 1654433015300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,9 +199,9 @@\n                 axisLine: {\n                 lineStyle: {\n                     color: '#1b418c'\n                 }\n-                }\n+                },\n                 textStyle: {\n                 color: '#fff',\n                 fontSize: 20\n                 },\n"
+                },
+                {
+                    "date": 1654433070743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,12 +200,9 @@\n                 lineStyle: {\n                     color: '#1b418c'\n                 }\n                 },\n-                textStyle: {\n-                color: '#fff',\n-                fontSize: 20\n-                },\n+                \n             },\n             series: [\n                 {\n                 name: 'AI机器人',\n"
+                },
+                {
+                    "date": 1654433080928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,8 +178,9 @@\n                 shape: 'circle',\n                 splitNumber: 5,\n                 axisName: {\n                 color: '#4aadf8'\n+                \n                 },\n                 splitLine: {\n                 lineStyle: {\n                     color: [\n"
+                },
+                {
+                    "date": 1654433088024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n                 shape: 'circle',\n                 splitNumber: 5,\n                 axisName: {\n                 color: '#4aadf8'\n-                \n+                fon\n                 },\n                 splitLine: {\n                 lineStyle: {\n                     color: [\n"
+                },
+                {
+                    "date": 1654433098537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,10 +177,10 @@\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n                 axisName: {\n-                color: '#4aadf8'\n-                fon\n+                color: '#4aadf8',\n+                fontSize:20\n                 },\n                 splitLine: {\n                 lineStyle: {\n                     color: [\n"
+                },
+                {
+                    "date": 1654433114541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,9 +177,9 @@\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n                 axisName: {\n-                color: '#4aadf8',\n+                color: '#ffffff',\n                 fontSize:20\n                 },\n                 splitLine: {\n                 lineStyle: {\n"
+                },
+                {
+                    "date": 1654433121392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,9 +177,9 @@\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n                 axisName: {\n-                color: '#ffffff',\n+                color: '#4aadf8',\n                 fontSize:20\n                 },\n                 splitLine: {\n                 lineStyle: {\n"
+                },
+                {
+                    "date": 1654433128565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:400px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:600px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654433138585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:600px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:500px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654433146541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:500px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:600px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654433170699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n }\n </script>\n <style scoped>\n .title{\n-    font-size:26px;\n+    font-size:px;\n     font-family: \"微软雅黑\";\n     color:rgb(239, 250, 248);\n     line-height: 1.3;\n     display: flex;\n"
+                },
+                {
+                    "date": 1654433198611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n }\n </script>\n <style scoped>\n .title{\n-    font-size:px;\n+    font-size:33px;\n     font-family: \"微软雅黑\";\n     color:rgb(239, 250, 248);\n     line-height: 1.3;\n     display: flex;\n"
+                },
+                {
+                    "date": 1654433209624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:600px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:550px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654433454261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,8 +176,9 @@\n                 { name: '自由度', max: 100 }\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n+                \n                 axisName: {\n                 color: '#4aadf8',\n                 fontSize:20\n                 },\n"
+                },
+                {
+                    "date": 1654433459658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,9 +176,9 @@\n                 { name: '自由度', max: 100 }\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n-                \n+                //name\n                 axisName: {\n                 color: '#4aadf8',\n                 fontSize:20\n                 },\n"
+                },
+                {
+                    "date": 1654433466868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,9 +176,9 @@\n                 { name: '自由度', max: 100 }\n                 ],\n                 shape: 'circle',\n                 splitNumber: 5,\n-                //name\n+                //namestyle\n                 axisName: {\n                 color: '#4aadf8',\n                 fontSize:20\n                 },\n"
+                },
+                {
+                    "date": 1654433472631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,9 +179,9 @@\n                 splitNumber: 5,\n                 //namestyle\n                 axisName: {\n                 color: '#4aadf8',\n-                fontSize:20\n+                fontSize:15\n                 },\n                 splitLine: {\n                 lineStyle: {\n                     color: [\n"
+                },
+                {
+                    "date": 1654433478550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,9 +179,9 @@\n                 splitNumber: 5,\n                 //namestyle\n                 axisName: {\n                 color: '#4aadf8',\n-                fontSize:15\n+                fontSize:18\n                 },\n                 splitLine: {\n                 lineStyle: {\n                     color: [\n"
+                },
+                {
+                    "date": 1654433484637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,9 +179,9 @@\n                 splitNumber: 5,\n                 //namestyle\n                 axisName: {\n                 color: '#4aadf8',\n-                fontSize:18\n+                fontSize:17\n                 },\n                 splitLine: {\n                 lineStyle: {\n                     color: [\n"
+                },
+                {
+                    "date": 1654433511554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:550px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:500px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654433527937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:500px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:400px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654433539595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:400px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:460px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654433545549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:460px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:480px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654433553603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:480px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:490px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654433988620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:490px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:450px;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654434052046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:450px;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:450px;MARGIN\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654434057319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:450px;MARGIN\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:450px;margin-top\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654434068572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:450px;margin-top\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:450px;margin-top:-15PX;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654506008378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:450px;margin-top:-15PX;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:650px;margin-top:-15PX;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654506014152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:650px;margin-top:-15PX;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:50px;margin-top:-15PX;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654506022951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       </el-col>\n    </el-row>\n    <el-row type=\"flex\" justify=\"center\" >\n        <el-col :span=\"24\">\n-             <div ref=\"myChart4\" style=\"min-width:300px;min-height:50px;margin-top:-15PX;\"></div>   \n+             <div ref=\"myChart4\" style=\"min-width:300px;min-height:700px;margin-top:-15PX;\"></div>   \n       </el-col>\n    </el-row>\n    </div>\n \n"
+                },
+                {
+                    "date": 1654506042397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -263,9 +263,9 @@\n }\n </script>\n <style scoped>\n .title{\n-    font-size:33px;\n+    font-size:44px;\n     font-family: \"微软雅黑\";\n     color:rgb(239, 250, 248);\n     line-height: 1.3;\n     display: flex;\n"
+                },
+                {
+                    "date": 1654506060827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -228,9 +228,9 @@\n                 symbol: 'none',\n                 itemStyle: {\n                     // color: '#ecf5ff'\n                     color: '#656dbb',\n-                    fontSize:'20px;'\n+                    fontSize:'30px;'\n                 },\n                 areaStyle: {\n                     opacity: 0.05\n                 }\n"
+                },
+                {
+                    "date": 1654506096099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,9 +179,9 @@\n                 splitNumber: 5,\n                 //namestyle\n                 axisName: {\n                 color: '#4aadf8',\n-                fontSize:17\n+                fontSize:25\n                 },\n                 splitLine: {\n                 lineStyle: {\n                     color: [\n"
+                },
+                {
+                    "date": 1654506106829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n                 data: ['AI机器人', '工业机器人', '小型机器人'],\n                 itemGap: 20,\n                 textStyle: {\n                 color: '#fff',\n-                fontSize: 20\n+                fontSize: 25\n                 },\n                 selectedMode: 'single'\n             },\n             \n"
+                }
+            ],
+            "date": 1654418638099,
+            "name": "Commit-0",
+            "content": "<template>\n  <div id=\"first\">\n  <!-- 路由跳转 -->\n<!-- 中间图 -->\n   <!-- 千万注意大小写myChart2如果写错，就什么也出不来 -->\n   <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n       <el-col :span=\"24\" >\n            <div ref=\"myChart4\" style=\"min-width:200px;min-height:340px;\"></div>   \n       </el-col>\n   </el-row>\n  \n \n</div>\n\n</template>\n\n<script>\n\nimport {reactive, ref, onMounted } from 'vue'  //按需导入reactive ref onMounted函数\nimport * as echarts from 'echarts'     //按需导入图表\n\n\nexport default {\n  components: {},//这个子模版不需要有\n  \n    setup() {\n      const state = reactive({     //创建响应式的数据对象\n           myChart4:ref()\n      });\n      const dataBJ = [\n           \n            [25, 11, 21, 0.65, 34, 9, 2],\n            [56, 7, 63, 0.3, 14, 5, 3],\n            [33, 7, 29, 0.33, 16, 6, 4],\n            [42, 24, 44, 0.76, 40, 16, 5],\n            [82, 58, 90, 1.77, 68, 33, 6],\n            [74, 49, 77, 1.46, 48, 27, 7],\n            [78, 55, 80, 1.29, 59, 29, 8],\n            [267, 216, 280, 4.8, 108, 64, 9],\n            [185, 127, 216, 2.52, 61, 27, 10],\n            [39, 19, 38, 0.57, 31, 15, 11],\n            [41, 11, 40, 0.43, 21, 7, 12],\n            [64, 38, 74, 1.04, 46, 22, 13],\n            [108, 79, 120, 1.7, 75, 41, 14],\n            [108, 63, 116, 1.48, 44, 26, 15],\n            [33, 6, 29, 0.34, 13, 5, 16],\n            [94, 66, 110, 1.54, 62, 31, 17],\n            [186, 142, 192, 3.88, 93, 79, 18],\n            [57, 31, 54, 0.96, 32, 14, 19],\n            [22, 8, 17, 0.48, 23, 10, 20],\n            [39, 15, 36, 0.61, 29, 13, 21],\n            [94, 69, 114, 2.08, 73, 39, 22],\n            [99, 73, 110, 2.43, 76, 48, 23],\n            [31, 12, 30, 0.5, 32, 16, 24],\n            [42, 27, 43, 1, 53, 22, 25],\n            [154, 117, 157, 3.05, 92, 58, 26],\n            [234, 185, 230, 4.09, 123, 69, 27],\n            [160, 120, 186, 2.77, 91, 50, 28],\n            [134, 96, 165, 2.76, 83, 41, 29],\n            [52, 24, 60, 1.03, 50, 21, 30],\n            [46, 5, 49, 0.28, 10, 6, 31]\n            ];\n            const dataGZ = [\n            [26, 37, 27, 1.163, 27, 13, 1],\n            [85, 62, 71, 1.195, 60, 8, 2],\n            [78, 38, 74, 1.363, 37, 7, 3],\n            [21, 21, 36, 0.634, 40, 9, 4],\n            [41, 42, 46, 0.915, 81, 13, 5],\n            [56, 52, 69, 1.067, 92, 16, 6],\n            [64, 30, 28, 0.924, 51, 2, 7],\n            [55, 48, 74, 1.236, 75, 26, 8],\n            [76, 85, 113, 1.237, 114, 27, 9],\n            [91, 81, 104, 1.041, 56, 40, 10],\n            [84, 39, 60, 0.964, 25, 11, 11],\n            [64, 51, 101, 0.862, 58, 23, 12],\n            [70, 69, 120, 1.198, 65, 36, 13],\n            [77, 105, 178, 2.549, 64, 16, 14],\n            [109, 68, 87, 0.996, 74, 29, 15],\n            [73, 68, 97, 0.905, 51, 34, 16],\n            [54, 27, 47, 0.592, 53, 12, 17],\n            [51, 61, 97, 0.811, 65, 19, 18],\n            [91, 71, 121, 1.374, 43, 18, 19],\n            [73, 102, 182, 2.787, 44, 19, 20],\n            [73, 50, 76, 0.717, 31, 20, 21],\n            [84, 94, 140, 2.238, 68, 18, 22],\n            [93, 77, 104, 1.165, 53, 7, 23],\n            [99, 130, 227, 3.97, 55, 15, 24],\n            [146, 84, 139, 1.094, 40, 17, 25],\n            [113, 108, 137, 1.481, 48, 15, 26],\n            [81, 48, 62, 1.619, 26, 3, 27],\n            [56, 48, 68, 1.336, 37, 9, 28],\n            [82, 92, 174, 3.29, 0, 13, 29],\n            [106, 116, 188, 3.628, 101, 16, 30],\n            [118, 50, 0, 1.383, 76, 11, 31]\n            ];\n            const dataSH = [\n            [91, 45, 125, 0.82, 34, 23, 1],\n            [65, 27, 78, 0.86, 45, 29, 2],\n            [83, 60, 84, 1.09, 73, 27, 3],\n            [109, 81, 121, 1.28, 68, 51, 4],\n            [106, 77, 114, 1.07, 55, 51, 5],\n            [109, 81, 121, 1.28, 68, 51, 6],\n            [106, 77, 114, 1.07, 55, 51, 7],\n            [89, 65, 78, 0.86, 51, 26, 8],\n            [53, 33, 47, 0.64, 50, 17, 9],\n            [80, 55, 80, 1.01, 75, 24, 10],\n            [117, 81, 124, 1.03, 45, 24, 11],\n            [99, 71, 142, 1.1, 62, 42, 12],\n            [95, 69, 130, 1.28, 74, 50, 13],\n            [116, 87, 131, 1.47, 84, 40, 14],\n            [108, 80, 121, 1.3, 85, 37, 15],\n            [134, 83, 167, 1.16, 57, 43, 16],\n            [79, 43, 107, 1.05, 59, 37, 17],\n            [71, 46, 89, 0.86, 64, 25, 18],\n            [97, 71, 113, 1.17, 88, 31, 19],\n            [84, 57, 91, 0.85, 55, 31, 20],\n            [87, 63, 101, 0.9, 56, 41, 21],\n            [104, 77, 119, 1.09, 73, 48, 22],\n            [87, 62, 100, 1, 72, 28, 23],\n            [168, 128, 172, 1.49, 97, 56, 24],\n            [65, 45, 51, 0.74, 39, 17, 25],\n            [39, 24, 38, 0.61, 47, 17, 26],\n            [39, 24, 39, 0.59, 50, 19, 27],\n            [93, 68, 96, 1.05, 79, 29, 28],\n            [188, 143, 197, 1.66, 99, 51, 29],\n            [174, 131, 174, 1.55, 108, 50, 30],\n            [187, 143, 201, 1.39, 89, 53, 31]\n            ];\n      const lineStyle = {\n            width: 1,\n            opacity: 0.5\n            };\n      \n      const init=()=>{//定义方法\n          if(state.myChart4){\n            //  图表初始化\n           var mychart = echarts.init(state.myChart4);\n            //  图表配置信息\n\n            const option = {\n            // backgroundColor: '#161627',\n            // title: {\n            //     text: '视频类型偏好',\n            //     left: 'center',\n            //     textStyle: {\n            //     color: '#6ef0f0'\n            //     }\n            // },\n            legend: {\n                top: 20,\n                data: ['Beijing', 'Shanghai', 'Guangzhou'],\n                itemGap: 20,\n                textStyle: {\n                color: '#fff',\n                fontSize: 14\n                },\n                selectedMode: 'single'\n            },\n            \n            radar: {\n                indicator: [\n                { name: '学习类', max: 300 },\n                { name: '游戏类', max: 250 },\n                { name: '生活类', max: 300 },\n                { name: '影视类', max: 5 },\n                { name: '时尚类', max: 200 },\n                { name: '动画类', max: 100 }\n                ],\n                shape: 'circle',\n                splitNumber: 5,\n                axisName: {\n                color: '#4aadf8'\n                },\n                splitLine: {\n                lineStyle: {\n                    color: [\n                        //RGBA(R,G,B,A) red、green、blue、透明度\n                    'rgba(10, 10, , 0.1)',\n                    'rgba(10, 10, 999, 0.2)',\n                    'rgba(10, 10, 999, 0.4)',\n                    'rgba(10, 10, 999, 0.6)',\n                    'rgba(10, 10, 999, 0.8)',\n                    'rgba(10, 10, 999, 1)'\n                    ].reverse()\n                }\n                },\n                splitArea: {\n                show: false\n                },\n                axisLine: {\n                lineStyle: {\n                    color: '#1b418c'\n                }\n                }\n            },\n            series: [\n                {\n                name: 'Beijing',\n                type: 'radar',\n                lineStyle: lineStyle,\n                data: dataBJ,\n                symbol: 'none',\n                itemStyle: {\n                    color: '#6ef0f0'\n                },\n                areaStyle: {\n                    opacity: 0.1\n                }\n                },\n                {\n                name: 'Shanghai',\n                type: 'radar',\n                lineStyle: lineStyle,\n                data: dataSH,\n                symbol: 'none',\n                itemStyle: {\n                    // color: '#ecf5ff'\n                    color: '#656dbb'\n                },\n                areaStyle: {\n                    opacity: 0.05\n                }\n                },\n                {\n                name: 'Guangzhou',\n                type: 'radar',\n                lineStyle: lineStyle,\n                data: dataGZ,\n                symbol: 'none',\n                itemStyle: {\n                    color: '#8abdea'\n                },\n                areaStyle: {\n                    opacity: 0.05\n                }\n                }\n            ]\n            };\n            //指定配置项和数据显示\n            mychart.setOption(option);\n          }\n      }\n      onMounted(()=>{\n          init()\n      })\n      return state;\n    },\n  \n}\n</script>\nst"
+        }
+    ]
+}

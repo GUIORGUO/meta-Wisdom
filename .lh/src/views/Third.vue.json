@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/views/Third.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1654487385564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1654487385563,
+            "name": "Commit-0",
+            "content": "<template>\n\n<div id=\"Third\">\n  <el-row type=\"flex\" justify=\"center\">\n    <el-col :span=\"24\">\n                              <!-- 刚开始圆环内的文字显示不全，因此要直接设置全局文字行高才可以 -->\n      <dv-active-ring-chart :config=\"config\" style=\"margin-top:-60px;width:800px;height:300px;line-height:22px;\" />\n    </el-col>\n  </el-row>\n\n</div>\n\n</template>\n\n<script>\nimport * as echarts from \"echarts\";\nimport {reactive, ref, onMounted } from 'vue'\n\nexport default {\n \n  data(){\n    return {\n      config: {\n            radius: '57%',  //圆环大小\n            activeRadius: '66%',//半径大小\n            lineWidth: 20,\n            data: [\n                    {\n                    name: '周口',\n                    value: 55\n                    },\n                    {\n                    name: '南阳',\n                    value: 120\n                    },\n                    {\n                    name: '西峡',\n                    value: 78\n                    },\n                    {\n                    name: '驻马店',\n                    value: 66\n                    },\n                    {\n                    name: '新乡',\n                    value: 80\n                    }\n                ],\n            digitalFlopStyle: {\n                fontSize: 20,\n                \n\n            }\n    }\n  }\n  }\n}\n</script>\n<style lang=\"scss\" scoped>\n\n</style>"
+        }
+    ]
+}

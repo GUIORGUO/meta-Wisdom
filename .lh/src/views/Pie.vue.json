@@ -1,0 +1,322 @@
+{
+    "sourceFile": "src/views/Pie.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 76,
+            "patches": [
+                {
+                    "date": 1654434227689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1654434235206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,12 @@\n     // option\n     var option2 = {\n       title: {\n         left: \"center\",\n-        text: \"设备\",\n+        text: \"设备信息\",\n         textStyle: {\n           color: \"#fff\",\n+          fontSize\n         },\n       },\n       tooltip: {\n         trigger: \"item\", //点击item时触发\n"
+                },
+                {
+                    "date": 1654434241946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         left: \"center\",\n         text: \"设备信息\",\n         textStyle: {\n           color: \"#fff\",\n-          fontSize\n+          fontSize:33,\n         },\n       },\n       tooltip: {\n         trigger: \"item\", //点击item时触发\n"
+                },
+                {
+                    "date": 1654434283574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n       },\n       legend: {\n         //图例小标\n         data: [\"原始Flow\", \"背景Flow\", \"特征Flow\", \"机器Flow\"],\n-        top: \"10%\",\n+        top: \"15%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n"
+                },
+                {
+                    "date": 1654434296626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n       },\n       grid: {\n         //调整图表和标题的距离\n         bottom: \"0%\",\n-        top: \"10%\",\n+        top: \"14%\",\n         left: \"0%\",\n         right: \"0%\",\n         containLabel: true,\n       },\n"
+                },
+                {
+                    "date": 1654434309094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n       },\n       grid: {\n         //调整图表和标题的距离\n         bottom: \"0%\",\n-        top: \"14%\",\n+        top: \"20%\",\n         left: \"0%\",\n         right: \"0%\",\n         containLabel: true,\n       },\n"
+                },
+                {
+                    "date": 1654434316489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n       },\n       grid: {\n         //调整图表和标题的距离\n         bottom: \"0%\",\n-        top: \"20%\",\n+        top: \"14%\",\n         left: \"0%\",\n         right: \"0%\",\n         containLabel: true,\n       },\n"
+                },
+                {
+                    "date": 1654434326626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n       },\n       grid: {\n         //调整图表和标题的距离\n         bottom: \"0%\",\n-        top: \"14%\",\n+        top: \"10%\",\n         left: \"0%\",\n         right: \"0%\",\n         containLabel: true,\n       },\n@@ -64,9 +64,9 @@\n         {\n           name: \"Funnel\",\n           type: \"funnel\",\n           left: \"10%\",\n-          top: 70, //距图标的距离\n+          top: 80, //距图标的距离\n           bottom: 30, //距底部的距离\n           width: \"80%\",\n           min: 0,\n           max: 100,\n"
+                },
+                {
+                    "date": 1654434354472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n     // option\n     var option2 = {\n       title: {\n         left: \"center\",\n+         top: \"10%\",\n         text: \"设备信息\",\n         textStyle: {\n           color: \"#fff\",\n           fontSize:33,\n"
+                },
+                {
+                    "date": 1654434367446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     // option\n     var option2 = {\n       title: {\n         left: \"center\",\n-         top: \"10%\",\n+        top: \"10%\",\n         text: \"设备信息\",\n         textStyle: {\n           color: \"#fff\",\n           fontSize:33,\n@@ -45,9 +45,9 @@\n       },\n       legend: {\n         //图例小标\n         data: [\"原始Flow\", \"背景Flow\", \"特征Flow\", \"机器Flow\"],\n-        top: \"15%\",\n+        top: \"25%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n"
+                },
+                {
+                    "date": 1654434376574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n         {\n           name: \"Funnel\",\n           type: \"funnel\",\n           left: \"10%\",\n-          top: 80, //距图标的距离\n+          top: 90, //距图标的距离\n           bottom: 30, //距底部的距离\n           width: \"80%\",\n           min: 0,\n           max: 100,\n"
+                },
+                {
+                    "date": 1654434384573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n         {\n           name: \"Funnel\",\n           type: \"funnel\",\n           left: \"10%\",\n-          top: 90, //距图标的距离\n+          top: 100, //距图标的距离\n           bottom: 30, //距底部的距离\n           width: \"80%\",\n           min: 0,\n           max: 100,\n"
+                },
+                {
+                    "date": 1654434390628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n         {\n           name: \"Funnel\",\n           type: \"funnel\",\n           left: \"10%\",\n-          top: 100, //距图标的距离\n+          top: 120, //距图标的距离\n           bottom: 30, //距底部的距离\n           width: \"80%\",\n           min: 0,\n           max: 100,\n"
+                },
+                {
+                    "date": 1654434457056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     var option2 = {\n       title: {\n         left: \"center\",\n         top: \"10%\",\n-        text: \"设备信息\",\n+        text: \"机器人数量\",\n         textStyle: {\n           color: \"#fff\",\n           fontSize:33,\n         },\n"
+                },
+                {
+                    "date": 1654434465040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,9 @@\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n+          \n         },\n       },\n       grid: {\n         //调整图表和标题的距离\n"
+                },
+                {
+                    "date": 1654434471621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n-          \n+          fontSize:10\n         },\n       },\n       grid: {\n         //调整图表和标题的距离\n"
+                },
+                {
+                    "date": 1654434492568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n-          fontSize:10\n+          fontSize:20\n         },\n       },\n       grid: {\n         //调整图表和标题的距离\n"
+                },
+                {
+                    "date": 1654434524567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     var option2 = {\n       title: {\n         left: \"center\",\n         top: \"10%\",\n-        text: \"机器人数量\",\n+        text: \"机器人数量度量\",\n         textStyle: {\n           color: \"#fff\",\n           fontSize:33,\n         },\n"
+                },
+                {
+                    "date": 1654434553700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n             },\n           },\n           itemStyle: {\n             borderColor: \"#fff\",\n-            borderWidth: 1,\n+            borderWidth: 2,\n           },\n           emphasis: {\n             label: {\n               fontSize: 20,\n"
+                },
+                {
+                    "date": 1654434558849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n             },\n           },\n           itemStyle: {\n             borderColor: \"#fff\",\n-            borderWidth: 2,\n+            borderWidth: 1,\n           },\n           emphasis: {\n             label: {\n               fontSize: 20,\n"
+                },
+                {
+                    "date": 1654434567107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,8 +89,9 @@\n           },\n           itemStyle: {\n             borderColor: \"#fff\",\n             borderWidth: 1,\n+            \n           },\n           emphasis: {\n             label: {\n               fontSize: 20,\n"
+                },
+                {
+                    "date": 1654434575561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n             \n           },\n           emphasis: {\n             label: {\n-              fontSize: 20,\n+              fontSize: 30,\n             },\n           },\n           data: [\n             { value: 75, name: \"背景Flow\" },\n"
+                },
+                {
+                    "date": 1654434593614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n           },\n           itemStyle: {\n             borderColor: \"#fff\",\n             borderWidth: 1,\n-            \n+            fontSize: 30,\n           },\n           emphasis: {\n             label: {\n               fontSize: 30,\n"
+                },
+                {
+                    "date": 1654434600692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n           },\n           itemStyle: {\n             borderColor: \"#fff\",\n             borderWidth: 1,\n-            fontSize: 30,\n+            \n           },\n           emphasis: {\n             label: {\n               fontSize: 30,\n"
+                },
+                {
+                    "date": 1654434619610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n               fontSize: 30,\n             },\n           },\n           data: [\n-            { value: 75, name: \"背景Flow\" },\n+            { value: 75, name: \"A\" },\n             { value: 50, name: \"特征Flow\" },\n             { value: 25, name: \"原始Flow\" },\n             { value: 100, name: \"机器Flow\" },\n           ],\n"
+                },
+                {
+                    "date": 1654434627025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n               fontSize: 30,\n             },\n           },\n           data: [\n-            { value: 75, name: \"A\" },\n+            { value: 75, name: \"AI机器人\" },\n             { value: 50, name: \"特征Flow\" },\n             { value: 25, name: \"原始Flow\" },\n             { value: 100, name: \"机器Flow\" },\n           ],\n"
+                },
+                {
+                    "date": 1654434637456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,9 @@\n             },\n           },\n           data: [\n             { value: 75, name: \"AI机器人\" },\n-            { value: 50, name: \"特征Flow\" },\n+            { value: 50, name: \"工业机器人\" },\n             { value: 25, name: \"原始Flow\" },\n             { value: 100, name: \"机器Flow\" },\n           ],\n         },\n"
+                },
+                {
+                    "date": 1654434644618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n           },\n           data: [\n             { value: 75, name: \"AI机器人\" },\n             { value: 50, name: \"工业机器人\" },\n-            { value: 25, name: \"原始Flow\" },\n+            { value: 25, name: \"小型机器人\" },\n             { value: 100, name: \"机器Flow\" },\n           ],\n         },\n       ],\n"
+                },
+                {
+                    "date": 1654434650666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n           data: [\n             { value: 75, name: \"AI机器人\" },\n             { value: 50, name: \"工业机器人\" },\n             { value: 25, name: \"小型机器人\" },\n-            { value: 100, name: \"机器Flow\" },\n+            { value: 100, name: \"音乐机器人\" },\n           ],\n         },\n       ],\n     };\n"
+                },
+                {
+                    "date": 1654434658565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n               fontSize: 30,\n             },\n           },\n           data: [\n-            { value: 75, name: \"AI机器人\" },\n+            { value: 75, name: \"机器人\" },\n             { value: 50, name: \"工业机器人\" },\n             { value: 25, name: \"小型机器人\" },\n             { value: 100, name: \"音乐机器人\" },\n           ],\n"
+                },
+                {
+                    "date": 1654434666062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,12 +97,12 @@\n               fontSize: 30,\n             },\n           },\n           data: [\n-            { value: 75, name: \"机器人\" },\n+            { value: 75, name: \"工业机器人\" },\n             { value: 50, name: \"工业机器人\" },\n             { value: 25, name: \"小型机器人\" },\n-            { value: 100, name: \"音乐机器人\" },\n+            { value: 100, name: \"AI机器人\" },\n           ],\n         },\n       ],\n     };\n"
+                },
+                {
+                    "date": 1654434672215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,9 @@\n             },\n           },\n           data: [\n             { value: 75, name: \"工业机器人\" },\n-            { value: 50, name: \"工业机器人\" },\n+            { value: 50, name: \"机器人\" },\n             { value: 25, name: \"小型机器人\" },\n             { value: 100, name: \"AI机器人\" },\n           ],\n         },\n"
+                },
+                {
+                    "date": 1654434695835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,20 +89,19 @@\n           },\n           itemStyle: {\n             borderColor: \"#fff\",\n             borderWidth: 1,\n-            \n           },\n           emphasis: {\n             label: {\n-              fontSize: 30,\n+              fontSize: 20,\n             },\n           },\n           data: [\n-            { value: 75, name: \"工业机器人\" },\n-            { value: 50, name: \"机器人\" },\n-            { value: 25, name: \"小型机器人\" },\n-            { value: 100, name: \"AI机器人\" },\n+            { value: 75, name: \"背景Flow\" },\n+            { value: 50, name: \"特征Flow\" },\n+            { value: 25, name: \"原始Flow\" },\n+            { value: 100, name: \"机器Flow\" },\n           ],\n         },\n       ],\n     };\n"
+                },
+                {
+                    "date": 1654434730151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         },\n       },\n       legend: {\n         //图例小标\n-        data: [\"原始Flow\", \"背景Flow\", \"特征Flow\", \"机器Flow\"],\n+        data: [\"工业机器人\", \"背景Flow\", \"特征Flow\", \"机器Flow\"],\n         top: \"25%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n"
+                },
+                {
+                    "date": 1654434737749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         },\n       },\n       legend: {\n         //图例小标\n-        data: [\"工业机器人\", \"背景Flow\", \"特征Flow\", \"机器Flow\"],\n+        data: [\"工业机器人\", \"小型机器人\", \"特征Flow\", \"机器Flow\"],\n         top: \"25%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n"
+                },
+                {
+                    "date": 1654434755656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         },\n       },\n       legend: {\n         //图例小标\n-        data: [\"工业机器人\", \"小型机器人\", \"特征Flow\", \"机器Flow\"],\n+        data: [\"工业机器人\", \"小型机器人\", \"音乐机器人\", \"AI\"],\n         top: \"25%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n"
+                },
+                {
+                    "date": 1654434768266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         },\n       },\n       legend: {\n         //图例小标\n-        data: [\"工业机器人\", \"小型机器人\", \"音乐机器人\", \"AI\"],\n+        data: [\"工业机器人\", \"小型机器人\", \"音乐机器人\", \"AI机器人\"],\n         top: \"25%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n@@ -96,9 +96,9 @@\n               fontSize: 20,\n             },\n           },\n           data: [\n-            { value: 75, name: \"背景Flow\" },\n+            { value: 75, name: \"工业机器人\" },\n             { value: 50, name: \"特征Flow\" },\n             { value: 25, name: \"原始Flow\" },\n             { value: 100, name: \"机器Flow\" },\n           ],\n"
+                },
+                {
+                    "date": 1654434773919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n             },\n           },\n           data: [\n             { value: 75, name: \"工业机器人\" },\n-            { value: 50, name: \"特征Flow\" },\n+            { value: 50, name: \"小型机器人\" },\n             { value: 25, name: \"原始Flow\" },\n             { value: 100, name: \"机器Flow\" },\n           ],\n         },\n"
+                },
+                {
+                    "date": 1654434782415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,9 @@\n           },\n           data: [\n             { value: 75, name: \"工业机器人\" },\n             { value: 50, name: \"小型机器人\" },\n-            { value: 25, name: \"原始Flow\" },\n+            { value: 25, name: \"工业机器人\" },\n             { value: 100, name: \"机器Flow\" },\n           ],\n         },\n       ],\n"
+                },
+                {
+                    "date": 1654434790039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n           data: [\n             { value: 75, name: \"工业机器人\" },\n             { value: 50, name: \"小型机器人\" },\n             { value: 25, name: \"工业机器人\" },\n-            { value: 100, name: \"机器Flow\" },\n+            { value: 100, name: \"AI机器人\" },\n           ],\n         },\n       ],\n     };\n"
+                },
+                {
+                    "date": 1654434819602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,9 @@\n           },\n           data: [\n             { value: 75, name: \"工业机器人\" },\n             { value: 50, name: \"小型机器人\" },\n-            { value: 25, name: \"工业机器人\" },\n+            { value: 25, name: \"音乐机器人\" },\n             { value: 100, name: \"AI机器人\" },\n           ],\n         },\n       ],\n"
+                },
+                {
+                    "date": 1654506981242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n     <el-col :span=\"24\">\n       <div\n         ref=\"myChartPi\"\n-        :style=\"{ minwidth: '250px', minHeight: '360px' }\"\n+        :style=\"{ minwidth: '250px', minHeight: '660px' }\"\n       ></div>\n     </el-col>\n   </el-row>\n </template>\n"
+                },
+                {
+                    "date": 1654507072909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         top: \"10%\",\n         text: \"机器人数量度量\",\n         textStyle: {\n           color: \"#fff\",\n-          fontSize:33,\n+          fontSize:,\n         },\n       },\n       tooltip: {\n         trigger: \"item\", //点击item时触发\n"
+                },
+                {
+                    "date": 1654507093401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         top: \"10%\",\n         text: \"机器人数量度量\",\n         textStyle: {\n           color: \"#fff\",\n-          fontSize:,\n+          fontSize:44,\n         },\n       },\n       tooltip: {\n         trigger: \"item\", //点击item时触发\n@@ -45,9 +45,9 @@\n       },\n       legend: {\n         //图例小标\n         data: [\"工业机器人\", \"小型机器人\", \"音乐机器人\", \"AI机器人\"],\n-        top: \"25%\",\n+        top: \"15%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n"
+                },
+                {
+                    "date": 1654507106045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n       },\n       grid: {\n         //调整图表和标题的距离\n         bottom: \"0%\",\n-        top: \"10%\",\n+        top: \"0%\",\n         left: \"0%\",\n         right: \"0%\",\n         containLabel: true,\n       },\n"
+                },
+                {
+                    "date": 1654507113055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n       },\n       grid: {\n         //调整图表和标题的距离\n         bottom: \"0%\",\n-        top: \"0%\",\n+        top: \"70%\",\n         left: \"0%\",\n         right: \"0%\",\n         containLabel: true,\n       },\n"
+                },
+                {
+                    "date": 1654507133946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n-          fontSize:20\n+          fontSize:25\n         },\n       },\n       grid: {\n         //调整图表和标题的距离\n"
+                },
+                {
+                    "date": 1654507156732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n       },\n       legend: {\n         //图例小标\n         data: [\"工业机器人\", \"小型机器人\", \"音乐机器人\", \"AI机器人\"],\n-        top: \"15%\",\n+        top: \"%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n"
+                },
+                {
+                    "date": 1654507170833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n     <el-col :span=\"24\">\n       <div\n         ref=\"myChartPi\"\n-        :style=\"{ minwidth: '250px', minHeight: '660px' }\"\n+        :style=\"{ minwidth: '250px', minHeight: '760px' }\"\n       ></div>\n     </el-col>\n   </el-row>\n </template>\n@@ -45,9 +45,9 @@\n       },\n       legend: {\n         //图例小标\n         data: [\"工业机器人\", \"小型机器人\", \"音乐机器人\", \"AI机器人\"],\n-        top: \"%\",\n+        top: \"0%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n"
+                },
+                {
+                    "date": 1654507193001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n         },\n       },\n       grid: {\n         //调整图表和标题的距离\n-        bottom: \"0%\",\n+        bottom: \"20%\",\n         top: \"70%\",\n         left: \"0%\",\n         right: \"0%\",\n         containLabel: true,\n"
+                },
+                {
+                    "date": 1654507201634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n         },\n       },\n       grid: {\n         //调整图表和标题的距离\n-        bottom: \"20%\",\n+        bottom: \"90%\",\n         top: \"70%\",\n         left: \"0%\",\n         right: \"0%\",\n         containLabel: true,\n"
+                },
+                {
+                    "date": 1654507212843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,10 +55,9 @@\n         },\n       },\n       grid: {\n         //调整图表和标题的距离\n-        bottom: \"90%\",\n-        top: \"70%\",\n+        \n         left: \"0%\",\n         right: \"0%\",\n         containLabel: true,\n       },\n"
+                },
+                {
+                    "date": 1654507228917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,9 @@\n           gap: 2,\n           label: {\n             show: true,\n             position: \"inside\",\n+            \n           },\n           labelLine: {\n             length: 10,\n             lineStyle: {\n"
+                },
+                {
+                    "date": 1654507234979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n           gap: 2,\n           label: {\n             show: true,\n             position: \"inside\",\n-            \n+            font\n           },\n           labelLine: {\n             length: 10,\n             lineStyle: {\n"
+                },
+                {
+                    "date": 1654507242764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n           gap: 2,\n           label: {\n             show: true,\n             position: \"inside\",\n-            font\n+            fontSize:25\n           },\n           labelLine: {\n             length: 10,\n             lineStyle: {\n"
+                },
+                {
+                    "date": 1654507292224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,16 @@\n <template>\n   <!-- 饼状图 -->\n+  <el-row type=\"flex\" justify=\"center\">\n+      <el-col>\n+           <h3 class=\"title\">\n+                机器质量度量\n+            </h3>\n+      </el-col>\n+       <el-col :span=\"24\" >\n+          <div id=\"myChart123\" :data=\"option\" :style=\"{ minwidth: '200px', minHeight: '650px'}\"></div>\n+        </el-col>\n+</el-row>\n \n   <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n     <el-col :span=\"24\">\n       <div\n"
+                },
+                {
+                    "date": 1654507298760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,9 @@\n </el-row>\n \n   <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n     <el-col :span=\"24\">\n-      <div\n-        ref=\"myChartPi\"\n-        :style=\"{ minwidth: '250px', minHeight: '760px' }\"\n-      ></div>\n+      \n     </el-col>\n   </el-row>\n </template>\n \n"
+                },
+                {
+                    "date": 1654507322420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,18 @@\n                 机器质量度量\n             </h3>\n       </el-col>\n        <el-col :span=\"24\" >\n-          <div id=\"myChart123\" :data=\"option\" :style=\"{ minwidth: '200px', minHeight: '650px'}\"></div>\n+          <div  ref=\"myChartPi\" :data=\"option\" :style=\"{ minwidth: '200px', minHeight: '650px'}\"></div>\n         </el-col>\n </el-row>\n \n   <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n     <el-col :span=\"24\">\n-      \n+      <div\n+        ref=\"myChartPi\"\n+        :style=\"{ minwidth: '250px', minHeight: '760px' }\"\n+      ></div>\n     </el-col>\n   </el-row>\n </template>\n \n"
+                },
+                {
+                    "date": 1654507342639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n                 机器质量度量\n             </h3>\n       </el-col>\n        <el-col :span=\"24\" >\n-          <div  ref=\"myChartPi\" :data=\"option\" :style=\"{ minwidth: '200px', minHeight: '650px'}\"></div>\n+          <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n \n   <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n"
+                },
+                {
+                    "date": 1654507372691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,16 +10,8 @@\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n \n-  <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n-    <el-col :span=\"24\">\n-      <div\n-        ref=\"myChartPi\"\n-        :style=\"{ minwidth: '250px', minHeight: '760px' }\"\n-      ></div>\n-    </el-col>\n-  </el-row>\n </template>\n \n <script>\n // 引入echarts\n@@ -131,5 +123,13 @@\n   },\n };\n </script>\n <style lang=\"scss\" scoped>\n+.title{\n+    font-size:33px;\n+    font-family: \"微软雅黑\";\n+    color:rgb(239, 250, 248);\n+    line-height: 1.3;\n+    display: flex;\n+    justify-content:center;\n+}\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654507391173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     var option2 = {\n       title: {\n         left: \"center\",\n         top: \"10%\",\n-        text: \"机器人数量度量\",\n+       \n         textStyle: {\n           color: \"#fff\",\n           fontSize:44,\n         },\n"
+                },
+                {
+                    "date": 1654507401411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n       },\n       legend: {\n         //图例小标\n         data: [\"工业机器人\", \"小型机器人\", \"音乐机器人\", \"AI机器人\"],\n-        top: \"0%\",\n+        top: \"20%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n"
+                },
+                {
+                    "date": 1654507441427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <!-- 饼状图 -->\n   <el-row type=\"flex\" justify=\"center\">\n       <el-col>\n            <h3 class=\"title\">\n-                机器质量度量\n+                机器人数；度量\n             </h3>\n       </el-col>\n        <el-col :span=\"24\" >\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n@@ -47,9 +47,9 @@\n       },\n       legend: {\n         //图例小标\n         data: [\"工业机器人\", \"小型机器人\", \"音乐机器人\", \"AI机器人\"],\n-        top: \"20%\",\n+        top: \"10%\",\n         itemHeight: 9, //图例长度\n         itemWidth: 10, //图例宽度\n         textStyle: {\n           color: \"#FFF\",\n"
+                },
+                {
+                    "date": 1654507447039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <!-- 饼状图 -->\n   <el-row type=\"flex\" justify=\"center\">\n       <el-col>\n            <h3 class=\"title\">\n-                机器人数；度量\n+                机器人数量度量\n             </h3>\n       </el-col>\n        <el-col :span=\"24\" >\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n"
+                },
+                {
+                    "date": 1654507460450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <!-- 饼状图 -->\n   <el-row type=\"flex\" justify=\"center\">\n       <el-col>\n            <h3 class=\"title\">\n-                机器人数量度量\n+                机器人数量占比度量\n             </h3>\n       </el-col>\n        <el-col :span=\"24\" >\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n"
+                },
+                {
+                    "date": 1654507469989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n };\n </script>\n <style lang=\"scss\" scoped>\n .title{\n-    font-size:33px;\n+    font-size:344px;\n     font-family: \"微软雅黑\";\n     color:rgb(239, 250, 248);\n     line-height: 1.3;\n     display: flex;\n"
+                },
+                {
+                    "date": 1654507488666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,12 +124,13 @@\n };\n </script>\n <style lang=\"scss\" scoped>\n .title{\n-    font-size:344px;\n+    font-size:44px;\n     font-family: \"微软雅黑\";\n     color:rgb(239, 250, 248);\n     line-height: 1.3;\n     display: flex;\n     justify-content:center;\n+    mar\n }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654507496938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,7 +130,7 @@\n     color:rgb(239, 250, 248);\n     line-height: 1.3;\n     display: flex;\n     justify-content:center;\n-    mar\n+    margin-top: ;\n }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654507515774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,7 +130,7 @@\n     color:rgb(239, 250, 248);\n     line-height: 1.3;\n     display: flex;\n     justify-content:center;\n-    margin-top: ;\n+    margin-top: 50px;\n }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654507532115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n            <h3 class=\"title\">\n                 机器人数量占比度量\n             </h3>\n       </el-col>\n-       <el-col :span=\"24\" >\n+       <el-col :span=\"24\" s>\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n \n"
+                },
+                {
+                    "date": 1654507567310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n            <h3 class=\"title\">\n                 机器人数量占比度量\n             </h3>\n       </el-col>\n-       <el-col :span=\"24\" s>\n+  </el-row>\n+       <el-col :span=\"24\" style=\"\">\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n \n"
+                },
+                {
+                    "date": 1654507572559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n                 机器人数量占比度量\n             </h3>\n       </el-col>\n   </el-row>\n+  <el-row type=\"flex\" justify=\"center\">\n        <el-col :span=\"24\" style=\"\">\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n"
+                },
+                {
+                    "date": 1654507581599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n             </h3>\n       </el-col>\n   </el-row>\n   <el-row type=\"flex\" justify=\"center\">\n-       <el-col :span=\"24\" style=\"\">\n+       <el-col :span=\"24\" >\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n \n"
+                },
+                {
+                    "date": 1654507589947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n                 机器人数量占比度量\n             </h3>\n       </el-col>\n   </el-row>\n-  <el-row type=\"flex\" justify=\"center\">\n+  <el-row type=\"flex\" justify=\"center\" style=\"margin-top:\">\n        <el-col :span=\"24\" >\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n"
+                },
+                {
+                    "date": 1654507595689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n                 机器人数量占比度量\n             </h3>\n       </el-col>\n   </el-row>\n-  <el-row type=\"flex\" justify=\"center\" style=\"margin-top:\">\n+  <el-row type=\"flex\" justify=\"center\" style=\"margin-top:-20px;\">\n        <el-col :span=\"24\" >\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n"
+                },
+                {
+                    "date": 1654507605892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n                 机器人数量占比度量\n             </h3>\n       </el-col>\n   </el-row>\n-  <el-row type=\"flex\" justify=\"center\" style=\"margin-top:-20px;\">\n+  <el-row type=\"flex\" justify=\"center\" style=\"margin-top:-40px;\">\n        <el-col :span=\"24\" >\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n"
+                },
+                {
+                    "date": 1654507614898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n                 机器人数量占比度量\n             </h3>\n       </el-col>\n   </el-row>\n-  <el-row type=\"flex\" justify=\"center\" style=\"margin-top:-40px;\">\n+  <el-row type=\"flex\" justify=\"center\" style=\"margin-top:-60px;\">\n        <el-col :span=\"24\" >\n           <div  ref=\"myChartPi\"  :style=\"{ minwidth: '250px', minHeight: '760px' }\"></div>\n         </el-col>\n </el-row>\n"
+                }
+            ],
+            "date": 1654434227689,
+            "name": "Commit-0",
+            "content": "<template>\n  <!-- 饼状图 -->\n\n  <el-row type=\"flex\" justify=\"center\" :span=\"24\">\n    <el-col :span=\"24\">\n      <div\n        ref=\"myChartPi\"\n        :style=\"{ minwidth: '250px', minHeight: '360px' }\"\n      ></div>\n    </el-col>\n  </el-row>\n</template>\n\n<script>\n// 引入echarts\nimport * as echarts from \"echarts\";\nexport default {\n  data() {\n    return {};\n  },\n  mounted() {\n    var that = this;\n    // option\n    var option2 = {\n      title: {\n        left: \"center\",\n        text: \"设备\",\n        textStyle: {\n          color: \"#fff\",\n        },\n      },\n      tooltip: {\n        trigger: \"item\", //点击item时触发\n        formatter: \"{a} <br/>{b} : {c}%\", //饼图、雷达图 : a（系列名称），b（数据项名称），c（数值）, d（百分比）\n      },\n      toolbox: {\n        feature: {\n          //特征\n          dataView: { readOnly: false }, //数据查看\n          restore: {}, //恢复\n          saveAsImage: {},\n        },\n      },\n      legend: {\n        //图例小标\n        data: [\"原始Flow\", \"背景Flow\", \"特征Flow\", \"机器Flow\"],\n        top: \"10%\",\n        itemHeight: 9, //图例长度\n        itemWidth: 10, //图例宽度\n        textStyle: {\n          color: \"#FFF\",\n        },\n      },\n      grid: {\n        //调整图表和标题的距离\n        bottom: \"0%\",\n        top: \"10%\",\n        left: \"0%\",\n        right: \"0%\",\n        containLabel: true,\n      },\n      series: [\n        {\n          name: \"Funnel\",\n          type: \"funnel\",\n          left: \"10%\",\n          top: 70, //距图标的距离\n          bottom: 30, //距底部的距离\n          width: \"80%\",\n          min: 0,\n          max: 100,\n          minSize: \"0%\",\n          maxSize: \"100%\",\n          sort: \"descending\", //降序排列\n          gap: 2,\n          label: {\n            show: true,\n            position: \"inside\",\n          },\n          labelLine: {\n            length: 10,\n            lineStyle: {\n              width: 1,\n              type: \"solid\",\n            },\n          },\n          itemStyle: {\n            borderColor: \"#fff\",\n            borderWidth: 1,\n          },\n          emphasis: {\n            label: {\n              fontSize: 20,\n            },\n          },\n          data: [\n            { value: 75, name: \"背景Flow\" },\n            { value: 50, name: \"特征Flow\" },\n            { value: 25, name: \"原始Flow\" },\n            { value: 100, name: \"机器Flow\" },\n          ],\n        },\n      ],\n    };\n\n    //初始化图表\n    // let myChart = echarts.init(document.getElementById(\"myChart123\"));\n    //   var myChartPi = echarts.init(document.getElementById(\"myChartPi\"));\n    var myChartPi = echarts.init(that.$refs.myChartPi, \"macarons\");\n    //指定配置项和数据显示\n    // myChart.setOption(option);\n    myChartPi.setOption(option2);\n\n    window.onresize = function () {\n      // 自适应大小\n      myChartPi.resize();\n    };\n  },\n};\n</script>\n<style lang=\"scss\" scoped>\n</style>"
+        }
+    ]
+}
